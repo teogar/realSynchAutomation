@@ -37,10 +37,10 @@ public class BaseTest {
         /**
          * Initializing Objects (Classes)
          */
-      options.addArguments("headless");
+
       options.addArguments("--start-fullscreen");
-      driver = new ChromeDriver(options);
-      //driver = new FirefoxDriver();
+      //driver = new ChromeDriver(options);
+      driver = new FirefoxDriver();
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
       newSynchPage = new NewSynchPage(driver);
