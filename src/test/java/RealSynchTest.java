@@ -42,6 +42,7 @@ public class RealSynchTest extends BaseTest {
 
     @Test(groups = "unit 3")
     public void rsE2E(){
+        System.out.println("REAL SYNCH CI PIPELINE");
         super.loginPage.logElements();
         super.loginPage.signIn("pete111@yopmail.com", "4444lola!!");
         System.out.println(driver.getTitle());
