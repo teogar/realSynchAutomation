@@ -96,7 +96,7 @@ public class Locators {
 	public static final String SF_USERNAME_FIELD = "//input[@name=\"sfUsername\"]";
 	public static final String SF_PASSWORD_FIELD = "//input[@name=\"sfPassword\"]";
 	public static final String SF_SECURITY_TOKEN_FIELD = "//input[@name=\"sfSecurityToken\"]";
-	public static final String FINISH_BTN = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[4]/div[3]/button[2]";
+	public static final String FINISH_BTN = "//button[contains(text() ,\"Finish\")]";
 	public static final String RS_ALL_TRANSACTIONS = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/div[2]/a/button";
 	public static final String REALS_REGISTRATION_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[2]/span";
 	public static final String FORGOT_PSW_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[1]/span";

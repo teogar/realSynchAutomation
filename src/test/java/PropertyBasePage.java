@@ -47,10 +47,14 @@ public class PropertyBasePage extends BaseTest {
         this.propertyBaseUserName.sendKeys(pBUser);
         this.propertyBasePsw.clear();
         this.propertyBasePsw.sendKeys(pBpsw);
+
+        try{
+            Thread.sleep(1000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
         this.ppCloseBtn.click();
-
-        this.nextButton.click();
-
         try{
             Thread.sleep(1000);
         }catch (InterruptedException e){
@@ -59,8 +63,17 @@ public class PropertyBasePage extends BaseTest {
 
         this.nextButton.click();
 
+
         try{
-            Thread.sleep(1000);
+            Thread.sleep(2000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        this.nextButton.click();
+
+        try{
+            Thread.sleep(2000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

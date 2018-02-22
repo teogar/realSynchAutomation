@@ -3,17 +3,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import utils.Locators;
 import utils.Properties;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     public RealSRegisterPage realSRegisterPage;
-    public WebDriver driver;
+    //public WebDriver driver;
+    public RemoteWebDriver driver;
     public NewSynchPage newSynchPage;
     public LoginPage loginPage;
     public VoicePadPage voicePadPage;
@@ -23,7 +28,7 @@ public class BaseTest {
     public ChromeOptions options  = new ChromeOptions();
 
     @BeforeClass(alwaysRun = true)
-    public void setUp(){
+    public void setUp() throws MalformedURLException {
 
         /**
          * Selenium Setup
@@ -38,9 +43,11 @@ public class BaseTest {
          * Initializing Objects (Classes)
          */
 
-      options.addArguments("--start-fullscreen");
+      //options.addArguments("--start-fullscreen");
+      options.addArguments("--start-maximized");
       //driver = new ChromeDriver(options);
-      driver = new FirefoxDriver();
+      //driver = new FirefoxDriver();
+      driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
       newSynchPage = new NewSynchPage(driver);
@@ -58,7 +65,7 @@ public class BaseTest {
      * Destroying Selenium after classes
      */
 
-    //@AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         driver.quit();
 
