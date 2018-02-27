@@ -30,6 +30,15 @@ public class SalesForcePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.FINISH_BTN)
     WebElement finishBtn;
 
+    @FindBy(how=How.XPATH, using = "//button[contains(text() , \"Verify\")]")
+    WebElement sFVerifyBtn;
+
+    @FindBy(how = How.XPATH, using = Locators.TARGET_CREDETIALS_BUTTON)
+    WebElement pBaseInputCed;
+
+    @FindBy(how = How.XPATH, using = Locators.CLOSE_BUTTON)
+    WebElement vPCloseBtn;
+
     public SalesForcePage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -38,37 +47,39 @@ public class SalesForcePage extends BaseTest {
     public void salesForceCredentials(String userN, String Psw, String sToken){
 
         /**
-         * Assertions
-         */
-
-        if (sfUserfName.isDisplayed()
-                && sfPsw.isDisplayed()
-                && sfSecurityT.isDisplayed()) {
-            System.out.println("The SalesForce Credentialas Fields are Displayed");
-        }else{
-            System.out.println("The Elements Are Not Displayed");
-            System.exit(-1);
-        }
-
-        /**
          * Instructions fot the SalesForce Credential Fields.
          */
 
+        this.pBaseInputCed.click();
         this.sfUserfName.clear();
         this.sfUserfName.sendKeys(userN);
         this.sfPsw.clear();
         this.sfPsw.sendKeys(Psw);
         this.sfSecurityT.clear();
         this.sfSecurityT.sendKeys(sToken);
-        this.nextButton.click();
+        this.sFVerifyBtn.click();
 
         try{
-            Thread.sleep(10000);
+            Thread.sleep(5000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        this.vPCloseBtn.click();
+
+        try{
+            Thread.sleep(3000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
 
         this.nextButton.click();
+
+        try{
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
 
         this.finishBtn.click();
 

@@ -48,8 +48,8 @@ public class RealSynchTest extends BaseTest {
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
         super.voicePadPage.voicePadCredentials("12341234", "twersdfeqwr", "garaseqweas");
-        //super.salesForcePage.salesForceCredentials("sadfsdf@sdfawsfd.com", "fasdfadsfas", "asdf23412asfds12as12F");
-        super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
+        super.salesForcePage.salesForceCredentials("laura@beerhometeam.com.sandbox2\n", "Hannah@19915\n", "eErZHMvUZLIRrs48CcQ2EOge9");
+        //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
 
     }
 

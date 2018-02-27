@@ -62,65 +62,29 @@ public class NewSynchPage extends BaseTest {
          */
 
         if(voicePad.isDisplayed()){
-            System.out.println("The VoicePad App is displayed");
+            this.voicePad.click();
         }else{
             System.out.println("Elements are not Displayed");
             System.exit(-1);
         }
 
-        /**
-         * Click on VoicePad App and Next button
-         */
-
-        this.voicePad.click();
-        this.nextButton.click();
-
-        /**
-         * Wait Till all Elements are Loaded
-         */
-
-        try{
-            Thread.sleep(3000);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
 
         /**
          * Verifying if SalesForce App is Clickable
          */
 
-        if(propertyBase.isDisplayed()){
-            System.out.println("The SalesForce App is Clickable");
+        if(salesForce.isDisplayed()){
+            this.salesForce.click();
         }else{
             System.out.println("Not Clickable");
             System.exit(-1);
         }
-
-        /**
-         * Verifying if Next Button is Clickable
-         */
-
-        if(nextButton.isDisplayed()){
-            System.out.println("Next Button is Clickable");
-        }else{
-            System.out.println("Next Button is not Clickable");
-            System.exit(-1);
-
-        }
-
-        /**
-         * Clicking on SalesForce App and Next Button
-         */
-
-        this.propertyBase.click();
 
         try{
             Thread.sleep(3000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-
-        this.nextButton.click();
 
     }
 

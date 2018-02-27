@@ -88,8 +88,8 @@ public class Locators {
 	public static final String DRIVER_FIREFOX_PATH = "/Users/teodorogarcia/IdeaProjects/IdmTest/src/geckodriver";
 	public static final String NEW_SYNCH_BTN = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[2]/div[3]/a/button" ;
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
-	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[7]/div/div[2]/div[1]/div/div/div/img";
-	public static final String RS_NEXT_BUTTON = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[4]/div[3]/button[2]";
+	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
+	public static final String RS_NEXT_BUTTON = "//button[contains(text() , \"Next\")]";
 	public static final String VC_CLIENT_FIELD = "//input[@type=\"number\"]";
 	public static final String VC_USERNAME_FIELD = "//input[@name=\"username\"]";
 	public static final String VC_PASSWORD_FIELD = "//input[@type=\"password\"]";
@@ -102,5 +102,8 @@ public class Locators {
 	public static final String FORGOT_PSW_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[1]/span";
 	public static final String RS_FORGOT_PSW_BOX = "//input[@type=\"text\"]";
 	public static final String RS_FORGOT_SUBMIT_BTN = "//input[@type=\"submit\"]";
-    public static final String PROPERTY_BASE_APP = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[7]/div/div[2]/div[7]/div/div/div/img";
+    public static final String PROPERTY_BASE_APP = "//img[@src=\"/images/applications/propertybase.JPG\"]";
+	public static final String SOURCE_CREDENTIALS_BUTTON =  "//button[@id=\"source-box-btn\"]";
+	public static final String CLOSE_BUTTON = "//button[@class=\"primary-button rs-md-font\"]";
+	public static final String TARGET_CREDETIALS_BUTTON = "//button[@id=\"target-box-btn\"]";
 }

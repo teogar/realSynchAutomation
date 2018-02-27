@@ -32,6 +32,9 @@ public class RealSRegisterPage extends BaseTest {
     @FindBy(how = How.XPATH, using = "//button[@type=\"submit\"]")
     WebElement rsSubmitButton;
 
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div/div/div/div[3]/div/button/span[2]")
+    WebElement buyPlanTeam;
+
 
     public RealSRegisterPage(WebDriver driver) {
         pageDriver = driver;
@@ -40,17 +43,25 @@ public class RealSRegisterPage extends BaseTest {
     }
 
     public void realRegistration(String name, String lastName, String email, String psw, String confpsw) {
-        if (rsRegisterLink.isDisplayed()) {
-            System.out.println("The Real Synch Registration Link is Displayed and is Clickable");
+
+        if (rsRegisterLink.isEnabled()) {
+            System.out.println("The Registration Link is enabled");
+            this.rsRegisterLink.click();
         } else {
             System.out.println("The Link is Broken");
             System.exit(-1);
         }
 
-        this.rsRegisterLink.click();
+        try{
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        this.buyPlanTeam.click();
 
         try{
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

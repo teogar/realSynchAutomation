@@ -27,10 +27,10 @@ public class VoicePadPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_NEXT_BUTTON)
     WebElement nextButton;
 
-    @FindBy(how = How.XPATH, using = "//button[@id=\"source-box-btn\"]")
+    @FindBy(how = How.XPATH, using = Locators.SOURCE_CREDENTIALS_BUTTON)
     WebElement vPInputCred;
 
-    @FindBy(how = How.XPATH, using = "//button[@class=\"primary-button rs-md-font\"]")
+    @FindBy(how = How.XPATH, using = Locators.CLOSE_BUTTON)
     WebElement vPCloseBtn;
 
     public VoicePadPage(WebDriver driver) {
@@ -40,12 +40,7 @@ public class VoicePadPage extends BaseTest {
 
     public void voicePadCredentials(String id, String user, String psw){
 
-
-
         this.vPInputCred.click();
-
-
-
 
         /**
          * Instructions for the VoicePad Credential Fileds

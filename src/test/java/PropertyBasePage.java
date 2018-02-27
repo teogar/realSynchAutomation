@@ -23,11 +23,17 @@ public class PropertyBasePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.FINISH_BTN)
     WebElement finishBtn;
 
-    @FindBy(how = How.XPATH, using = "//button[@id=\"target-box-btn\"]")
+    @FindBy(how = How.XPATH, using = Locators.TARGET_CREDETIALS_BUTTON)
     WebElement pBaseInputCed;
 
     @FindBy(how = How.XPATH, using = "//button[@class=\"primary-button rs-md-font\"]")
     WebElement ppCloseBtn;
+
+    @FindBy(how = How.XPATH, using = "//button[@type=\"button\"]")
+    WebElement configButton;
+
+    @FindBy(how = How.XPATH, using = "//button[contains(text() , \"Save\")]")
+    WebElement savebutton;
 
 
 
@@ -70,7 +76,20 @@ public class PropertyBasePage extends BaseTest {
             e.printStackTrace();
         }
 
-        this.nextButton.click();
+        if(configButton.isEnabled()){
+            this.configButton.click();
+        }else{
+            System.out.println("The Config Button is Unclickable");
+            System.exit(-1);
+        }
+
+        try{
+            Thread.sleep(2000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        this.savebutton.click();
 
         try{
             Thread.sleep(2000);
