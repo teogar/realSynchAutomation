@@ -1,7 +1,9 @@
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -63,6 +65,11 @@ public class SalesForcePage extends BaseTest {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
+
+        WebElement element = driver.findElement(By.id("//button[contains(text() , \"Verify\")]"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element);
+        actions.perform();
 
         this.sFVerifyBtn.click();
 
