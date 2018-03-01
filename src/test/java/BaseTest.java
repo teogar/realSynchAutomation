@@ -1,9 +1,6 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,7 +8,6 @@ import utils.Locators;
 import utils.Properties;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -25,6 +21,7 @@ public class BaseTest {
     public SalesForcePage salesForcePage;
     public PropertyBasePage propertyBasePage;
     public ForgotPasswordPage forgotPasswordPage;
+    public ChangeCred changeCred;
     public ChromeOptions options  = new ChromeOptions();
 
     @BeforeClass(alwaysRun = true)
@@ -52,6 +49,7 @@ public class BaseTest {
       loginPage = new LoginPage(driver);
       newSynchPage = new NewSynchPage(driver);
       voicePadPage = new VoicePadPage(driver);
+      changeCred = new ChangeCred(driver);
       salesForcePage = new SalesForcePage(driver);
       propertyBasePage = new PropertyBasePage(driver);
       forgotPasswordPage = new ForgotPasswordPage(driver);
