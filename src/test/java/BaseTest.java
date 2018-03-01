@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
 
     public RealSRegisterPage realSRegisterPage;
-    public WebDriver driver;
+    //public WebDriver driver;
     public RemoteWebDriver driver;
     public NewSynchPage newSynchPage;
     public LoginPage loginPage;
