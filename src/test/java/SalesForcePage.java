@@ -57,6 +57,13 @@ public class SalesForcePage extends BaseTest {
         this.sfPsw.sendKeys(Psw);
         this.sfSecurityT.clear();
         this.sfSecurityT.sendKeys(sToken);
+
+        try{
+            Thread.sleep(5000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
         this.sFVerifyBtn.click();
 
         try{
