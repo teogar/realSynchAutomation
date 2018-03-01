@@ -1,6 +1,8 @@
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -8,12 +10,13 @@ import utils.Locators;
 import utils.Properties;
 
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     public RealSRegisterPage realSRegisterPage;
-    //public WebDriver driver;
+    public WebDriver driver;
     public RemoteWebDriver driver;
     public NewSynchPage newSynchPage;
     public LoginPage loginPage;
@@ -21,7 +24,6 @@ public class BaseTest {
     public SalesForcePage salesForcePage;
     public PropertyBasePage propertyBasePage;
     public ForgotPasswordPage forgotPasswordPage;
-    public ChangeCred changeCred;
     public ChromeOptions options  = new ChromeOptions();
 
     @BeforeClass(alwaysRun = true)
@@ -41,15 +43,14 @@ public class BaseTest {
          */
 
       //options.addArguments("--start-fullscreen");
-      //options.addArguments("--start-maximized");
+      options.addArguments("--start-maximized");
       //driver = new ChromeDriver(options);
-      driver = new FirefoxDriver();
-      //driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
+     // driver = new FirefoxDriver();
+      driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
       newSynchPage = new NewSynchPage(driver);
       voicePadPage = new VoicePadPage(driver);
-      changeCred = new ChangeCred(driver);
       salesForcePage = new SalesForcePage(driver);
       propertyBasePage = new PropertyBasePage(driver);
       forgotPasswordPage = new ForgotPasswordPage(driver);
