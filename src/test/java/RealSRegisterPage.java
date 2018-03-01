@@ -14,25 +14,25 @@ public class RealSRegisterPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.REALS_REGISTRATION_LINK)
     WebElement rsRegisterLink;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"firstName\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_FIRST_NAME)
     WebElement rsFirstName;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"lastName\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_LASTNAME)
     WebElement rsLastName;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"email\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_EMAIL)
     WebElement rsEmail;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"password\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_PASSWORD)
     WebElement rsPassword;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"confirmpassword\"]")
+    @FindBy(how = How.XPATH, using = Locators.R_REG_CONFIRM_PASSWORD)
     WebElement rsConfirmPsw;
 
-    @FindBy(how = How.XPATH, using = "//button[@type=\"submit\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_SUBMIT_BUTTON)
     WebElement rsSubmitButton;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div/div/div/div[3]/div/button/span[2]")
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_BUY_PLAN_TEAM)
     WebElement buyPlanTeam;
 
 

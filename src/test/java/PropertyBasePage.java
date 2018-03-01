@@ -14,10 +14,10 @@ public class PropertyBasePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_NEXT_BUTTON)
     WebElement nextButton;
 
-    @FindBy(how = How.XPATH,using = "//input[@name=\"username\"]")
+    @FindBy(how = How.XPATH,using = Locators.P_BASE_USERNAME_FIELD)
     WebElement propertyBaseUserName;
 
-    @FindBy(how = How.XPATH,using = "//input[@name=\"password\"]")
+    @FindBy(how = How.XPATH,using = Locators.P_BASE_PWD_FIELD)
     WebElement propertyBasePsw;
 
     @FindBy(how = How.XPATH, using = Locators.FINISH_BTN)
@@ -26,14 +26,14 @@ public class PropertyBasePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.TARGET_CREDETIALS_BUTTON)
     WebElement pBaseInputCed;
 
-    @FindBy(how = How.XPATH, using = "//button[@class=\"primary-button rs-md-font\"]")
+    @FindBy(how = How.XPATH, using = Locators.P_BASE_CLOSE_BTN)
     WebElement ppCloseBtn;
 
-    @FindBy(how = How.XPATH, using = "//button[@type=\"button\"]")
+    @FindBy(how = How.XPATH, using = Locators.P_BASE_CONFIG_BTN)
     WebElement configButton;
 
-    @FindBy(how = How.XPATH, using = "//button[contains(text() , \"Save\")]")
-    WebElement savebutton;
+    @FindBy(how = How.XPATH, using = Locators.P_BASE_SAVE_BTN)
+    WebElement saveButton;
 
 
 
@@ -89,7 +89,7 @@ public class PropertyBasePage extends BaseTest {
             e.printStackTrace();
         }
 
-        this.savebutton.click();
+        this.saveButton.click();
 
         try{
             Thread.sleep(2000);

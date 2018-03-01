@@ -30,7 +30,7 @@ public class SalesForcePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.FINISH_BTN)
     WebElement finishBtn;
 
-    @FindBy(how=How.XPATH, using = "//button[contains(text() , \"Verify\")]")
+    @FindBy(how=How.XPATH, using = Locators.S_FORCE_VERIFY_BTN)
     WebElement sFVerifyBtn;
 
     @FindBy(how = How.XPATH, using = Locators.TARGET_CREDETIALS_BUTTON)
@@ -82,6 +82,12 @@ public class SalesForcePage extends BaseTest {
         }
 
         this.finishBtn.click();
+
+        try{
+            Thread.sleep(15000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
 
     }
 

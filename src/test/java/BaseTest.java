@@ -44,10 +44,10 @@ public class BaseTest {
          */
 
       //options.addArguments("--start-fullscreen");
-      options.addArguments("--start-maximized");
+      //options.addArguments("--start-maximized");
       //driver = new ChromeDriver(options);
-      //driver = new FirefoxDriver();
-      driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
+      driver = new FirefoxDriver();
+      //driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
       newSynchPage = new NewSynchPage(driver);

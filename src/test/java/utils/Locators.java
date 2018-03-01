@@ -106,4 +106,17 @@ public class Locators {
 	public static final String SOURCE_CREDENTIALS_BUTTON =  "//button[@id=\"source-box-btn\"]";
 	public static final String CLOSE_BUTTON = "//button[@class=\"primary-button rs-md-font\"]";
 	public static final String TARGET_CREDETIALS_BUTTON = "//button[@id=\"target-box-btn\"]";
+	public static final String RS_REG_FIRST_NAME = "//input[@name=\"firstName\"]";
+	public static final String RS_REG_LASTNAME = "//input[@name=\"lastName\"]";
+	public static final String RS_REG_EMAIL = "//input[@name=\"email\"]";
+	public static final String RS_REG_PASSWORD = "//input[@name=\"password\"]";
+	public static final String R_REG_CONFIRM_PASSWORD = "//input[@name=\"confirmpassword\"]";
+	public static final String RS_REG_SUBMIT_BUTTON = "//button[@type=\"submit\"]";
+	public static final String RS_REG_BUY_PLAN_TEAM = "//*[@id=\"root\"]/div/div/div/div/div[3]/div/button/span[2]";
+	public static final String P_BASE_USERNAME_FIELD = "//input[@name=\"username\"]";
+	public static final String P_BASE_PWD_FIELD = "//input[@name=\"password\"]";
+	public static final String P_BASE_CLOSE_BTN = "//button[@class=\"primary-button rs-md-font\"]";
+	public static final String P_BASE_CONFIG_BTN = "//button[@type=\"button\"]";
+	public static final String P_BASE_SAVE_BTN = "//button[contains(text() , \"Save\")]";
+	public static final String S_FORCE_VERIFY_BTN = "//button[contains(text() , \"Verify\")]";
 }

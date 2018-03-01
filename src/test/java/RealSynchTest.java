@@ -1,9 +1,6 @@
 
-
 import com.jayway.restassured.response.Response;
 import org.testng.annotations.Test;
-
-
 import static com.jayway.restassured.RestAssured.given;
 
 public class RealSynchTest extends BaseTest {
@@ -13,11 +10,10 @@ public class RealSynchTest extends BaseTest {
      * Negative test with White Spaces "tabs, space bar etc."
      */
 
-
     @Test(groups = "unit 1")
 
     public void reg(){
-        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete925@yopmail.com", "4444lola!!!!", "4444lola!!!!");
+        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete2@yopmail.com", "4444lola!!!!", "4444lola!!!!");
     }
 
     /**
@@ -44,7 +40,7 @@ public class RealSynchTest extends BaseTest {
     public void rsE2E(){
         System.out.println("REAL SYNCH CI PIPELINE");
         super.loginPage.logElements();
-        super.loginPage.signIn("pete111@yopmail.com", "4444lola!!");
+        super.loginPage.signIn("pete2@yopmail.com", "4444lola!!!!");
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
         super.voicePadPage.voicePadCredentials("12341234", "twersdfeqwr", "garaseqweas");
@@ -56,6 +52,7 @@ public class RealSynchTest extends BaseTest {
     /**
      * This Test Suite performs the "Change your password" functionality
      */
+
     @Test(groups = {"unit_4"})
     public void rsPswRecovery(){
         super.forgotPasswordPage.pswRecovery();
