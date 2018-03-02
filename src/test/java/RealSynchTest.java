@@ -11,8 +11,8 @@ public class RealSynchTest extends BaseTest {
      */
 
     @Test(groups = "unit 1")
-
     public void reg(){
+        System.out.println("INITIALIAZED PLAN SELECTION AND USER REG.");
         super.realSRegisterPage.realRegistration("Alan", "Walker", "pete5@yopmail.com", "4444lola!!!!", "4444lola!!!!");
     }
 
