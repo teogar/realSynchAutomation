@@ -13,7 +13,7 @@ public class RealSynchTest extends BaseTest {
     @Test(groups = "unit 1")
 
     public void reg(){
-        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete2@yopmail.com", "4444lola!!!!", "4444lola!!!!");
+        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete5@yopmail.com", "4444lola!!!!", "4444lola!!!!");
     }
 
     /**

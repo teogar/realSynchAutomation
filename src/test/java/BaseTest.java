@@ -1,4 +1,3 @@
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -43,9 +42,9 @@ public class BaseTest {
          */
 
       //options.addArguments("--start-fullscreen");
-      options.addArguments("--start-maximized");
+      //options.addArguments("--start-maximized");
       //driver = new ChromeDriver(options);
-     // driver = new FirefoxDriver();
+      //driver = new FirefoxDriver();
       driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), DesiredCapabilities.firefox());
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
