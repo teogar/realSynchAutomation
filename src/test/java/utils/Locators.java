@@ -98,7 +98,7 @@ public class Locators {
 	public static final String SF_SECURITY_TOKEN_FIELD = "//input[@name=\"sfSecurityToken\"]";
 	public static final String FINISH_BTN = "//button[contains(text() ,\"Finish\")]";
 	public static final String RS_ALL_TRANSACTIONS = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/div[2]/a/button";
-	public static final String REALS_REGISTRATION_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[2]/span";
+	public static final String REALS_REGISTRATION_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a";
 	public static final String FORGOT_PSW_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[1]/span";
 	public static final String RS_FORGOT_PSW_BOX = "//input[@type=\"text\"]";
 	public static final String RS_FORGOT_SUBMIT_BTN = "//input[@type=\"submit\"]";
@@ -119,4 +119,5 @@ public class Locators {
 	public static final String P_BASE_CONFIG_BTN = "//button[@type=\"button\"]";
 	public static final String P_BASE_SAVE_BTN = "//button[contains(text() , \"Save\")]";
 	public static final String S_FORCE_VERIFY_BTN = "//button[contains(text() , \"Verify\")]";
+
 }

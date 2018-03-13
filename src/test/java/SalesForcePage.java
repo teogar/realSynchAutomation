@@ -1,9 +1,12 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+
+import java.security.Key;
 
 public class SalesForcePage extends BaseTest {
 
@@ -61,7 +64,6 @@ public class SalesForcePage extends BaseTest {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-
 
         this.sFVerifyBtn.click();
 
