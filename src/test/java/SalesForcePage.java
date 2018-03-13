@@ -40,6 +40,9 @@ public class SalesForcePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.CLOSE_BUTTON)
     WebElement vPCloseBtn;
 
+    @FindBy(how = How.XPATH, using = "//p[contains(text(), \"Your synch was correctly saved and will try to activate\")]")
+    WebElement success;
+
     public SalesForcePage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -95,6 +98,13 @@ public class SalesForcePage extends BaseTest {
             Thread.sleep(15000);
         }catch (InterruptedException e){
             e.printStackTrace();
+        }
+
+        if(success.isDisplayed()){
+            System.out.println("Yor Synch was correctly saved and will try to activate");
+
+        }else{
+            System.out.println("Error something is wrong");
         }
 
     }

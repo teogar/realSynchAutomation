@@ -44,7 +44,7 @@ public class RealSynchTest extends BaseTest {
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
         super.voicePadPage.voicePadCredentials("12341234", "twersdfeqwr", "garaseqweas");
-        super.salesForcePage.salesForceCredentials("laura@beerhometeam.com.sandbox2\n", "Hannah@19915\n", "eErZHMvUZLIRrs48CcQ2EOge9");
+        super.salesForcePage.salesForceCredentials("hmarin@itexico.net.rsbxv1", "Tgar$ia2018", "zNI1ISNV5Jx0cndV8plhuwZp");
         //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
 
     }
