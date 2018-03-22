@@ -26,7 +26,7 @@ public class RealSynchTest extends BaseTest {
     @Test(groups = "unit 2")
     public void login(){
         super.loginPage.logElements();
-        super.loginPage.signIn("pete111@yopmail.com", "4444lola!!");
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
 
     }
 
@@ -40,10 +40,10 @@ public class RealSynchTest extends BaseTest {
     public void rsE2E(){
         System.out.println("REAL SYNCH CI PIPELINE");
         super.loginPage.logElements();
-        super.loginPage.signIn("pete2@yopmail.com", "4444lola!!!!");
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
-        super.voicePadPage.voicePadCredentials("12341234", "twersdfeqwr", "garaseqweas");
+        super.voicePadPage.voicePadCredentials("127", "twersdfeqwr", "garaseqweas");
         super.salesForcePage.salesForceCredentials("hmarin@itexico.net.rsbxv1", "Tgar$ia2018", "zNI1ISNV5Jx0cndV8plhuwZp");
         //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
 
