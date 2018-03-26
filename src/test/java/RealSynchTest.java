@@ -53,11 +53,25 @@ public class RealSynchTest extends BaseTest {
      * This Test Suite performs the "Change your password" functionality
      */
 
-    @Test(groups = {"unit_4"})
+    @Test(groups = {"unit 4"})
     public void rsPswRecovery(){
         super.forgotPasswordPage.pswRecovery();
         super.forgotPasswordPage.sendPwd("pete696@yopmail.com");
 
+    }
+
+    @Test(groups ={"unit 5"})
+    public  void logOutFlow(){
+        super.loginPage.logElements();
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.logoutPage.logOut();
+    }
+
+    @Test(groups = {"unit 6"})
+    public void deactivateSynch(){
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.deactivateSynchPage.deactivateSynch();
+        super.logoutPage.logOut();
     }
 
 }

@@ -26,10 +26,12 @@ public class BaseTest {
     public RemoteWebDriver driver;
     public NewSynchPage newSynchPage;
     public LoginPage loginPage;
+    public LogoutPage logoutPage;
     public VoicePadPage voicePadPage;
     public SalesForcePage salesForcePage;
     public PropertyBasePage propertyBasePage;
     public ForgotPasswordPage forgotPasswordPage;
+    public DeactivateSynchPage deactivateSynchPage;
     public ChromeOptions options  = new ChromeOptions();
 
     @BeforeClass(alwaysRun = true)
@@ -60,11 +62,13 @@ public class BaseTest {
 
       realSRegisterPage = new RealSRegisterPage(driver);
       loginPage = new LoginPage(driver);
+      logoutPage = new LogoutPage(driver);
       newSynchPage = new NewSynchPage(driver);
       voicePadPage = new VoicePadPage(driver);
       salesForcePage = new SalesForcePage(driver);
       propertyBasePage = new PropertyBasePage(driver);
       forgotPasswordPage = new ForgotPasswordPage(driver);
+      deactivateSynchPage = new DeactivateSynchPage(driver);
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       driver.manage().window().maximize();
       driver.navigate().to("https://realsynch-fullstack.herokuapp.com/login");
