@@ -45,6 +45,7 @@ public class RealSynchTest extends BaseTest {
         super.newSynchPage.createNewSynch();
         super.voicePadPage.voicePadCredentials("127", "twersdfeqwr", "garaseqweas");
         super.salesForcePage.salesForceCredentials("hmarin@itexico.net.rsbxv1", "Tgar$ia2018", "zNI1ISNV5Jx0cndV8plhuwZp");
+        super.logoutPage.logOut();
         //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
 
     }
@@ -71,6 +72,13 @@ public class RealSynchTest extends BaseTest {
     public void deactivateSynch(){
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         super.deactivateSynchPage.deactivateSynch();
+        super.logoutPage.logOut();
+    }
+
+    @Test(groups = {"unit 7"})
+    public void modifyPlan(){
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.modifyPlanPage.changePlan();
         super.logoutPage.logOut();
     }
 

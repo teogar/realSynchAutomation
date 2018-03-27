@@ -82,7 +82,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.confirmButton.click();
 
         if(calendarButton.isDisplayed()){
-            System.out.println("The calendat button is ready show info");
+            System.out.println("The calendar button is ready show info");
         }else{
             System.out.println("The calendar button is not displayed");
             System.exit(-1);
@@ -95,7 +95,7 @@ public class DeactivateSynchPage extends BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        
+
         this.calendarButton.click();
 
         try {

@@ -43,6 +43,12 @@ public class SalesForcePage extends BaseTest {
     @FindBy(how = How.XPATH, using = "//p[contains(text(), \"Your synch was correctly saved and will try to activate\")]")
     WebElement success;
 
+    @FindBy(how = How.XPATH,using = "//input[@value=\"https://test.salesforce.com\"]")
+    WebElement testSalesFrorceCheck;
+
+    @FindBy(how = How.XPATH, using = "//button[@class=\"confirm\"]")
+    WebElement planConfrimBtn;
+
     public SalesForcePage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -68,10 +74,12 @@ public class SalesForcePage extends BaseTest {
             e.printStackTrace();
         }
 
+        this.testSalesFrorceCheck.click();
+
         this.sFVerifyBtn.click();
 
         try{
-            Thread.sleep(5000);
+            Thread.sleep(8000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -105,6 +113,14 @@ public class SalesForcePage extends BaseTest {
 
         }else{
             System.out.println("Error something is wrong");
+        }
+
+        this.planConfrimBtn.click();
+
+        try{
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
         }
 
     }

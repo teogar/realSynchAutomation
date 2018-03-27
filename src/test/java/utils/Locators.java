@@ -86,17 +86,17 @@ public class Locators {
 	public static final String RS_PSW_BOX = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[1]/div[2]/div/input";
 	public static final String RE_SINGIN_BTN = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[2]/input";
 	public static final String DRIVER_FIREFOX_PATH = "/Users/teodorogarcia/IdeaProjects/IdmTest/src/geckodriver";
-	public static final String NEW_SYNCH_BTN = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[2]/div[3]/a/button" ;
+	public static final String NEW_SYNCH_BTN = "//button[@class=\"primary-button create-synch\"]" ;
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
-	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[3]/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
+	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
 	public static final String RS_NEXT_BUTTON = "//button[contains(text() , \"Next\")]";
 	public static final String VC_CLIENT_FIELD = "//input[@type=\"number\"]";
-	public static final String VC_USERNAME_FIELD = "//input[@name=\"username\"]";
+	public static final String VC_USERNAME_FIELD = "//input[@name=\"loginName\"]";
 	public static final String VC_PASSWORD_FIELD = "//input[@type=\"password\"]";
-	public static final String SF_USERNAME_FIELD = "//input[@name=\"sfUsername\"]";
-	public static final String SF_PASSWORD_FIELD = "//input[@name=\"sfPassword\"]";
-	public static final String SF_SECURITY_TOKEN_FIELD = "//input[@name=\"sfSecurityToken\"]";
-	public static final String FINISH_BTN = "//button[contains(text() ,\"Finish\")]";
+	public static final String SF_USERNAME_FIELD = "//input[@name=\"loginName\"]";
+	public static final String SF_PASSWORD_FIELD = "//input[@type=\"password\"]";
+	public static final String SF_SECURITY_TOKEN_FIELD = "//input[@name=\"loginApiKey\"]";
+	public static final String FINISH_BTN = "//button[contains(text(), \"Activate\")]";
 	public static final String RS_ALL_TRANSACTIONS = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/div[2]/a/button";
 	public static final String REALS_REGISTRATION_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a";
 	public static final String FORGOT_PSW_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[1]/span";
@@ -119,5 +119,8 @@ public class Locators {
 	public static final String P_BASE_CONFIG_BTN = "//button[@type=\"button\"]";
 	public static final String P_BASE_SAVE_BTN = "//button[contains(text() , \"Save\")]";
 	public static final String S_FORCE_VERIFY_BTN = "//button[contains(text() , \"Verify\")]";
+	public static final String RS_AVATAR_BUTTON = "//img[@class=\"avatar-img-header \"]";
 
+	public static final String RS_LOGOUT_BTN = "//*[@id=\"root\"]/div/div[1]/div/div/ul/li[3]";
+	public static final String RS_OK_BTN = "//button[@class=\"confirm\"]";
 }

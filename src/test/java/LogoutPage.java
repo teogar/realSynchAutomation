@@ -18,13 +18,13 @@ public class LogoutPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RE_SINGIN_BTN)
     WebElement singInBtn;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[2]/div[2]/div[5]/img")
+    @FindBy(how = How.XPATH, using = Locators.RS_AVATAR_BUTTON)
     WebElement rsAvatarBtn;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div/div/ul/li[3]")
+    @FindBy(how = How.XPATH, using = Locators.RS_LOGOUT_BTN)
     WebElement rSLogOutBtn;
 
-    @FindBy(how = How.XPATH, using = "//button[@class=\"confirm\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_OK_BTN)
     WebElement okButton;
 
 
