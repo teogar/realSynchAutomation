@@ -40,13 +40,13 @@ public class SalesForcePage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.CLOSE_BUTTON)
     WebElement vPCloseBtn;
 
-    @FindBy(how = How.XPATH, using = "//p[contains(text(), \"Your synch was correctly saved and will try to activate\")]")
+    @FindBy(how = How.XPATH, using = Locators.RS_SUCCESS_BUTTON)
     WebElement success;
 
-    @FindBy(how = How.XPATH,using = "//input[@value=\"https://test.salesforce.com\"]")
+    @FindBy(how = How.XPATH,using = Locators.RS_TEST_SF_CHECKBOX)
     WebElement testSalesFrorceCheck;
 
-    @FindBy(how = How.XPATH, using = "//button[@class=\"confirm\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_PLAN_CONFIRM_BUTTON)
     WebElement planConfrimBtn;
 
     public SalesForcePage(WebDriver driver) {

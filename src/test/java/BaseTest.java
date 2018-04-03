@@ -33,6 +33,7 @@ public class BaseTest {
     public ForgotPasswordPage forgotPasswordPage;
     public DeactivateSynchPage deactivateSynchPage;
     public ModifyPlanPage modifyPlanPage;
+    public ActivateSynchPage activateSynchPage;
     public ChromeOptions options  = new ChromeOptions();
 
     @BeforeClass(alwaysRun = true)
@@ -71,6 +72,7 @@ public class BaseTest {
       forgotPasswordPage = new ForgotPasswordPage(driver);
       deactivateSynchPage = new DeactivateSynchPage(driver);
       modifyPlanPage = new ModifyPlanPage(driver);
+      activateSynchPage = new ActivateSynchPage(driver);
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       driver.manage().window().maximize();
       driver.navigate().to("https://realsynch-fullstack.herokuapp.com/login");

@@ -82,9 +82,9 @@ public class Locators {
 	 */
 
 	public static final String TEST_CHROME_PATH ="/Users/teodorogarcia/IdeaProjects/IdmTest/src/chromedriver";
-	public static final String RS_NAME_BOX = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[1]/div[1]/div/input";
-	public static final String RS_PSW_BOX = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[1]/div[2]/div/input";
-	public static final String RE_SINGIN_BTN = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[2]/input";
+	public static final String RS_NAME_BOX = "//*[@id=\"root\"]/div/div[3]/div/div[3]/form/div[1]/div[1]/div/input";
+	public static final String RS_PSW_BOX = "//*[@id=\"root\"]/div/div[3]/div/div[3]/form/div[1]/div[2]/div/input";
+	public static final String RE_SINGIN_BTN = "//input[@type=\"submit\"]";
 	public static final String DRIVER_FIREFOX_PATH = "/Users/teodorogarcia/IdeaProjects/IdmTest/src/geckodriver";
 	public static final String NEW_SYNCH_BTN = "//button[@class=\"primary-button create-synch\"]" ;
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
@@ -99,7 +99,7 @@ public class Locators {
 	public static final String FINISH_BTN = "//button[contains(text(), \"Activate\")]";
 	public static final String RS_ALL_TRANSACTIONS = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/div[2]/a/button";
 	public static final String REALS_REGISTRATION_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a";
-	public static final String FORGOT_PSW_LINK = "//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/form/div[2]/div[1]/a[1]/span";
+	public static final String FORGOT_PSW_LINK = "//*[contains(text(),\"Forgot\")]";
 	public static final String RS_FORGOT_PSW_BOX = "//input[@type=\"text\"]";
 	public static final String RS_FORGOT_SUBMIT_BTN = "//input[@type=\"submit\"]";
     public static final String PROPERTY_BASE_APP = "//img[@src=\"/images/applications/propertybase.JPG\"]";
@@ -122,5 +122,18 @@ public class Locators {
 	public static final String RS_AVATAR_BUTTON = "//img[@class=\"avatar-img-header \"]";
 
 	public static final String RS_LOGOUT_BTN = "//*[@id=\"root\"]/div/div[1]/div/div/ul/li[3]";
-	public static final String RS_OK_BTN = "//button[@class=\"confirm\"]";
+	public static final String RS_OK_BTN = "/html/body/div[3]/div[7]/div/button";
+	public static final String RS_ELIPSIS_BUTTON = "//*[@id=\"10\"]/div/div[6]/i";
+	public static final String RD_DEACTIVATE_BUTTON = "//*[@id=\"deactivate\"]/button";
+	public static final String RS_CONFIRM_BUTTON = "//button[contains(text(), \"OK\")]";
+	public static final String RS_ACTIVE_FILTER = "//button[contains(text(), \"Active\")]";
+	public static final String RS_CALENDAR_BUTTON = "//*[@id=\"10\"]/div/div[5]/i";
+	public static final String RS_ACCOUNT_SET_BUTTON = "//*[contains(text(), \"Account Settings\")]";
+	public static final String RS_PLAN_BUTTON = "//*[contains(text(), \"Plan\")]";
+	public static final String RS_VISA_CARD_VALIDATOR = "//img[@src=\"/images/brand-icons/visa.png\"]";
+	public static final String RS_LOW_EXEC_PLAN = "//*[@id=\"root\"]/div/div[3]/div/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div/button";
+	public static final String RS_PLAN_CONFIRM_BUTTON = "//button[@class=\"confirm\"]";
+	public static final String RS_SUCCESS_BUTTON = "//p[contains(text(), \"Your synch was correctly saved and will try to activate\")]";
+	public static final String RS_TEST_SF_CHECKBOX = "//input[@value=\"https://test.salesforce.com\"]";
+    public static final String RS_ACTIVATION_BUTTON = "//*[@id=\"activate\"]";
 }

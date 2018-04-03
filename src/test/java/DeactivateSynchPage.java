@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
+import utils.Locators;
 
 
 public class DeactivateSynchPage extends BaseTest {
@@ -12,19 +12,19 @@ public class DeactivateSynchPage extends BaseTest {
     public WebDriver pageDriver;
 
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"10\"]/div/div[6]/i")
+    @FindBy(how = How.XPATH, using = Locators.RS_ELIPSIS_BUTTON)
     WebElement elipsisButton;
 
-    @FindBy(how = How.XPATH,using = "//*[@id=\"deactivate\"]/button")
+    @FindBy(how = How.XPATH,using = Locators.RD_DEACTIVATE_BUTTON)
     WebElement deactivateButton;
 
-    @FindBy(how = How.XPATH, using = "//button[contains(text(), \"OK\")]")
+    @FindBy(how = How.XPATH, using = Locators.RS_CONFIRM_BUTTON)
     WebElement confirmButton;
 
-    @FindBy(how = How.XPATH, using = "//button[contains(text(), \"Active\")]")
+    @FindBy(how = How.XPATH, using = Locators.RS_ACTIVE_FILTER)
     WebElement activeFilter;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"10\"]/div/div[5]/i")
+    @FindBy(how = How.XPATH, using = Locators.RS_CALENDAR_BUTTON)
     WebElement calendarButton;
 
 
@@ -66,7 +66,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.deactivateButton.click();
 
         try {
-            Thread.sleep(4000);
+            Thread.sleep(7000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -14,19 +14,19 @@ public WebDriver pageDriver;
     @FindBy(how = How.XPATH, using = Locators.RS_AVATAR_BUTTON)
     WebElement rsAvatarBtn;
 
-    @FindBy(how = How.XPATH, using = "//*[contains(text(), \"Account Settings\")]")
+    @FindBy(how = How.XPATH, using = Locators.RS_ACCOUNT_SET_BUTTON)
     WebElement accountSettings;
 
-    @FindBy(how = How.XPATH, using = "//*[contains(text(), \"Plan\")]")
+    @FindBy(how = How.XPATH, using = Locators.RS_PLAN_BUTTON)
     WebElement planButton;
 
-    @FindBy(how = How.XPATH, using = "//img[@src=\"/images/brand-icons/visa.png\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_VISA_CARD_VALIDATOR)
     WebElement visaCardImg;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[3]/div/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div/button")
+    @FindBy(how = How.XPATH, using = Locators.RS_LOW_EXEC_PLAN)
     WebElement lowExecPlan;
 
-    @FindBy(how = How.XPATH, using = "//button[@class=\"confirm\"]")
+    @FindBy(how = How.XPATH, using = Locators.RS_PLAN_CONFIRM_BUTTON)
     WebElement planConfrimBtn;
 
     public ModifyPlanPage(WebDriver driver) {

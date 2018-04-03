@@ -13,7 +13,7 @@ public class RealSynchTest extends BaseTest {
     @Test(groups = "unit 1")
     public void reg(){
         System.out.println("INITIALIAZED PLAN SELECTION AND USER REG.");
-        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete5@yopmail.com", "4444lola!!!!", "4444lola!!!!");
+        super.realSRegisterPage.realRegistration("Alan", "Walker", "pete222@yopmail.com", "4444lola!!!", "4444lola!!!");
     }
 
     /**
@@ -61,12 +61,20 @@ public class RealSynchTest extends BaseTest {
 
     }
 
+    /**
+     * This Test Suite performs logout functionality
+     */
+
     @Test(groups ={"unit 5"})
     public  void logOutFlow(){
         super.loginPage.logElements();
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         super.logoutPage.logOut();
     }
+
+    /**
+     * This Test Suite Performs the deactivate a Synch functionality
+     */
 
     @Test(groups = {"unit 6"})
     public void deactivateSynch(){
@@ -75,10 +83,25 @@ public class RealSynchTest extends BaseTest {
         super.logoutPage.logOut();
     }
 
+    /**
+     * This Test Suite performs the Modify plan functionality
+     */
+
     @Test(groups = {"unit 7"})
     public void modifyPlan(){
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         super.modifyPlanPage.changePlan();
+        super.logoutPage.logOut();
+    }
+
+    /**
+     * This Test Suite Performs the activate a Synch Functionality
+     */
+
+    @Test(groups = {"unit 8"})
+    public void actSynch(){
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.activateSynchPage.activateSynch();
         super.logoutPage.logOut();
     }
 
