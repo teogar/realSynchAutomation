@@ -40,9 +40,9 @@ public class LoginPage extends BaseTest {
         if(userName.isDisplayed()
                 && psw.isDisplayed()
                 && singInBtn.isDisplayed()) {
-            System.out.println("The Elements are displayed");
+            System.out.println("The Elements are Displayed and allows Interactions");
         }else{
-            System.out.println("Are Not");
+            System.out.println("Are Not Able");
             System.exit(-1);
         }
     }
