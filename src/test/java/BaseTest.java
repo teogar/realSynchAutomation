@@ -39,7 +39,6 @@ public class BaseTest {
     public DeactivateSynchPage deactivateSynchPage;
     public ModifyPlanPage modifyPlanPage;
     public ActivateSynchPage activateSynchPage;
-    public UpdateCredsPage updateCredsPage;
     public ChromeOptions options  = new ChromeOptions();
 
 
@@ -81,7 +80,6 @@ public class BaseTest {
       deactivateSynchPage = new DeactivateSynchPage(driver);
       modifyPlanPage = new ModifyPlanPage(driver);
       activateSynchPage = new ActivateSynchPage(driver);
-      updateCredsPage = new UpdateCredsPage(driver);
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       //driver.manage().window().maximize();
       driver.navigate().to("https://realsynch-production.herokuapp.com/login");
