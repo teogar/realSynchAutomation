@@ -119,7 +119,6 @@ public class RealSynchTest extends BaseTest {
     @Test(groups = {"unit 10"})
     public void sIdXCreds(){
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
-        super.updateCredsPage.sIdXUpCreds();
         super.logoutPage.logOut();
 
     }
