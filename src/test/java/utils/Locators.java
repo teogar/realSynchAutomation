@@ -82,9 +82,9 @@ public class Locators {
 	 */
 
 	public static final String TEST_CHROME_PATH ="/Users/teodorogarcia/IdeaProjects/IdmTest/src/chromedriver";
-	public static final String RS_NAME_BOX = "//*[@id=\"root\"]/div/div[3]/div/div[3]/form/div[1]/div[1]/div/input";
-	public static final String RS_PSW_BOX = "//*[@id=\"root\"]/div/div[3]/div/div[3]/form/div[1]/div[2]/div/input";
-	public static final String RE_SINGIN_BTN = "//input[@type=\"submit\"]";
+	public static final String RS_NAME_BOX = "//input[@name=\"email\"]";
+	public static final String RS_PSW_BOX = "//input[@name=\"password\"]";
+	public static final String RE_SINGIN_BTN = "//button[@type=\"submit\"]";
 	public static final String DRIVER_FIREFOX_PATH = "/Users/teodorogarcia/IdeaProjects/IdmTest/src/geckodriver";
 	public static final String NEW_SYNCH_BTN = "//button[@class=\"primary-button create-synch\"]" ;
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
@@ -123,7 +123,7 @@ public class Locators {
 
 	public static final String RS_LOGOUT_BTN = "//*[@id=\"root\"]/div/div[1]/div/div/ul/li[3]";
 	public static final String RS_OK_BTN = "/html/body/div[3]/div[7]/div/button";
-	public static final String RS_ELIPSIS_BUTTON = "//*[@id=\"10\"]/div/div[6]/i";
+	public static final String RS_ELIPSIS_BUTTON = "//*[@id=\"142\"]/div/div[6]/i";
 	public static final String RD_DEACTIVATE_BUTTON = "//*[@id=\"deactivate\"]/button";
 	public static final String RS_CONFIRM_BUTTON = "//button[contains(text(), \"OK\")]";
 	public static final String RS_ACTIVE_FILTER = "//button[contains(text(), \"Active\")]";

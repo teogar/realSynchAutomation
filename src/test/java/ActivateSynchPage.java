@@ -30,10 +30,9 @@ public class ActivateSynchPage extends BaseTest {
     public ActivateSynchPage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
-
     }
 
-    public void activateSynch(){
+    public void activateSynch() {
 
         if(elipsisButton.isDisplayed()){
             System.out.println("The elipsis button is displayed");
@@ -44,14 +43,13 @@ public class ActivateSynchPage extends BaseTest {
 
         this.elipsisButton.click();
 
-
-        try{
+        try {
             Thread.sleep(3000);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        if(activateButton.isDisplayed()){
+        if(activateButton.isDisplayed()) {
             System.out.println("The activation button is displayed");
         }else{
             System.out.println("The activation button is displayed");

@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -18,6 +19,9 @@ import java.awt.event.KeyEvent;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
+
+import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 
 public class BaseTest {
 
@@ -29,12 +33,15 @@ public class BaseTest {
     public LogoutPage logoutPage;
     public VoicePadPage voicePadPage;
     public SalesForcePage salesForcePage;
+    public ShowCase showCase;
     public PropertyBasePage propertyBasePage;
     public ForgotPasswordPage forgotPasswordPage;
     public DeactivateSynchPage deactivateSynchPage;
     public ModifyPlanPage modifyPlanPage;
     public ActivateSynchPage activateSynchPage;
+    public UpdateCredsPage updateCredsPage;
     public ChromeOptions options  = new ChromeOptions();
+
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws MalformedURLException, AWTException {
@@ -68,14 +75,16 @@ public class BaseTest {
       newSynchPage = new NewSynchPage(driver);
       voicePadPage = new VoicePadPage(driver);
       salesForcePage = new SalesForcePage(driver);
+      showCase = new ShowCase(driver);
       propertyBasePage = new PropertyBasePage(driver);
       forgotPasswordPage = new ForgotPasswordPage(driver);
       deactivateSynchPage = new DeactivateSynchPage(driver);
       modifyPlanPage = new ModifyPlanPage(driver);
       activateSynchPage = new ActivateSynchPage(driver);
+      updateCredsPage = new UpdateCredsPage(driver);
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-      driver.manage().window().maximize();
-      driver.navigate().to("https://realsynch-fullstack.herokuapp.com/login");
+      //driver.manage().window().maximize();
+      driver.navigate().to("https://realsynch-production.herokuapp.com/login");
 
     }
 

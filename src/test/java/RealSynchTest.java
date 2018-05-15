@@ -1,6 +1,9 @@
 
 import com.jayway.restassured.response.Response;
 import org.testng.annotations.Test;
+
+import java.util.Properties;
+
 import static com.jayway.restassured.RestAssured.given;
 
 public class RealSynchTest extends BaseTest {
@@ -26,7 +29,7 @@ public class RealSynchTest extends BaseTest {
     @Test(groups = "unit 2")
     public void login(){
         super.loginPage.logElements();
-        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.loginPage.signIn(utils.Properties.ABRAHAM_USER_NAME, utils.Properties.ABRAHAM_PWD);
 
     }
 
@@ -43,7 +46,7 @@ public class RealSynchTest extends BaseTest {
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
-        super.voicePadPage.voicePadCredentials("127", "twersdfeqwr", "garaseqweas");
+        super.voicePadPage.voicePadCredentials("1680", "twersdfeqwr", "garaseqweas");
         super.salesForcePage.salesForceCredentials("hmarin@itexico.net.rsbxv1", "Tgar$ia2018", "zNI1ISNV5Jx0cndV8plhuwZp");
         super.logoutPage.logOut();
         //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");
@@ -103,6 +106,22 @@ public class RealSynchTest extends BaseTest {
         super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
         super.activateSynchPage.activateSynch();
         super.logoutPage.logOut();
+    }
+
+    @Test(groups ={"unit 9"})
+    public  void scIdXToFuB(){
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.showCase.sdIx();
+        super.logoutPage.logOut();
+
+    }
+
+    @Test(groups = {"unit 10"})
+    public void sIdXCreds(){
+        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.updateCredsPage.sIdXUpCreds();
+        super.logoutPage.logOut();
+
     }
 
 }

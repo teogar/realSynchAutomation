@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+import utils.Properties;
 
 import java.security.Key;
 
@@ -68,9 +69,9 @@ public class SalesForcePage extends BaseTest {
         this.sfSecurityT.clear();
         this.sfSecurityT.sendKeys(sToken);
 
-        try{
-            Thread.sleep(5000);
-        }catch (InterruptedException e){
+        try {
+            Thread.sleep(Properties.TIME_OFF_5);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
@@ -79,47 +80,47 @@ public class SalesForcePage extends BaseTest {
         this.sFVerifyBtn.click();
 
         try{
-            Thread.sleep(8000);
-        }catch (InterruptedException e){
+            Thread.sleep(Properties.TIME_OFF_8);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         this.vPCloseBtn.click();
 
-        try{
+        try {
             Thread.sleep(3000);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         this.nextButton.click();
 
-        try{
+        try {
             Thread.sleep(3000);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         this.finishBtn.click();
 
-        try{
+        try {
             Thread.sleep(15000);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         if(success.isDisplayed()){
             System.out.println("Yor Synch was correctly saved and will try to activate");
 
-        }else{
+        } else {
             System.out.println("Error something is wrong");
         }
 
         this.planConfrimBtn.click();
 
-        try{
+        try {
             Thread.sleep(3000);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 

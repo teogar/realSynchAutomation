@@ -4,7 +4,7 @@
     <test name = "Test">
         <groups>
             <run>
-                <include name="unit 6"/>
+                <include name="unit 2"/>
             </run>
         </groups>
         <classes>

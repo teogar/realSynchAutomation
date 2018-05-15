@@ -177,4 +177,18 @@ public class Properties {
 		public static final String OW_PWD = "teddy810316";
 	    public static final String OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
     	public static final String GECKO_DRIVER_PROPERTY = "webdriver.gecko.driver" ;
+
+	   /**
+	    * Constant for time off 5 secs.
+	    */
+
+	    public static final long TIME_OFF_5 = 5000;
+
+    /**
+     * Constatnt for time off 8 secs.
+     */
+
+        public static final long TIME_OFF_8 = 8000;
+		public static final String ABRAHAM_PWD = "abrahamtest123@mailinator.com" ;
+        public static final String ABRAHAM_USER_NAME = "abrahamtest123@mailinator.com";
 }

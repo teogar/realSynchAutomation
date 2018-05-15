@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import utils.Locators;
 
 public class LoginPage extends BaseTest {
@@ -24,9 +25,6 @@ public class LoginPage extends BaseTest {
     WebElement singInBtn;
 
 
-
-
-
     public LoginPage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -41,12 +39,12 @@ public class LoginPage extends BaseTest {
 
         if(userName.isDisplayed()
                 && psw.isDisplayed()
-                && singInBtn.isDisplayed()){
-            System.out.println("The Elements are Displayed");
+                && singInBtn.isDisplayed()) {
+            System.out.println("The Elements are displayed");
         }else{
-            System.out.println("the");
+            System.out.println("Are Not");
+            System.exit(-1);
         }
-
     }
 
     public void signIn(String user, String password) {

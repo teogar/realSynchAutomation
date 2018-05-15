@@ -27,7 +27,7 @@ public WebDriver pageDriver;
     WebElement lowExecPlan;
 
     @FindBy(how = How.XPATH, using = Locators.RS_PLAN_CONFIRM_BUTTON)
-    WebElement planConfrimBtn;
+    WebElement planConfirmBtn;
 
     public ModifyPlanPage(WebDriver driver) {
         pageDriver = driver;
@@ -75,7 +75,7 @@ public WebDriver pageDriver;
             e.printStackTrace();
         }
 
-        this.planConfrimBtn.click();
+        this.planConfirmBtn.click();
 
         try{
             Thread.sleep(7000);
@@ -83,7 +83,7 @@ public WebDriver pageDriver;
             e.printStackTrace();
         }
 
-        this.planConfrimBtn.click();
+        this.planConfirmBtn.click();
         System.out.println("The plan has been changed successfully");
 
     }

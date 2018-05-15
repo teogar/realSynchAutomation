@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import utils.Locators;
 
 public class VoicePadPage extends BaseTest {
@@ -46,6 +47,8 @@ public class VoicePadPage extends BaseTest {
          * Instructions for the VoicePad Credential Fileds
          *
          */
+
+        Assert.assertTrue(clientId.isDisplayed(), "This assert is passed");
 
         this.clientId.clear();
         this.clientId.sendKeys(id);
