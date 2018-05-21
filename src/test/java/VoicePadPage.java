@@ -44,7 +44,7 @@ public class VoicePadPage extends BaseTest {
         this.vPInputCred.click();
 
         /**
-         * Triggers events.
+         * Triggers Actions on the frameWork.
          *
          */
 
