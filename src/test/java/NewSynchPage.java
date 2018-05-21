@@ -59,7 +59,7 @@ public class NewSynchPage extends BaseTest {
         }
 
         /**
-         * Display Verification for Static Elements
+         * Displayed Elements Verifications
          */
 
         if(voicePad.isDisplayed()){
