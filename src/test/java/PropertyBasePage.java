@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+import utils.Properties;
 
 public class PropertyBasePage extends BaseTest {
 
@@ -55,14 +56,14 @@ public class PropertyBasePage extends BaseTest {
         this.propertyBasePsw.sendKeys(pBpsw);
 
         try{
-            Thread.sleep(1000);
+            Thread.sleep(Properties.TIME_OFF_3);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
 
         this.ppCloseBtn.click();
         try{
-            Thread.sleep(1000);
+            Thread.sleep(Properties.TIME_OFF_1);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -71,7 +72,7 @@ public class PropertyBasePage extends BaseTest {
 
 
         try{
-            Thread.sleep(2000);
+            Thread.sleep(Properties.TIME_OFF_2);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -84,7 +85,7 @@ public class PropertyBasePage extends BaseTest {
         }
 
         try{
-            Thread.sleep(2000);
+            Thread.sleep(Properties.TIME_OFF_2);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -92,7 +93,7 @@ public class PropertyBasePage extends BaseTest {
         this.saveButton.click();
 
         try{
-            Thread.sleep(2000);
+            Thread.sleep(Properties.TIME_OFF_2);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

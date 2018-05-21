@@ -1,6 +1,7 @@
 
 import com.jayway.restassured.response.Response;
 import org.testng.annotations.Test;
+import utils.Locators;
 
 import java.util.Properties;
 
@@ -43,10 +44,10 @@ public class RealSynchTest extends BaseTest {
     public void rsE2E(){
         System.out.println("REAL SYNCH CI PIPELINE");
         super.loginPage.logElements();
-        super.loginPage.signIn("pete222@yopmail.com", "4444lola!!!");
+        super.loginPage.signIn(utils.Properties.ABRAHAM_USER_NAME, utils.Properties.ABRAHAM_PWD);
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
-        super.voicePadPage.voicePadCredentials("1680", "twersdfeqwr", "garaseqweas");
+        super.voicePadPage.voicePadCredentials("1680");
         super.salesForcePage.salesForceCredentials("hmarin@itexico.net.rsbxv1", "Tgar$ia2018", "zNI1ISNV5Jx0cndV8plhuwZp");
         super.logoutPage.logOut();
         //super.propertyBasePage.propertyBase("AlfaGuarda", "2354567");

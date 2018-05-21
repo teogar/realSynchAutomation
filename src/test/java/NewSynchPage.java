@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+import utils.Properties;
 
 public class NewSynchPage extends BaseTest {
 
@@ -52,7 +53,7 @@ public class NewSynchPage extends BaseTest {
          */
 
         try{
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -75,13 +76,13 @@ public class NewSynchPage extends BaseTest {
 
         if(salesForce.isDisplayed()){
             this.salesForce.click();
-        }else{
+        } else {
             System.out.println("Not Clickable");
             System.exit(-1);
         }
 
         try{
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

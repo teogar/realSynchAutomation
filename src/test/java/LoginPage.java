@@ -10,6 +10,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utils.Locators;
+import utils.Properties;
 
 public class LoginPage extends BaseTest {
 
@@ -24,14 +25,13 @@ public class LoginPage extends BaseTest {
     @FindBy(how = How.XPATH,using = Locators.RE_SINGIN_BTN)
     WebElement singInBtn;
 
-
     public LoginPage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
 
     }
 
-    public void logElements(){
+    public void logElements() {
 
         /**
          * Assertions "The login elements are in place "
@@ -42,7 +42,7 @@ public class LoginPage extends BaseTest {
                 && singInBtn.isDisplayed()) {
             System.out.println("The Elements are Displayed and allows Interactions");
         }else{
-            System.out.println("Are Not Able");
+            System.out.println("Are Not Able to Interact");
             System.exit(-1);
         }
     }
@@ -50,14 +50,14 @@ public class LoginPage extends BaseTest {
     public void signIn(String user, String password) {
 
         /**
-         * The login elements on the whole, triggers events
+         * The login elements, triggers events
          */
 
         userName.clear();
         userName.sendKeys(user);
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class LoginPage extends BaseTest {
         singInBtn.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

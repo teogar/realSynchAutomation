@@ -5,6 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+import utils.Properties;
+
+import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 
 public class DeactivateSynchPage extends BaseTest {
@@ -45,7 +50,7 @@ public class DeactivateSynchPage extends BaseTest {
         }
 
         try{
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -58,7 +63,7 @@ public class DeactivateSynchPage extends BaseTest {
         }
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(Properties.TIME_OFF_7);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -66,7 +71,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.deactivateButton.click();
 
         try {
-            Thread.sleep(7000);
+            Thread.sleep(Properties.TIME_OFF_7);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -74,7 +79,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.confirmButton.click();
 
         try {
-            Thread.sleep(4000);
+            Thread.sleep(Properties.TIME_OFF_4);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -91,7 +96,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.activeFilter.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -99,7 +104,7 @@ public class DeactivateSynchPage extends BaseTest {
         this.calendarButton.click();
 
         try {
-            Thread.sleep(10000);
+            Thread.sleep(Properties.TIME_OFF_10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -79,7 +79,7 @@ public class SalesForcePage extends BaseTest {
 
         this.sFVerifyBtn.click();
 
-        try{
+        try {
             Thread.sleep(Properties.TIME_OFF_8);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -88,7 +88,7 @@ public class SalesForcePage extends BaseTest {
         this.vPCloseBtn.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -96,7 +96,7 @@ public class SalesForcePage extends BaseTest {
         this.nextButton.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -104,22 +104,21 @@ public class SalesForcePage extends BaseTest {
         this.finishBtn.click();
 
         try {
-            Thread.sleep(15000);
+            Thread.sleep(Properties.TIME_OFF_16);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         if(success.isDisplayed()){
             System.out.println("Yor Synch was correctly saved and will try to activate");
+            this.success.click();
 
         } else {
             System.out.println("Error something is wrong");
         }
 
-        this.planConfrimBtn.click();
-
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

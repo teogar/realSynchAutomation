@@ -191,4 +191,14 @@ public class Properties {
         public static final long TIME_OFF_8 = 8000;
 		public static final String ABRAHAM_PWD = "abrahamtest123@mailinator.com" ;
         public static final String ABRAHAM_USER_NAME = "abrahamtest123@mailinator.com";
+        public static final long TIME_OFF_3 = 3000;
+        public static final long TIME_OFF_15 = 15000;
+        public static final long TIME_OFF_6 = 6000;
+        public static final long TIME_OFF_9 = 9000;
+        public static final long TIME_OFF_10 = 10000;
+        public static final long TIME_OFF_16 = 16000;
+        public static final long TIME_OFF_1 = 1000;
+    public static final long TIME_OFF_2 = 2000;
+    public static final long TIME_OFF_7 = 7000;
+    public static final long TIME_OFF_4 = 4000;
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.Locators;
+import utils.Properties;
 
 public class ActivateSynchPage extends BaseTest {
 
@@ -18,7 +19,7 @@ public class ActivateSynchPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_CONFIRM_BUTTON)
     WebElement confirmButton;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div[3]/h2")
+    @FindBy(how = How.XPATH, using = Locators.SUCCESS_BUTTON_OK)
     WebElement successImg;
 
     @FindBy(how = How.XPATH, using = Locators.RS_ACTIVE_FILTER)
@@ -44,7 +45,7 @@ public class ActivateSynchPage extends BaseTest {
         this.elipsisButton.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -57,7 +58,7 @@ public class ActivateSynchPage extends BaseTest {
         }
 
         try{
-            Thread.sleep(5000);
+            Thread.sleep(Properties.TIME_OFF_5);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -65,7 +66,7 @@ public class ActivateSynchPage extends BaseTest {
         this.activateButton.click();
 
         try{
-            Thread.sleep(6000);
+            Thread.sleep(Properties.TIME_OFF_6);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -73,7 +74,7 @@ public class ActivateSynchPage extends BaseTest {
         this.confirmButton.click();
 
         try{
-            Thread.sleep(9000);
+            Thread.sleep(Properties.TIME_OFF_9);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -88,7 +89,7 @@ public class ActivateSynchPage extends BaseTest {
         this.confirmButton.click();
 
         try{
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         }catch (InterruptedException e){
             e.printStackTrace();
         }

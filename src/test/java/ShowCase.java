@@ -7,6 +7,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Locators;
+import utils.Properties;
 
 public class ShowCase extends BaseTest {
 
@@ -15,28 +16,28 @@ public class ShowCase extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.NEW_SYNCH_BTN)
     WebElement newSynchBtn;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[5]/div/div[2]/div[9]/div/div/div")
+    @FindBy(how = How.XPATH, using = Locators.SIDX_ICON_BUTTON)
     WebElement showCaseIdx;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div")
+    @FindBy(how = How.XPATH, using = Locators.FUB_ICON_BUTTON)
     WebElement fUb;
 
-    @FindBy(how = How.CLASS_NAME, using = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img")
+    @FindBy(how = How.CLASS_NAME, using = Locators.FUB_IMG)
     WebElement fUbImg;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"source-box-btn\"]/span")
+    @FindBy(how = How.XPATH, using = Locators.SIDX_CREDS)
     WebElement sIdXCredentials;
 
     @FindBy(how = How.XPATH, using = Locators.CLOSE_BUTTON)
     WebElement closeBtn;
 
-    @FindBy(how = How.XPATH, using = "//input[@name=\"loginApiKey\"]")
+    @FindBy(how = How.XPATH, using = Locators.FUB_CREDS_BUTTON)
     WebElement fuBCreds;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"target-box-btn\"]")
+    @FindBy(how = How.XPATH, using = Locators.INPUT_FUB_BUTTON)
     WebElement inputFubtn;
 
-    @FindBy(how = How.XPATH, using = "//*[contains(text(), \"Verify\")]")
+    @FindBy(how = How.XPATH, using = Locators.FUB_VERIFY_BUTTON)
     WebElement fUbVerify;
 
     @FindBy(how = How.XPATH, using = Locators.FINISH_BTN)
@@ -48,7 +49,7 @@ public class ShowCase extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_CONFIRM_BUTTON)
     WebElement confirmButton;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"source-0\"]")
+    @FindBy(how = How.XPATH, using = Locators.SIDX_PENCIL_BUTTON)
     WebElement sIdXPencil;
 
 
@@ -72,7 +73,7 @@ public class ShowCase extends BaseTest {
         this.showCaseIdx.click();
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(Properties.TIME_OFF_5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -87,7 +88,7 @@ public class ShowCase extends BaseTest {
         this.fUb.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -95,7 +96,7 @@ public class ShowCase extends BaseTest {
         this.sIdXCredentials.click();
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(Properties.TIME_OFF_5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -103,11 +104,11 @@ public class ShowCase extends BaseTest {
         this.closeBtn.click();
         this.inputFubtn.click();
         this.fuBCreds.clear();
-        this.fuBCreds.sendKeys("325812829d5985be8afc09a2c71219896bfe6b");
+        this.fuBCreds.sendKeys(Locators.FUB_API_KEY);
         this.fUbVerify.click();
 
         try {
-            Thread.sleep(10000);
+            Thread.sleep(Properties.TIME_OFF_10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -115,7 +116,7 @@ public class ShowCase extends BaseTest {
         this.closeBtn.click();
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -124,7 +125,7 @@ public class ShowCase extends BaseTest {
 
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -132,7 +133,7 @@ public class ShowCase extends BaseTest {
         this.finishBtn.click();
 
         try {
-            Thread.sleep(15000);
+            Thread.sleep(Properties.TIME_OFF_15);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -140,7 +141,7 @@ public class ShowCase extends BaseTest {
         this.confirmButton.click();
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(Properties.TIME_OFF_5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

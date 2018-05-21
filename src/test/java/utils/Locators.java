@@ -86,11 +86,11 @@ public class Locators {
 	public static final String RS_PSW_BOX = "//input[@name=\"password\"]";
 	public static final String RE_SINGIN_BTN = "//button[@type=\"submit\"]";
 	public static final String DRIVER_FIREFOX_PATH = "/Users/teodorogarcia/IdeaProjects/IdmTest/src/geckodriver";
-	public static final String NEW_SYNCH_BTN = "//button[@class=\"primary-button create-synch\"]" ;
+	public static final String NEW_SYNCH_BTN = "//button[@class=\"warning-button create-synch\"]" ;
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
-	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
+	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[4]/div/div/div[2]/div/div[7]/div/div[2]/div[1]/div[1]/div/div/img";
 	public static final String RS_NEXT_BUTTON = "//button[contains(text() , \"Next\")]";
-	public static final String VC_CLIENT_FIELD = "//input[@type=\"number\"]";
+	public static final String VC_CLIENT_FIELD = "//input[@name=\"userId\"]";
 	public static final String VC_USERNAME_FIELD = "//input[@name=\"loginName\"]";
 	public static final String VC_PASSWORD_FIELD = "//input[@type=\"password\"]";
 	public static final String SF_USERNAME_FIELD = "//input[@name=\"loginName\"]";
@@ -133,7 +133,17 @@ public class Locators {
 	public static final String RS_VISA_CARD_VALIDATOR = "//img[@src=\"/images/brand-icons/visa.png\"]";
 	public static final String RS_LOW_EXEC_PLAN = "//*[@id=\"root\"]/div/div[3]/div/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div/button";
 	public static final String RS_PLAN_CONFIRM_BUTTON = "//button[@class=\"confirm\"]";
-	public static final String RS_SUCCESS_BUTTON = "//p[contains(text(), \"Your synch was correctly saved and will try to activate\")]";
+	public static final String RS_SUCCESS_BUTTON = "//button[@class=\"confirm\"]";
 	public static final String RS_TEST_SF_CHECKBOX = "//input[@value=\"https://test.salesforce.com\"]";
     public static final String RS_ACTIVATION_BUTTON = "//*[@id=\"activate\"]";
+	public static final String SIDX_ICON_BUTTON = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[5]/div/div[2]/div[9]/div/div/div" ;
+	public static final String FUB_ICON_BUTTON = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div" ;
+	public static final String FUB_CREDS_BUTTON = "//input[@name=\"loginApiKey\"]";
+	public static final String SUCCESS_BUTTON_OK = "/html/body/div[3]/h2";
+	public static final String SIDX_CREDS = "//*[@id=\"source-box-btn\"]/span";
+	public static final String INPUT_FUB_BUTTON = "//*[@id=\"target-box-btn\"]";
+	public static final String FUB_VERIFY_BUTTON = "//*[contains(text(), \"Verify\")]";
+	public static final String SIDX_PENCIL_BUTTON = "//*[@id=\"source-0\"]";
+	public static final CharSequence FUB_API_KEY = "3058d941b787f637417f368f0eb8d53d75c877";
+	public static final String FUB_IMG = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
 }

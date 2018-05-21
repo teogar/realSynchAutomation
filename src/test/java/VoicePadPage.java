@@ -39,7 +39,7 @@ public class VoicePadPage extends BaseTest {
         PageFactory.initElements(pageDriver, this);
     }
 
-    public void voicePadCredentials(String id, String user, String psw){
+    public void voicePadCredentials(String id){
 
         this.vPInputCred.click();
 
@@ -52,10 +52,6 @@ public class VoicePadPage extends BaseTest {
 
         this.clientId.clear();
         this.clientId.sendKeys(id);
-        this.userName.clear();
-        this.userName.sendKeys(user);
-        this.password.clear();
-        this.password.sendKeys(psw);
         this.vPCloseBtn.click();
 
     }
