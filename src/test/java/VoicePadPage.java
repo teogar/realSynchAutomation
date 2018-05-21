@@ -44,7 +44,7 @@ public class VoicePadPage extends BaseTest {
         this.vPInputCred.click();
 
         /**
-         * Instructions for the VoicePad Credential Fileds
+         * Events to VoicePad Form
          *
          */
 
