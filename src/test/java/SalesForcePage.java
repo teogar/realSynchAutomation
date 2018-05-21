@@ -111,6 +111,11 @@ public class SalesForcePage extends BaseTest {
 
         if(success.isDisplayed()){
             System.out.println("Yor Synch was correctly saved and will try to activate");
+            try {
+                Thread.sleep(Properties.TIME_OFF_3);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             this.success.click();
 
         } else {

@@ -48,7 +48,7 @@ public class VoicePadPage extends BaseTest {
          *
          */
 
-        Assert.assertTrue(clientId.isDisplayed(), "This assert is passed");
+        Assert.assertTrue(clientId.isDisplayed(), "This assert is Passed");
 
         this.clientId.clear();
         this.clientId.sendKeys(id);

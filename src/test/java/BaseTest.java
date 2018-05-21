@@ -90,7 +90,7 @@ public class BaseTest {
      * Destroying Selenium after classes
      */
 
-    //@AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true)
     public void tearDown(){
         driver.quit();
 
