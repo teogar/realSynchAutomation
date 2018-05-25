@@ -1,0 +1,16 @@
+LogoutPage.class
+utils/Locators.class
+utils/Properties.class
+PropertyBasePage.class
+ModifyPlanPage.class
+RealSynchTest.class
+ForgotPasswordPage.class
+ShowCase.class
+LoginPage.class
+VoicePadPage.class
+SalesForcePage.class
+ActivateSynchPage.class
+NewSynchPage.class
+RealSRegisterPage.class
+BaseTest.class
+DeactivateSynchPage.class
