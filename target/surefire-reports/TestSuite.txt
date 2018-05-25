@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 77.334 sec <<< FAILURE! - in TestSuite
+rsE2E(RealSynchTest)  Time elapsed: 65.164 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: 
+Given xpath expression "" is invalid: SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'esolis-2.local', ip: 'fe80:0:0:0:b0:bd07:c6a5:81aa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '9'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 31776, moz:profile: /tmp/rust_mozprofile.xVvMVA..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: 460f897b-acb1-49a3-83e4-2df...}
+Session ID: 460f897b-acb1-49a3-83e4-2dfea1f8baed
+*** Element info: {Using=xpath, value=}
+	at RealSynchTest.rsE2E(RealSynchTest.java:52)
+
