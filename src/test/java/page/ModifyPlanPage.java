@@ -20,6 +20,9 @@ public WebDriver pageDriver;
     @FindBy(how = How.XPATH, using = Locators.RS_PLAN_BUTTON)
     WebElement planButton;
 
+    @FindBy(how = How.XPATH, using = Locators.RS_PLAN_CONFIRM_BUTTON)
+    WebElement paymentButton;
+
     @FindBy(how = How.XPATH, using = Locators.RS_VISA_CARD_VALIDATOR)
     WebElement visaCardImg;
 
@@ -35,28 +38,53 @@ public WebDriver pageDriver;
     }
 
     public void changePlan() {
-
-        this.rsAvatarBtn.click();
-
+        System.out.print("Looking for Avatar icon ");
+        if(rsAvatarBtn.isDisplayed()) {
+            System.out.println(": FOUND");
+            this.rsAvatarBtn.click();
+        } else {
+            System.out.println(": NOT FOUND");
+        }
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        this.accountSettings.click();
+        System.out.print("Looking for Account Settings ");
+        if( accountSettings.isDisplayed()) {
+            System.out.println(": FOUND");
+            accountSettings.click();
+        } else {
+            System.out.println(": NOT FOUND");
+        }
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        if(visaCardImg.isDisplayed()) {
-            System.out.println("The payment method is defined");
+        System.out.print( "Looking for Payment Method image ");
+        if(paymentButton.isDisplayed()) {
+            System.out.println(": FOUND");
+            paymentButton.click();
         } else {
-            System.out.println("The payment method is defiend and can't continue");
+            System.out.println(": NOT FOUND");
             System.exit(-1);
         }
-        this.planButton.click();
+        System.out.print( "Looking for Visa Card Image ");
+        if(visaCardImg.isDisplayed()) {
+            System.out.println(": FOUND");
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        System.out.print( "Looking for plan Button ");
+        if(planButton.isDisplayed()) {
+            System.out.println(": FOUND");
+            this.planButton.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -68,12 +96,14 @@ public WebDriver pageDriver;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        System.out.println("Confirming plan");
         this.planConfirmBtn.click();
         try {
             Thread.sleep(7000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        System.out.println("Double check confirm plan");
         this.planConfirmBtn.click();
         System.out.println("The plan has been changed successfully");
     }

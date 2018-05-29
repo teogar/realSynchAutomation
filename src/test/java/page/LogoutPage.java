@@ -11,15 +11,6 @@ import utils.Locators;
 public class LogoutPage extends BaseTest {
     public WebDriver pageDriver;
 
-    @FindBy(how = How.XPATH, using = Locators.RS_NAME_BOX)
-    WebElement userName;
-
-    @FindBy(how = How.XPATH, using = Locators.RS_PSW_BOX)
-    WebElement psw;
-
-    @FindBy(how = How.XPATH, using = Locators.RE_SINGIN_BTN)
-    WebElement singInBtn;
-
     @FindBy(how = How.XPATH, using = Locators.RS_AVATAR_BUTTON)
     WebElement rsAvatarBtn;
 

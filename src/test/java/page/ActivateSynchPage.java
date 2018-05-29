@@ -39,11 +39,11 @@ public class ActivateSynchPage extends BaseTest {
     public void activateSynch() {
         if(elipsisButton.isDisplayed()) {
             System.out.println("The elipsis button is displayed");
+            this.elipsisButton.click();
         } else {
             System.out.println("The Elipsis button is not displayed");
             System.exit(-1);
         }
-        this.elipsisButton.click();
         try {
             Thread.sleep(Properties.TIME_OFF_3);
         } catch (InterruptedException e) {
