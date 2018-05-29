@@ -16,6 +16,28 @@ import static utils.Properties.SALES_FORCE_TOKEN;
 import static utils.Properties.VOICE_PAD_CREDENTIAL;
 
 public class RealSynchTest extends BaseTest {
+
+/**
+    @Test(groups = {"unit 8"})
+    public void actSynchVoicePad2REalgeek() {
+        super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
+        super.activateSynch();
+        super.VoicePad();
+        super.Realgeek();
+        logout();
+    }
+
+    @Test(groups = {"unit 9"})
+    public void actSynchBr360Pad2REalgeek() {
+        super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
+        super.activateSynch();
+        super.Br360();
+        super.Realgeek();
+        logout();
+    }
+
+
+    **/
     @Test(groups = "unit 1")
     public void signUpRealSynchTest() {
         System.out.println("INITIALIAZED PLAN SELECTION AND USER REG.");
@@ -55,14 +77,12 @@ public class RealSynchTest extends BaseTest {
     }
 
     @Test(groups = {"unit 6"})
-    //WIP
     public void deactivateSynch() {
         super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
         super.deactivateSynchPage.deactivateSynch();
         super.logoutPage.logOut();
     }
-
-    //Functionality pending
+    //Deprecated
     @Test(groups = {"unit 7"})
     public void modifyPlan() {
         super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
@@ -79,17 +99,20 @@ public class RealSynchTest extends BaseTest {
     }
 
     //Not complete
+    //WIP
     @Test(groups ={"unit 9"})
-    public  void syncCreationShowCase2sdIxTest() {
+    public  void syncCreationShowCase2FUBTest() {
         super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
         super.showCasePage.sdIx();
         super.logoutPage.logOut();
+
     }
 
 
     @Test(groups = {"unit 10"})
-    public void sdIxIdTest() {
+    public void syncCreationsVoicePad2SalesForceTest() {
         super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
+        super.voicePadPage.voicePad();
         super.logoutPage.logOut();
     }
 }

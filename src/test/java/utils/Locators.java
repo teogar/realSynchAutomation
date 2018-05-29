@@ -1,59 +1,6 @@
 package utils;
 
-import org.openqa.selenium.By;
-
 public class Locators {
-
-	public static final By SEARCH_BOX_ID = By.id("navbar-query");
-	public static final By SEARCH_BUTTON_ID = By.id("navbar-submit-button");
-	public static final CharSequence ESO_MOVIE_INI = ("IT");
-	public static final By MOVIE_RESULT_LIST =
-			By.xpath("//h3[contains(text(),'Titles')]/following-sibling::table//tr");
-	public static final By MOVIE_LINK_XPATH = By.xpath(".//a");
-	public static final String RICHARD_LOCATOR = ("//table[@class='cast_list']//span[text()='Richard Thomas']");
-	public static final String TIM_LOCATOR = ("//table[@class='cast_list']//span[text()='Tim Reid']");
-	public static final String ANNETTE_LOCATOR = ("//table[@class='cast_list']//span[text()='Annette O'Toole']");
-	public static final String FULL_CAST = ("//a[contains(text(), 'full cast')]");
-	public static final String ROYAL_LOGIN_BUTTON = ("//*[@data-testid='royal_login_button']");
-	public static final String FB_EMAIL_BOX = ("//input[@type='email']");
-	public static final String FB_PASSBOX = ("//*[@data-testid='royal_pass']");
-	public static final String FACEBOOK_SEARCHBOX = ("//*[@placeholder='Busca en Facebook']");
-	public static final String FACEBOOK_SEARCHBUTTON = ("//i[@class='_585_']");
-	public static final String TEDDY_PROFILE = ("//div[@class='_1k67 _4q39']");
-	public static final String IMG_PROFILE = ("//a[@id='u_0_u']");
-	public static final String FACEBOOK_LOGO = ("//h1[@data-click='bluebar_logo']");
-	public static final String LINKD_EMAILBOX = ("//input[@type='text']");
-	public static final String LINKD_PASSBOX = ("//input[@type='password']");
-	public static final String LD_LOGBUTTON = ("//input[@type='submit']");
-	public static final String LINKD_HOMEBUTTON = ("bug-text-color");
-	public static final String LINKD_PROFILENAV = ("//li[@id='profile-nav-item']");
-	public static final String LINKD_SEARCHBOX = ("//input[@aria-autocomplete='list']");
-	public static final String LINKD_SCOPE = ("//button[@class='nav-search-button']");
-	public static final String TATA_LINK_XPATH = ("//h3[@class='search-result__title Sans-17px-black-85%-semibold-dense']");
-	public static final String TATA_NAVBUTTON = ("//img[@class='lazy-image org-top-card-module__logo loaded']");
-	public static final String LK_NAVBUTTON = ("//*[@class='bug-34dp']");
-	public static final String LK_USER_IMG = ("//div[@id='nav-settings__dropdown']");
-	public static final String LK_SINGO_BUTTON = ("//a[@data-control-name='nav.settings_signout']");
-	public static final String TEN_EMAIL_FIELD = ("//input[@type='email']");
-	public static final String TEN_PWD_FIELD = ("//input[@type='password']");
-	public static final String TEN_SUBMIT_BUTTON = ("//button[@type='submit']");
-	public static final String TEN_CANDIDATE_BUTTON = ("//div[@class='Home-middle']//a[@href='#/candidates']");
-	public static final String TEN_ADD_BUTTON = ("//div[@class='Candidates-floating-button']");
-	public static final String AMAZON_SCOPE = ("//div[@class='nav-search-scope nav-sprite']");
-	public static final String AMA_SEARCH_BOX = ("//input[@type='text']");
-	public static final String AMA_SINGIN_AREA = ("//a[@data-nav-ref='nav_ya_signin']");
-	public static final String AMA_EMAILBOX = ("//input[@type='email']");
-	public static final String AMA_PWDBOX = ("//input[@type='password']");
-	public static final String AMA_SUBMIT_BUTTON = ("//input[@id='signInSubmit']");
-	public static final String AMA_HOME_BUTTON = ("//span[@class='nav-logo-base nav-sprite']");
-	public static final String NAVIGATION_BTN = ("//div[@id='nav-main']");
-	public static final String AMA_CART = ("//span[@class='nav-cart-icon nav-sprite']");
-	public static final String NEWS_OPEN_WEATHER =("//div[@class=\"navbar navbar-dark navbar-static-top\"]//li/a[@href=\"https://openweathermap.org/news\"]");
-	public static final String OW_WEB_TOKEN = "78d47af55a880d5de2cb0ffb35e15a5c";
-	public static final String GDL_CITY_ID = "4005539";
-	public static final String WEATHER_DESC_JASON_PATH = "weather[0].description";
-	public static final String OP_SING_BTN = "//a[@onclick=\"_gaq.push(['_trackEvent', 'Navbar', 'Main', 'signin']);\"]";
-	public static final String OP_EMAIL_BOX = "//*[@class=\'string email optional form-control\']";
 	public static final String TEST_CHROME_PATH ="/Users/rchacon/Documents/RealSynch/src/chromedriver";
 	public static final String RS_NAME_BOX = "//input[@name=\"email\"]";
 	public static final String RS_PSW_BOX = "//input[@name=\"password\"]";
@@ -62,7 +9,7 @@ public class Locators {
 	public static final String NEW_SYNCH_BTN = "//button[contains(text(), 'Add New Synch')]";
 	public static final String VOICE_PAD_PATH = "//div[@class=\"ui-g-12\"]//*[@src=\"/images/applications/voicepad.JPG\"]";
 	public static final String SALES_FORCE_APP = "//*[@id=\"root\"]/div/div[4]/div/div/div[2]/div/div[7]/div/div[2]/div[1]/div[1]/div/div/img";
-	public static final String RS_NEXT_BUTTON = "//button[contains(text() , \"Next\")]";
+	public static final String RS_NEXT_BUTTON = "//*[contains(text() , \"Next\")]";
 	public static final String VC_CLIENT_FIELD = "//input[@name=\"userId\"]";
 	public static final String VC_USERNAME_FIELD = "//input[@name=\"loginName\"]";
 	public static final String VC_PASSWORD_FIELD = "//input[@type=\"password\"]";
@@ -75,7 +22,7 @@ public class Locators {
 	public static final String FORGOT_PSW_LINK = "//*[contains(text(),\"Forgot\")]";
 	public static final String RS_FORGOT_PSW_BOX = "//input[@type=\"text\"]";
 	public static final String RS_FORGOT_SUBMIT_BTN = "//input[@type=\"submit\"]";
-    public static final String PROPERTY_BASE_APP = "//img[@src=\"/images/applications/propertybase.JPG\"]";
+	public static final String PROPERTY_BASE_APP = "//img[@src=\"/images/applications/propertybase.JPG\"]";
 	public static final String SOURCE_CREDENTIALS_BUTTON =  "//button[@id=\"source-box-btn\"]";
 	public static final String CLOSE_BUTTON = "//button[contains(text(), 'Close')]";
 	public static final String TARGET_CREDETIALS_BUTTON = "//button[@id=\"target-box-btn\"]";
@@ -98,7 +45,7 @@ public class Locators {
 	public static final String RS_ELIPSIS_BUTTON = "//i[@class = 'fa fa-ellipsis-h']";
 	public static final String RD_DEACTIVATE_BUTTON = "//button[contains(text(), 'Deactivate')]";
 	public static final String RS_YES_BUTTON = " //*[contains(text(), \"Yes\")]";
-	public static final String RS_CONFIRM_BUTTON = "//*[@id='pr_id_2']/div[2]/div/div[2]/div/button";
+	public static final String RS_CONFIRM_BUTTON = "//*[contains (text(), 'OK')]";
 	public static final String RS_ACTIVE_SYNCH = "//span[text() = 'active']";
 	public static final String RS_CALENDAR_BUTTON = "//i[@class='fa fa-calendar']";
 	public static final String RS_ACCOUNT_SET_BUTTON = "//*[contains(text(), \"Account Settings\")]";
@@ -108,15 +55,20 @@ public class Locators {
 	public static final String RS_PLAN_CONFIRM_BUTTON = "//button[@class=\"confirm\"]";
 	public static final String RS_SUCCESS_BUTTON = "//button[@class=\"confirm\"]";
 	public static final String RS_TEST_SF_CHECKBOX = "//input[@value=\"https://test.salesforce.com\"]";
-    public static final String RS_ACTIVATION_BUTTON = "//*[contains(text(), 'Request a new provider')]";
-	public static final String SIDX_ICON_BUTTON = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[5]/div/div[2]/div[9]/div/div/div" ;
-	public static final String FUB_ICON_BUTTON = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div" ;
+	public static final String RS_ACTIVATION_BUTTON = "//*[contains(text(), 'Request a new provider')]";
+	public static final String SIDX_ICON_BUTTON = "//*[@src = '/images/applications/showcaseidx.JPG']" ;
+	public static final String FUB_ICON_BUTTON = "//*[@src = '/images/applications/followupboss.JPG']" ;
 	public static final String FUB_CREDS_BUTTON = "//input[@name=\"loginApiKey\"]";
 	public static final String SUCCESS_BUTTON_OK = "/html/body/div[3]/h2";
-	public static final String SIDX_CREDS = "//*[@id=\"source-box-btn\"]/span";
-	public static final String INPUT_FUB_BUTTON = "//*[@id=\"target-box-btn\"]";
+	public static final String INPUT_SOURCE_BUTTON = "//*[@id=\"source-box-btn\"]/span";
+	public static final String INPUT_TARGET_BUTTON = "//*[@id=\"target-box-btn\"]";
 	public static final String FUB_VERIFY_BUTTON = "//*[contains(text(), \"Verify\")]";
 	public static final String SIDX_PENCIL_BUTTON = "//*[@id=\"source-0\"]";
 	public static final CharSequence FUB_API_KEY = "3058d941b787f637417f368f0eb8d53d75c877";
 	public static final String FUB_IMG = "//*[@id=\"root\"]/div/div[3]/div/div/div[2]/div/div[6]/div/div[2]/div[1]/div/div/div/img";
+	public static  final String VOICE_PAD_ICON = "//*[@src='/images/applications/voicepad.JPG']";
+	public static  final String SALES_FORCE_ICON = "//*[@src='/images/applications/salesforce.JPG']";
+	public static  final String VOICE_PAD_ID = "//*[@name='userId']";
+	public static  final CharSequence SALES_FORCE_TOKEN = "zNI1ISNV5Jx0cndV8plhuwZp";
+    public static  final String TEST_URL = "//*[@value'https://test.salesforce.com']";
 }

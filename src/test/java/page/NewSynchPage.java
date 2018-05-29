@@ -12,7 +12,7 @@ import utils.Properties;
 public class NewSynchPage extends BaseTest {
     public WebDriver pageDriver;
 
-    @FindBy(how = How.XPATH, using = Locators.NEW_SYNCH_BTN)
+    @FindBy(how = How.XPATH, using = Locators.P_BASE_PWD_FIELD)
     WebElement newSynchBtn;
 
     @FindBy(how = How.XPATH, using = Locators.VOICE_PAD_PATH)
