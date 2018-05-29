@@ -19,6 +19,7 @@ import page.RealSRegisterPage;
 import page.SalesForcePage;
 import page.ShowCasePage;
 import page.VoicePadPage;
+import page.Dashboard;
 import utils.Locators;
 import utils.Properties;
 
@@ -27,7 +28,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-
+    public Dashboard dashboard;
     public RealSRegisterPage realSRegisterPage;
     //public WebDriver driver;
     public RemoteWebDriver driver;
@@ -42,6 +43,7 @@ public class BaseTest {
     public DeactivateSynchPage deactivateSynchPage;
     public ModifyPlanPage modifyPlanPage;
     public ActivateSynchPage activateSynchPage;
+
     public ChromeOptions options  = new ChromeOptions();
 
 
@@ -82,6 +84,8 @@ public class BaseTest {
       forgotPasswordPage = new ForgotPasswordPage(driver);
       deactivateSynchPage = new DeactivateSynchPage(driver);
       modifyPlanPage = new ModifyPlanPage(driver);
+      dashboard = new Dashboard(driver);
+
       activateSynchPage = new ActivateSynchPage(driver);
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       //driver.manage().window().maximize();

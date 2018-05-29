@@ -56,8 +56,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+      <file leaf-file-name="LoginLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
@@ -119,6 +119,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Oscar Reynoso" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -171,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/DashBoradPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
@@ -185,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
       </list>
     </option>
   </component>
@@ -379,7 +384,41 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+              <item name="Locator" type="cbb8eebc:String" user="Locator" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+              <item name="page" type="cbb8eebc:String" user="page" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/resources" type="cbb8eebc:String" user="src/test/resources" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
