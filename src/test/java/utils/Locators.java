@@ -71,4 +71,22 @@ public class Locators {
 	public static  final String VOICE_PAD_ID = "//*[@name='userId']";
 	public static  final CharSequence SALES_FORCE_TOKEN = "zNI1ISNV5Jx0cndV8plhuwZp";
     public static  final String TEST_URL = "//*[@value'https://test.salesforce.com']";
+
+    public static final String RS_EDIT_FIRST_NAME = "//input[@id=\"ui-first\"]";
+    public static final String RS_EDIT_LAST_NAME = "//input[@id=\"ui-last\"]";
+    public static final String RS_EDIT_EMAIL = "//input[@id=\"ui-email\"]";
+    public static final String RS_CHANGEPASS_SUBMIT_BUTTON = "//input[@type=\"submit\"]";
+    public static final String RS_CHANGEPASS_CANCEL_BUTTON = "//input[@value=\"Cancel\"]";
+
+    public static final String RS_ACCOUNT_CHANGEPASSWORD_BUTTON = "//*[contains(text(), \"Change Password\")]";
+    public static final String RS_REG_CONFIRM_PASSWORD = "//input[@name=\"confirmpassword\"]";
+    public static final String RS_REG_CANCEL_BUTTON = "//button[contains(text() , \"Cancel\")]";
+
+    /*
+    public static final String RS_REG_FIRST_NAME = "//input[@name=\"firstName\"]";
+    public static final String RS_REG_LASTNAME = "//input[@name=\"lastName\"]";
+    public static final String RS_REG_EMAIL = "//input[@name=\"email\"]";
+    public static final String RS_REG_PASSWORD = "//input[@name=\"password\"]";
+    public static final String RS_REG_SUBMIT_BUTTON = "//button[contains(text(), \"Submit\"]";*/
+
 }
