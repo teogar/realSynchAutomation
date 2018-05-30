@@ -8,9 +8,9 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-public class DashBoradPage extends BaseTest {
+public class DashBoardPage extends BaseTest {
 
-    public DashBoradPage(WebDriver driver) {
+    public DashBoardPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
     }
