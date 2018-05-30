@@ -7,19 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import page.ActivateSynchPage;
-import page.DeactivateSynchPage;
-import page.ForgotPasswordPage;
-import page.LoginPage;
-import page.LogoutPage;
-import page.ModifyPlanPage;
-import page.NewSynchPage;
-import page.PropertyBasePage;
-import page.RealSRegisterPage;
-import page.SalesForcePage;
-import page.ShowCasePage;
-import page.VoicePadPage;
-import page.Dashboard;
+import page.*;
 import utils.Locators;
 import utils.Properties;
 
@@ -33,6 +21,7 @@ public class BaseTest {
     //public WebDriver driver;
     public RemoteWebDriver driver;
     public NewSynchPage newSynchPage;
+    public LoginPage1 loginpage;
     public LoginPage loginPage;
     public LogoutPage logoutPage;
     public VoicePadPage voicePadPage;
@@ -74,6 +63,7 @@ public class BaseTest {
       driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), desiredCapabilities);
 
       realSRegisterPage = new RealSRegisterPage(driver);
+      loginpage = new LoginPage1(driver);
       loginPage = new LoginPage(driver);
       logoutPage = new LogoutPage(driver);
       newSynchPage = new NewSynchPage(driver);
