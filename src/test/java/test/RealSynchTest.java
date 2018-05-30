@@ -13,7 +13,7 @@ import static utils.Properties.REGISTRATION_PASSWORD;
 import static utils.Properties.SALES_FORCE_CREDENTIAL;
 import static utils.Properties.SALES_FORCE_PWD;
 import static utils.Properties.SALES_FORCE_TOKEN;
-import static utils.Properties.VOICE_PAD_CREDENTIAL;
+import static utils.Properties.VOICE_PAD_CLIENT_ID;
 
 public class RealSynchTest extends BaseTest {
 
@@ -58,7 +58,7 @@ public class RealSynchTest extends BaseTest {
         super.loginPage.Login(ABRAHAM_USER_NAME, ABRAHAM_PWD);
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
-        super.voicePadPage.voicePadCredentials(VOICE_PAD_CREDENTIAL);
+        super.voicePadPage.voicePadCredentials(VOICE_PAD_CLIENT_ID);
         super.salesForcePage.salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
         super.logoutPage.logOut();
     }

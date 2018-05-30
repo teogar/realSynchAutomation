@@ -45,7 +45,7 @@ public class VoicePadPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.INPUT_SOURCE_BUTTON)
     WebElement VoicePadInput;
 
-    @FindBy(how = How.XPATH, using = Properties.VOICE_PAD_CREDENTIAL)
+    @FindBy(how = How.XPATH, using = Properties.VOICE_PAD_CLIENT_ID)
     WebElement voicePadId;
 
     @FindBy(how = How.XPATH, using = Locators.INPUT_TARGET_BUTTON)
