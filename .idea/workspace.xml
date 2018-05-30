@@ -2,55 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25d7f2b3-cce7-4b3d-ba22-029104cf01c6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/CredentialsPopUpLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/DashBoradPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/FinishPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/SourcePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/WizardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/CredentialsLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/CredentialsPopUpLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/FinishLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/LoginLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/SourceLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Locator/WizardLocator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/CredentialsPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/CredentialsPopupPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/DashBoradPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/FinishPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/LoginPage1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/SourcePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/page/WizardPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/ActivateSynchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/ActivateSynchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/LogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/ModifyPlanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/ModifyPlanPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/NewSynchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/NewSynchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/ShowCasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/ShowCasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/CredentialsPopUpLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/DashBoradPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/DashBoardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/FinishPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/FinishPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/SourcePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/SourcePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Properties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/ActivateSynchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/ActivateSynchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/DeactivateSynchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/DeactivateSynchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/LogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/LogoutPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/ModifyPlanPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/ModifyPlanPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/NewSynchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/NewSynchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/PropertyBasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/PropertyBasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/SalesForcePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/SalesForcePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/ShowCasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/ShowCasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/page/VoicePadPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/VoicePadPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/RealSynchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/RealSynchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Locators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Locators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Properties.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,29 +28,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Locators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Locators.java">
+      <file leaf-file-name="DashBoardLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+            <state relative-caret-position="68">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoicePadPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
+      <file leaf-file-name="CredentialsLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+      <file leaf-file-name="LoginLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WizardLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="51" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FinishPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/FinishPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,8 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ActivateSynchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PropertyBasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/DeactivateSynchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/VoicePadPage.java" />
@@ -158,19 +138,13 @@
         <option value="$PROJECT_DIR$/src/test/java/page/RealSRegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/InputCredentialLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialPopUpLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/ActivateSynchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/NewSynchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/DashBoradLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/Login1.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/ModifyPlanPage.java" />
@@ -186,6 +160,14 @@
         <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/InputSourceCredentialsLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
       </list>
     </option>
   </component>
@@ -635,6 +617,14 @@
       <option name="presentableId" value="Default" />
       <updated>1515680747552</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second delivery to POM">
+      <created>1527629393733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527629393733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -679,8 +669,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-331" y="-1080" width="1920" height="1076" extended-state="6" />
-    <editor active="true" />
+    <frame x="-331" y="-1080" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32952183" />
@@ -740,6 +729,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second delivery to POM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second delivery to POM" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -927,23 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsPopUpLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/WizardPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -951,13 +927,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1018,16 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1038,51 +997,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/FinishPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoradPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1093,13 +1014,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1120,17 +1034,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="777">
+          <caret line="156" column="1" lean-forward="true" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="151" column="16" lean-forward="true" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+        <state relative-caret-position="2363">
+          <caret line="139" column="49" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="85" lean-forward="true" selection-start-line="21" selection-start-column="85" selection-end-line="21" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/FinishPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
