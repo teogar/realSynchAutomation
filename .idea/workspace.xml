@@ -121,6 +121,9 @@
       <find>pass</find>
     </findStrings>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/heads/dev_oscar.reynoso" />
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -130,7 +133,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev_oscar.reynoso" />
       </map>
     </option>
   </component>
@@ -155,10 +158,7 @@
         <option value="$PROJECT_DIR$/pom1.xml" />
         <option value="$PROJECT_DIR$/src/test/java/page/ShowCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/scIdXTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/PropertyBasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/RealSRegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
@@ -190,15 +190,21 @@
         <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/Dashboard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/TopPageLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/DashBoardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" />
       </list>
     </option>
   </component>
@@ -385,6 +391,18 @@
               <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
               <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
               <item name="page" type="cbb8eebc:String" user="page" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+              <item name="utils" type="cbb8eebc:String" user="utils" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -960,13 +978,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/HomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ActivateSynchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/NewSynchPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1002,7 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-263">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
@@ -1012,20 +1023,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="692">
+          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="99" column="24" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="99" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1083,14 +1091,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="-1360">
+          <caret line="32" column="69" lean-forward="true" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="66" lean-forward="false" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
