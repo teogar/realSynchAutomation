@@ -43,7 +43,8 @@ public class LoginPage1 extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            //System.exit(-1);
+            throw new RuntimeException();
         }
     }
 
