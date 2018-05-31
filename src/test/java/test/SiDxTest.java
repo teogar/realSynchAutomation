@@ -25,7 +25,7 @@ public class SiDxTest extends BaseTest{
     @Test(groups = "unit 2")
     public void login(){
         super.loginPage.logElements();
-        super.loginPage.Login(utils.Properties.ABRAHAM_USER_NAME, utils.Properties.ABRAHAM_PWD);
+        super.loginPage.Login(utils.Properties.AUTOMATION_USERNAME, utils.Properties.AUTOMATION_PASSWORD);
 
     }
 
@@ -39,7 +39,7 @@ public class SiDxTest extends BaseTest{
     public void rsE2E(){
         System.out.println("REAL SYNCH CI PIPELINE");
         super.loginPage.logElements();
-        super.loginPage.Login(utils.Properties.ABRAHAM_USER_NAME, utils.Properties.ABRAHAM_PWD);
+        super.loginPage.Login(utils.Properties.AUTOMATION_USERNAME, utils.Properties.AUTOMATION_PASSWORD);
         System.out.println(driver.getTitle());
         super.newSynchPage.createNewSynch();
         super.voicePadPage.voicePadCredentials("1680");

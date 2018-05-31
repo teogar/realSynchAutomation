@@ -26,7 +26,7 @@ public class RealSRegisterPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_REG_PASSWORD)
     WebElement rsPassword;
 
-    @FindBy(how = How.XPATH, using = Locators.R_REG_CONFIRM_PASSWORD)
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_CONFIRM_PASSWORD)
     WebElement rsConfirmPsw;
 
     @FindBy(how = How.XPATH, using = Locators.RS_REG_SUBMIT_BUTTON)

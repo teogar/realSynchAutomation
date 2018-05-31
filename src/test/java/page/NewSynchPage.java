@@ -27,6 +27,15 @@ public class NewSynchPage extends BaseTest {
     @FindBy(how = How.XPATH, using = Locators.RS_NEXT_BUTTON)
     WebElement nextButton;
 
+    @FindBy(how = How.XPATH, using = Locators.RS_REG_CANCEL_BUTTON)
+    WebElement cancelButton;
+
+    @FindBy(how = How.XPATH, using = Locators.RS_YES_BUTTON)
+    WebElement yesButton;
+
+    @FindBy(how = How.XPATH, using = Locators.RS_OK_BTN)
+    WebElement okButton;
+
     public NewSynchPage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -61,6 +70,82 @@ public class NewSynchPage extends BaseTest {
         if(salesForce.isDisplayed()) {
             System.out.print(": FOUND");
             this.salesForce.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        try {
+            Thread.sleep(Properties.TIME_OFF_3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveSyncAsDraft() {
+        System.out.print("Looking for Synch button ");
+        if(newSynchBtn.isDisplayed()) {
+            System.out.println(": FOUND");
+            this.newSynchBtn.click();
+        } else {
+            System.out.println(("NOT FOUND"));
+            System.exit(-1);
+        }
+        try {
+            Thread.sleep(Properties.TIME_OFF_3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.print("Looking for VoicePad Icon ");
+        if(voicePad.isDisplayed()) {
+            System.out.println(": FOUND");
+            this.voicePad.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        System.out.print("Looking for Sales Force ");
+        if(salesForce.isDisplayed()) {
+            System.out.print(": FOUND");
+            this.salesForce.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        try {
+            Thread.sleep(Properties.TIME_OFF_3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.print("Click on Cancel to save as Draft ");
+        if(cancelButton.isDisplayed()) {
+            System.out.print(": Clicked");
+            this.cancelButton.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        try {
+            Thread.sleep(Properties.TIME_OFF_3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.print("Click on Yes to confirm save as Draft ");
+        if(yesButton.isDisplayed()) {
+            System.out.println(": Clicked");
+            this.yesButton.click();
+        } else {
+            System.out.println(": NOT FOUND");
+            System.exit(-1);
+        }
+        try {
+            Thread.sleep(Properties.TIME_OFF_3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.print("Click on OK to go to the Dashboard");
+        if(okButton.isDisplayed()) {
+            System.out.println(": Clicked");
+            this.okButton.click();
         } else {
             System.out.println(": NOT FOUND");
             System.exit(-1);
