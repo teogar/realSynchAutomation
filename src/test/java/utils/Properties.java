@@ -17,7 +17,9 @@ public class Properties {
 	public static final String SALES_FORCE_PWD = "Tgar$ia2018";
 	public static final String SALES_FORCE_TOKEN = "zNI1ISNV5Jx0cndV8plhuwZp";
 	public static final String REAL_SYNCH_FORGOT_PWD = "pete696@yopmail.com";
-	public static final String VOICE_PAD_CREDENTIAL = "1680";
+	public static final String VOICE_PAD_CLIENT_ID = "1680";
+	public static final String VOICE_PAD_USER = "teoteo999@mailinator.com";
+	public static final String VOICE_PAD_PWD = "teoteo999@mailinator.com";
 	public static final long TIME_OFF_3 = 3000;
 	public static final long TIME_OFF_15 = 15000;
 	public static final long TIME_OFF_6 = 6000;

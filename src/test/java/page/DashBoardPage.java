@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
-import utils.Properties;
 
 public class DashBoardPage extends BaseTest {
+
     public DashBoardPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -34,10 +34,10 @@ public class DashBoardPage extends BaseTest {
     WebElement elipsisButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATE_SYNCH_BUTTON)
-    WebElement activateSynchButton;
+    WebElement activateSynchLink;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.DEACTIVATE_SYNCH_LINK)
-    WebElement deactivateSynchutton;
+    WebElement deactivateSyncLink;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.SYNCH_STATUS)
     WebElement synchStatus;
@@ -53,7 +53,6 @@ public class DashBoardPage extends BaseTest {
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_BUTTON)
     WebElement editSynchButton;
-
 
     public String getSynchStatusText() {
         System.out.print("Looking for 'Synch Status' text");
@@ -78,6 +77,7 @@ public class DashBoardPage extends BaseTest {
             return "NOT FOUND";
         }
     }
+  
     public String getTargetNameText() {
         System.out.print("Looking for 'Target name' text");
         if(targetName.isDisplayed()) {
@@ -117,6 +117,7 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
+  
     public boolean clickOnElipsis() {
         System.out.print("Looking for 'Elipsis' button");
         if(elipsisButton.isDisplayed()) {
@@ -130,11 +131,12 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
-    public boolean clickOnActivateSynchButton() {
+  
+    public boolean clickOnActivateSynch() {
         System.out.print("Looking for 'Activate Synch' button");
-        if(activateSynchButton.isDisplayed()) {
+        if(activateSynchLink.isDisplayed()) {
             System.out.print(" : FOUND");
-            activateSynchButton.click();
+            activateSynchLink.click();
             System.out.print(" & CLICKED");
             return true;
         }
@@ -143,11 +145,12 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
-    public boolean clickOnDeactivateSynchButton() {
+  
+    public boolean clickOnDeactivateSynchLink() {
         System.out.print("Looking for 'Submit' button");
-        if(deactivateSynchutton.isDisplayed()) {
+        if(deactivateSynchLink.isDisplayed()) {
             System.out.print(" : FOUND");
-            deactivateSynchutton.click();
+            deactivateSynchLink.click();
             System.out.print(" & CLICKED");
             return true;
         }
@@ -156,6 +159,7 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
+  
     public boolean clickOnSourceCredentialsIssueButton() {
         System.out.print("Looking for 'Source Credentials Issue' button");
         if(sourceCredentialsIssueButton.isDisplayed()) {
@@ -169,6 +173,7 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
+  
     public boolean clickOnTargetCredentialsIssue() {
         System.out.print("Looking for 'Target Credentials Issue' button");
         if(targetCredentialsIssueButton.isDisplayed()) {
@@ -182,6 +187,7 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
+  
     public boolean clickOnActivationInstructions() {
         System.out.print("Looking for 'Activation Instructions' button");
         if(activationInstructionsButton.isDisplayed()) {
@@ -195,6 +201,7 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
+  
     public boolean clickOnEditSynch() {
         System.out.print("Looking for 'Edit Synch' button");
         if(editSynchButton.isDisplayed()) {
@@ -208,5 +215,4 @@ public class DashBoardPage extends BaseTest {
             return false;
         }
     }
-
 }
