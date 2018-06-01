@@ -15,103 +15,106 @@ public class TopPage extends BaseTest{
     }
 
     @FindBy( how = How.XPATH, using = TopPageLocator.GOTODASHBOARD_BUTTON)
-    WebElement goToDashboardButton;
+    static WebElement goToDashboardButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.CUSTOMERASSITANCE_BUTTON)
-    WebElement customerAssistanceButton;
+    static WebElement customerAssistanceButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
-    WebElement avatarUserButton;
+    static WebElement avatarUserButton;
 
     @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
-    WebElement accountSettingsButton;
+    static WebElement accountSettingsButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.CHANGE_PASSWORD_BUTTON)
-    WebElement changePasswordButtton;
+    static WebElement changePasswordButtton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.LOGOUT_BUTTON)
-    WebElement logoutButton;
+    static WebElement logoutButton;
 
-    public boolean clickOnGoToDashboard() {
+    @FindBy(how = How.XPATH, using = TopPageLocator.OK_BUTTTON)
+    static WebElement okButton;
+
+    public static void clickOnGoToDashboard() {
         System.out.print("Looking for 'Go To Dashboard' button");
         if(goToDashboardButton.isDisplayed()) {
             System.out.print(" : FOUND");
             goToDashboardButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnCustomerAssitanceButton() {
+    public static void clickOnCustomerAssitanceButton() {
         System.out.print("Looking for 'Customer Assistance' button");
         if(customerAssistanceButton.isDisplayed()) {
             System.out.print(" : FOUND");
             customerAssistanceButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnUserAvatarButton() {
+    public static void clickOnUserAvatarButton() {
         System.out.print("Looking for 'User Avatar' button");
         if(avatarUserButton.isDisplayed()) {
             System.out.print(" : FOUND");
             avatarUserButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnChangePasswordButton() {
+    public static void clickOnChangePasswordButton() {
         System.out.print("Looking for 'Change Password' button");
         if(changePasswordButtton.isDisplayed()) {
             System.out.print(" : FOUND");
             changePasswordButtton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnLogoutButton() {
+    public static void clickOnLogoutButton() {
         System.out.print("Looking for 'LogOut' button");
         if(logoutButton.isDisplayed()) {
             System.out.print(" : FOUND");
             logoutButton.click();
             System.out.println(" & CLICKED");
-            return true;
+            System.out.print("Looking for 'Ok' button");
+            if(logoutButton.isDisplayed()) {
+                System.out.print(" : FOUND");
+                okButton.click();
+                System.out.println(" & CLICKED");
+            }
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnAccountSettings() {
+    public static void clickOnAccountSettings() {
         System.out.print("Looking for 'Account Settings' button");
         if(accountSettingsButton.isDisplayed()) {
             System.out.print(" : FOUND");
             accountSettingsButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 /*

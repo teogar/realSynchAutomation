@@ -11,9 +11,7 @@ public class WizardLocator extends BaseTest {
     public static final String FOLLOWUPBOSS_ICON = "//img[@src='/images/applications/followupboss.JPG']";
     public static final String CONTACTUALLY_ICON = "//img[@src='/images/applications/contactually.JPG']";
     public static final String BOOMTOWN_ICON = "//img[@src='/images/applications/boomtown.JPG']";
-    public static final String CANCEL_BUTTON = "//button[contains(text(),'Cancel')]";
-    public static final String BACK_BUTTON = "//button[contains(text(),'Back')]";
-    public static final String NEXT_BUTTON = "//button[contains(text(),'Next')]";
+
 
 }
 

@@ -35,7 +35,7 @@ public class WizardPage extends BaseTest {
 
     @FindBy( how = How.XPATH, using = WizardLocator.BOOMTOWN_ICON)
     WebElement boomTowIcon;
-
+/*
     @FindBy( how = How.XPATH, using = WizardLocator.CANCEL_BUTTON)
     WebElement cancelButton;
 
@@ -44,7 +44,7 @@ public class WizardPage extends BaseTest {
 
     @FindBy( how = How.XPATH, using = WizardLocator.NEXT_BUTTON)
     WebElement nextButton;
-
+*/
     public boolean clickOnStep2Navigator() {
         System.out.print("Looking for 'Step 2 Wizard Navigator' button");
         if(stepNavigator.isDisplayed()) {
@@ -123,6 +123,7 @@ public class WizardPage extends BaseTest {
             return false;
         }
     }
+    /*
     public boolean clickOnCancelButton() {
         System.out.print("Looking for 'Cancel' button");
         if(cancelButton.isDisplayed()) {
@@ -162,4 +163,5 @@ public class WizardPage extends BaseTest {
             return false;
         }
     }
+    */
 }

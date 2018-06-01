@@ -133,4 +133,5 @@ public class RealSynchTest extends BaseTest {
         super.newSynchPage.saveSyncAsDraft();
         super.logoutPage.logOut();
     }
+
 }

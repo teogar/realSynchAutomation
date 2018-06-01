@@ -111,4 +111,10 @@ public class Br360Test extends BaseTest{
         super.loginPage.Login("pete222@yopmail.com", "4444lola!!!");
         super.logoutPage.logOut();
     }
+
+    public void login(String username,String password) {
+        super.loginpage.sendUsername(username);
+        super.loginpage.sendPassword(password);
+        super.loginpage.clickOnSubmitButton();
+    }
 }
