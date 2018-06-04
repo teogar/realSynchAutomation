@@ -48,12 +48,20 @@ public class InputCredentialsPage extends BaseTest {
     @FindBy( how = How.XPATH, using = InputCredentialsLocator.CLOSE_BUTTON)
     static WebElement  closeButton;
 
+    @FindBy( how = How.XPATH, using = InputCredentialsLocator.LABEL)
+    static WebElement  statusLabel;
 
-    public static boolean  clickCloseIcon() {
+
+    public static String getLabelText() {
+        return statusLabel.getText();
+    }
+
+    public static boolean clickOnClose() {
         System.out.print("Looking for close icon");
         if(closeIcon.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             closeIcon.click();
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
@@ -62,11 +70,12 @@ public class InputCredentialsPage extends BaseTest {
         }
     }
 
-    public static boolean  clickSourceImage() {
+    public static boolean  clickOnSourceImage() {
         System.out.print("Looking for source image");
         if(sourceImage.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             sourceImage.click();
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
@@ -78,9 +87,10 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  enterClientId(@Nonnull String data) {
         System.out.print("Looking for customer ID");
         if(clientIdInput.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             clientIdInput.clear();
             clientIdInput.sendKeys(data);
+            System.out.println(" & SENT");
             return true;
         }
         else {
@@ -92,9 +102,10 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  enterUser(@Nonnull String data) {
         System.out.print("Looking for user");
         if(userInput.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             userInput.clear();
             userInput.sendKeys(data);
+            System.out.println(" & SENT");
             return true;
         }
         else {
@@ -106,9 +117,10 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  enterPassword( @Nonnull String data) {
         System.out.print("Looking for password");
         if(passwordInput.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             passwordInput.clear();
             passwordInput.sendKeys(data);
+            System.out.println(" & SENT");
             return true;
         }
         else {
@@ -120,9 +132,10 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  enterToken( @Nonnull String data) {
         System.out.print("Lookin for token");
         if(tokenInput.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             tokenInput.clear();
             tokenInput.sendKeys(data);
+            System.out.println(" & SENT");
             return true;
         }
         else {
@@ -134,8 +147,9 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  selectUrl1() {
         System.out.print("Looking for URL1");
         if(urlTest1.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             urlTest1.click();
+            System.out.println(" & SELECTED");
             return true;
         }
         else {
@@ -147,8 +161,9 @@ public class InputCredentialsPage extends BaseTest {
     public static boolean  selectUrl2() {
         System.out.print("Looking for URL2");
         if(urlTest2.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             urlTest2.click();
+            System.out.println(" & SELECTED");
             return true;
         }
         else {
@@ -157,11 +172,35 @@ public class InputCredentialsPage extends BaseTest {
         }
     }
 
-    public static boolean  clickVerifyButton() {
+    public static boolean  clickOnVerifyButton() {
         System.out.print("Looking for verify button");
         if(verifyButton.isDisplayed()) {
-            System.out.println(" : DONE");
+            System.out.print(" : DONE");
             verifyButton.click();
+            System.out.println(" & CLICKED");
+            System.out.print("Verifying API Key");
+            if(getLabelText().contentEquals("VERIFIED")) {
+                System.out.println(" : SUCCESS");
+                return true;
+            }
+            else {
+                System.out.println(" : NOT SUCCESS");
+                return false;
+            }
+
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static boolean  clickOnCloseButton() {
+        System.out.print("Looking for close button");
+        if(closeButton.isDisplayed()) {
+            System.out.print(" : DONE");
+            closeButton.click();
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
@@ -170,12 +209,12 @@ public class InputCredentialsPage extends BaseTest {
         }
     }
 
-    public static boolean  clickCloseButton() {
-        System.out.print("Looking for close button");
-        if(closeButton.isDisplayed()) {
-            System.out.println(" : DONE");
-            closeButton.click();
-            return true;
+    public static void clickOnBoomVerifyButton() {
+        System.out.print("Looking for verify button");
+        if (verifyButton.isDisplayed()) {
+            System.out.print(" : DONE");
+            verifyButton.click();
+            System.out.println(" & CLICKED");
         }
         else {
             System.out.println(" : NOT FOUND");

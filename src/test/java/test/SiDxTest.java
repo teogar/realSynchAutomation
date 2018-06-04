@@ -6,6 +6,10 @@ import utils.Flows.BasicFlows;
 import static page.DashBoardPage.clickOnAddNewSynchButton;
 import static utils.Properties.AUTOMATION_PASSWORD;
 import static utils.Properties.AUTOMATION_USERNAME;
+import static utils.Properties.SALES_FORCE_CREDENTIAL;
+import static utils.Properties.SALES_FORCE_PWD;
+import static utils.Properties.SALES_FORCE_TOKEN;
+import static utils.Properties.VOICE_PAD_CLIENT_ID;
 
 public class SiDxTest extends BasicFlows {
     /**

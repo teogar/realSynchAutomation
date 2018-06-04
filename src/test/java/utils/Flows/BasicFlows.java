@@ -4,14 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import page.BoomTownPage;
 import page.CredentialsPage;
 import page.DashBoardPage;
+import page.InputCredentialsPage;
 import page.LoginPage;
 import page.ResetPasswordPage;
 import page.SourcePage;
 import page.TopPage;
 import page.WizardPage;
 import test.BaseTest;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
+
+import static utils.Properties.CONTACTUALLY_API_KEY;
+import static utils.Properties.FOLLOW_UP_BOSS_API_KEY;
 
 
 public class BasicFlows extends BaseTest {
@@ -120,6 +129,67 @@ public class BasicFlows extends BaseTest {
         CredentialsPage.clickOnYesAlertButton();
         Thread.sleep(500);
         CredentialsPage.clickOnOkAlertButton();
+        return true;
+    }
+
+    @Test
+    public boolean voicePadCredentials(String ID) {
+        CredentialsPage.clickOnSourceInputButton();
+        InputCredentialsPage.enterClientId(ID);
+        InputCredentialsPage.clickOnClose();
+        return true;
+    }
+
+    @Test
+    public boolean salesForceCredentials(String ID, String PWD, String TKN) throws InterruptedException {
+        CredentialsPage.clickOnTargetInputButton();
+        InputCredentialsPage.enterUser(ID);
+        InputCredentialsPage.enterPassword(PWD);
+        InputCredentialsPage.enterToken(TKN);
+        InputCredentialsPage.selectUrl2();
+        InputCredentialsPage.clickOnClose();
+        Thread.sleep(300);
+        CredentialsPage.clickOnNextButton();
+        return true;
+    }
+
+    @Test
+    public boolean followUpBossCredentials(String APIKey) {
+        CredentialsPage.clickOnTargetInputButton();
+        InputCredentialsPage.enterToken(FOLLOW_UP_BOSS_API_KEY);
+        InputCredentialsPage.clickOnVerifyButton();
+        InputCredentialsPage.clickOnClose();
+        CredentialsPage.clickOnNextButton();
+        return true;
+    }
+
+    @Test
+    public boolean contactuallyCredentials() {
+        CredentialsPage.clickOnTargetInputButton();
+        InputCredentialsPage.enterToken(CONTACTUALLY_API_KEY);
+        InputCredentialsPage.clickOnVerifyButton();
+        InputCredentialsPage.clickOnClose();
+        CredentialsPage.clickOnNextButton();
+        return true;
+    }
+
+    @Test
+    public boolean boomTownCredentials(String mail, String pwd) {
+        CredentialsPage.clickOnTargetInputButton();
+        InputCredentialsPage.clickOnBoomVerifyButton();
+        Set<String> st= driver.getWindowHandles();
+        Iterator<String> it = st.iterator();
+        String parent =  it.next();
+        String child =it.next();
+        //swtich to parent
+        System.out.println("Now switching to parent window");
+        driver.switchTo().window(child);
+        System.out.println(driver.getCurrentUrl());
+        BoomTownPage boomTown = new BoomTownPage(driver);
+        boomTown.enterEmail(mail);
+        boomTown.enterPassword(pwd);
+        boomTown.clickOnLogin();
+        //driver.switchTo().window(parent);
         return true;
     }
 }
