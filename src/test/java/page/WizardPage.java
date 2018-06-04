@@ -1,12 +1,12 @@
 package page;
 
+import Locator.WizardLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
-import Locator.WizardLocator;
 
 public class WizardPage extends BaseTest {
 
@@ -16,36 +16,36 @@ public class WizardPage extends BaseTest {
     }
 
     @FindBy( how = How.XPATH, using = WizardLocator.TITLE_PAGE)
-    WebElement title;
+    static WebElement title;
 
     @FindBy( how = How.XPATH, using = WizardLocator.WIZARD_STEP_NAVIGATOR2)
-    WebElement stepNavigator;
+    static WebElement stepNavigator;
 
     @FindBy( how = How.XPATH, using = WizardLocator.REQUEST_NEW_PROVIDER_LINK)
-    WebElement newProviderLink;
+    static WebElement newProviderLink;
 
-    @FindBy( how = How.XPATH, using = WizardLocator.SALESFORCE_ICON)
-    WebElement salesForceIcon;
+    @FindBy( how = How.XPATH, using = WizardLocator.SALESFORCE_LOGO)
+    static WebElement salesForceLogo;
 
-    @FindBy( how = How.XPATH, using = WizardLocator.FOLLOWUPBOSS_ICON)
-    WebElement followUpBossIcon;
+    @FindBy( how = How.XPATH, using = WizardLocator.FOLLOWUPBOSS_LOGO)
+    static WebElement followUpBossLogo;
 
-    @FindBy( how = How.XPATH, using = WizardLocator.CONTACTUALLY_ICON)
-    WebElement contactuallyIcon;
+    @FindBy( how = How.XPATH, using = WizardLocator.CONTACTUALLY_LOGO)
+    static WebElement contactuallyLogo;
 
-    @FindBy( how = How.XPATH, using = WizardLocator.BOOMTOWN_ICON)
-    WebElement boomTowIcon;
+    @FindBy( how = How.XPATH, using = WizardLocator.BOOMTOWN_LOGO)
+    static WebElement boomTowLogo;
 
     @FindBy( how = How.XPATH, using = WizardLocator.CANCEL_BUTTON)
-    WebElement cancelButton;
+    static WebElement cancelButton;
 
     @FindBy( how = How.XPATH, using = WizardLocator.BACK_BUTTON)
-    WebElement backButton;
+    static WebElement backButton;
 
     @FindBy( how = How.XPATH, using = WizardLocator.NEXT_BUTTON)
-    WebElement nextButton;
+    static WebElement nextButton;
 
-    public boolean clickOnStep2Navigator() {
+    public static boolean clickOnStep2Navigator() {
         System.out.print("Looking for 'Step 2 Wizard Navigator' button");
         if(stepNavigator.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -55,10 +55,11 @@ public class WizardPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnRequestNewProvider() {
+
+    public static boolean clickOnRequestNewProvider() {
         System.out.print("Looking for 'Request New Provider' button");
         if(newProviderLink.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -68,62 +69,67 @@ public class WizardPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnSalesForce() {
+
+    public static boolean clickOnSalesForceLogo() {
         System.out.print("Looking for 'SalesForce' button");
-        if(salesForceIcon.isDisplayed()) {
+        if(salesForceLogo.isDisplayed()) {
             System.out.print(" : FOUND");
-            salesForceIcon.click();
+            salesForceLogo.click();
             System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnFollowUpBoss() {
+
+    public static boolean clickOnFollowUpBossLogo() {
         System.out.print("Looking for 'FollowUp Boss' button");
-        if(followUpBossIcon.isDisplayed()) {
+        if(followUpBossLogo.isEnabled()) {
             System.out.print(" : FOUND");
-            followUpBossIcon.click();
+            followUpBossLogo.click();
             System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnContactually() {
+
+    public static boolean clickOnContactuallyLogo() {
         System.out.print("Looking for 'Contactually' button");
-        if(contactuallyIcon.isDisplayed()) {
+        if(contactuallyLogo.isDisplayed()) {
             System.out.print(" : FOUND");
-            contactuallyIcon.click();
+            contactuallyLogo.click();
             System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnBoomTown() {
+
+    public static boolean clickOnBoomTownLogo() {
         System.out.print("Looking for 'BoomTown' button");
-        if(boomTowIcon.isDisplayed()) {
+        if(boomTowLogo.isDisplayed()) {
             System.out.print(" : FOUND");
-            boomTowIcon.click();
+            boomTowLogo.click();
             System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnCancelButton() {
+
+    public static boolean clickOnCancelButton() {
         System.out.print("Looking for 'Cancel' button");
         if(cancelButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -133,10 +139,11 @@ public class WizardPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnBackButton() {
+
+    public static boolean clickOnBackButton() {
         System.out.print("Looking for 'Back' button");
         if(backButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -146,10 +153,11 @@ public class WizardPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnNextButton() {
+
+    public static boolean clickOnNextButton() {
         System.out.print("Looking for 'Next' button");
         if(nextButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -159,7 +167,7 @@ public class WizardPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 }

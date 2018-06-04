@@ -9,30 +9,31 @@ import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
 public class TopPage extends BaseTest{
+
     public TopPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
     }
 
     @FindBy( how = How.XPATH, using = TopPageLocator.GOTODASHBOARD_BUTTON)
-    WebElement goToDashboardButton;
+    static WebElement goToDashboardButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.CUSTOMERASSITANCE_BUTTON)
-    WebElement customerAssistanceButton;
+    static WebElement customerAssistanceButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
-    WebElement avatarUserButton;
+    public static WebElement avatarUserButton;
 
     @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
-    WebElement accountSettingsButton;
+    static WebElement accountSettingsButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.CHANGE_PASSWORD_BUTTON)
-    WebElement changePasswordButtton;
+    static WebElement changePasswordButtton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.LOGOUT_BUTTON)
-    WebElement logoutButton;
+    static WebElement logoutButton;
 
-    public boolean clickOnGoToDashboard() {
+    public static boolean clickOnGoToDashboard() {
         System.out.print("Looking for 'Go To Dashboard' button");
         if(goToDashboardButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -42,11 +43,11 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnCustomerAssitanceButton() {
+    public static boolean clickOnCustomerAssitanceButton() {
         System.out.print("Looking for 'Customer Assistance' button");
         if(customerAssistanceButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -56,11 +57,11 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnUserAvatarButton() {
+    public static boolean clickOnUserAvatarButton() {
         System.out.print("Looking for 'User Avatar' button");
         if(avatarUserButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -70,10 +71,11 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-    public boolean clickOnChangePasswordButton() {
+
+    public static boolean clickOnChangePasswordButton() {
         System.out.print("Looking for 'Change Password' button");
         if(changePasswordButtton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -83,11 +85,11 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnLogoutButton() {
+    public static boolean clickOnLogoutButton() {
         System.out.print("Looking for 'LogOut' button");
         if(logoutButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -97,11 +99,11 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnAccountSettings() {
+    public static boolean clickOnAccountSettings() {
         System.out.print("Looking for 'Account Settings' button");
         if(accountSettingsButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -111,22 +113,7 @@ public class TopPage extends BaseTest{
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
-/*
-    public boolean clickOn(WebElement button){
-        System.out.print("Looking for '" + button.name + "' button");
-        if(button.isDisplayed()) {
-            System.out.print(" : FOUND");
-            button.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return false;
-        }
-    }
-*/
 }

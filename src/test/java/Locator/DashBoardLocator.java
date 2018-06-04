@@ -1,11 +1,7 @@
 package Locator;
 
-import test.BaseTest;
-
-public class DashBoardLocator extends BaseTest {
-
+public class DashBoardLocator {
     public static final String TITLE_PAGE = "//h2[contains(text(), \"Dashboard\")]";
-
     public static final String ADD_NEW_SYNC_BUTTON = "//*[contains(text(), 'Add New Synch')]";
     public static final String SYNCH_STATUS = "//div[@class='ui-g-2 col-status']/span";
     public static final String SOURCE_CREDENTIALSISSUE_BUTTON = "//div[@class='ui-g-3 source-row-cell']/span[@class='fa fa-exclamation-triangle no-credentials']";
@@ -18,6 +14,5 @@ public class DashBoardLocator extends BaseTest {
     public static final String DEACTIVATE_SYNCH_LINK = "//button[contains(text(),'Deactivate')]";
     public static final String ACTIVATION_INSTRUCTIONS_SYNCH_BUTTON = "//button[contains(text(),'Activation Instructions')]";
     public static final String EDIT_SYNCH_BUTTON = "//button[contains(text(),'Edit')]";
-
 }
 

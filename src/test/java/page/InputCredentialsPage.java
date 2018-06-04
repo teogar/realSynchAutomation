@@ -1,7 +1,7 @@
 package page;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement ;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -19,37 +19,37 @@ public class InputCredentialsPage extends BaseTest {
     }
 
     @FindBy( how = How.XPATH, using = InputCredentialsLocator.CLOSE_ICON)
-    WebElement closeIcon;
+    static WebElement  closeIcon;
 
     @FindBy( how = How.XPATH, using = InputCredentialsLocator.SOURCE_IMAGE)
-    WebElement sourceImage;
+    static WebElement  sourceImage;
 
     @FindBy( how = How.NAME, using = InputCredentialsLocator.CLIENT_ID_INPUT)
-    WebElement clientIdInput;
+    static WebElement  clientIdInput;
 
     @FindBy( how = How.NAME, using = InputCredentialsLocator.USER_INPUT)
-    WebElement userInput;
+    static WebElement  userInput;
 
     @FindBy( how = How.NAME, using = InputCredentialsLocator.PASSWORD_INPUT)
-    WebElement passwordInput;
+    static WebElement  passwordInput;
 
     @FindBy( how = How.NAME, using = InputCredentialsLocator.TOKEN_INPUT)
-    WebElement tokenInput;
+    static WebElement  tokenInput;
 
     @FindBy( how = How.ID, using = InputCredentialsLocator.URL_TEST1)
-    WebElement urlTest1;
+    static WebElement  urlTest1;
 
     @FindBy( how = How.ID, using = InputCredentialsLocator.URL_TEST2)
-    WebElement urlTest2;
+    static WebElement  urlTest2;
 
     @FindBy( how = How.XPATH, using = InputCredentialsLocator.VERIFY_BUTTON)
-    WebElement verifyButton;
+    static WebElement  verifyButton;
 
     @FindBy( how = How.XPATH, using = InputCredentialsLocator.CLOSE_BUTTON)
-    WebElement closeButton;
+    static WebElement  closeButton;
 
 
-    public boolean clickCloseIcon() {
+    public static boolean  clickCloseIcon() {
         System.out.print("Looking for close icon");
         if(closeIcon.isDisplayed()) {
             System.out.println(" : DONE");
@@ -58,11 +58,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickSourceImage() {
+    public static boolean  clickSourceImage() {
         System.out.print("Looking for source image");
         if(sourceImage.isDisplayed()) {
             System.out.println(" : DONE");
@@ -71,11 +71,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean enterClientId(@Nonnull String data) {
+    public static boolean  enterClientId(@Nonnull String data) {
         System.out.print("Looking for customer ID");
         if(clientIdInput.isDisplayed()) {
             System.out.println(" : DONE");
@@ -85,11 +85,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean enterUser(@Nonnull String data) {
+    public static boolean  enterUser(@Nonnull String data) {
         System.out.print("Looking for user");
         if(userInput.isDisplayed()) {
             System.out.println(" : DONE");
@@ -99,11 +99,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean enterPassword( @Nonnull String data) {
+    public static boolean  enterPassword( @Nonnull String data) {
         System.out.print("Looking for password");
         if(passwordInput.isDisplayed()) {
             System.out.println(" : DONE");
@@ -113,11 +113,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean enterToken( @Nonnull String data) {
+    public static boolean  enterToken( @Nonnull String data) {
         System.out.print("Lookin for token");
         if(tokenInput.isDisplayed()) {
             System.out.println(" : DONE");
@@ -127,11 +127,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean selectUrl1() {
+    public static boolean  selectUrl1() {
         System.out.print("Looking for URL1");
         if(urlTest1.isDisplayed()) {
             System.out.println(" : DONE");
@@ -140,11 +140,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean selectUrl2() {
+    public static boolean  selectUrl2() {
         System.out.print("Looking for URL2");
         if(urlTest2.isDisplayed()) {
             System.out.println(" : DONE");
@@ -153,11 +153,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickVerifyButton() {
+    public static boolean  clickVerifyButton() {
         System.out.print("Looking for verify button");
         if(verifyButton.isDisplayed()) {
             System.out.println(" : DONE");
@@ -166,11 +166,11 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickCloseButton() {
+    public static boolean  clickCloseButton() {
         System.out.print("Looking for close button");
         if(closeButton.isDisplayed()) {
             System.out.println(" : DONE");
@@ -179,7 +179,7 @@ public class InputCredentialsPage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 }

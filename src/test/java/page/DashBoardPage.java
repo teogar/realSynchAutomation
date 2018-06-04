@@ -16,45 +16,45 @@ public class DashBoardPage extends BaseTest {
     }
 
     @FindBy( how = How.XPATH, using = DashBoardLocator.TITLE_PAGE)
-    WebElement title;
+    static WebElement title;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.ADD_NEW_SYNC_BUTTON)
-    WebElement addNewSynchButton;
+    static WebElement addNewSynchButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.SOURCE_NAME)
-    WebElement sourceName;
+    static WebElement sourceName;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.TARGET_NAME)
-    WebElement targetName;
+    static WebElement targetName;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.CALENDAR_ICON)
-    WebElement calendarButton;
+    static WebElement calendarButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.ELIPSIS_BUTTON)
-    WebElement elipsisButton;
+    static WebElement elipsisButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATE_SYNCH_BUTTON)
-    WebElement activateSynchLink;
+    static WebElement activateSynchLink;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.DEACTIVATE_SYNCH_LINK)
-    WebElement deactivateSyncLink;
+    static WebElement deactivateSyncLink;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.SYNCH_STATUS)
-    WebElement synchStatus;
+    static WebElement synchStatus;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.SOURCE_CREDENTIALSISSUE_BUTTON)
-    WebElement sourceCredentialsIssueButton;
+    static WebElement sourceCredentialsIssueButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.TARGET_CREDENTIALSISSUE_BUTTON)
-    WebElement targetCredentialsIssueButton;
+    static WebElement targetCredentialsIssueButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_BUTTON)
-    WebElement activationInstructionsButton;
+    static WebElement activationInstructionsButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_BUTTON)
-    WebElement editSynchButton;
+    static WebElement editSynchButton;
 
-    public String getSynchStatusText() {
+    public static String getSynchStatusText() {
         System.out.print("Looking for 'Synch Status' text");
         if(synchStatus.isDisplayed()) {
             System.out.println(" : FOUND & RETRIEVED");
@@ -66,7 +66,7 @@ public class DashBoardPage extends BaseTest {
         }
     }
 
-    public String getSourceNameText() {
+    public static String getSourceNameText() {
         System.out.print("Looking for 'Source name' text");
         if(sourceName.isDisplayed()) {
             System.out.println(" : FOUND & RETRIEVED");
@@ -78,7 +78,7 @@ public class DashBoardPage extends BaseTest {
         }
     }
   
-    public String getTargetNameText() {
+    public static String getTargetNameText() {
         System.out.print("Looking for 'Target name' text");
         if(targetName.isDisplayed()) {
             System.out.println(" : FOUND & RETRIEVED");
@@ -90,129 +90,129 @@ public class DashBoardPage extends BaseTest {
         }
     }
 
-    public boolean clickOnAddNewSynchButton(){
+    public static boolean clickOnAddNewSynchButton(){
         System.out.print("Looking for 'Add new synch button' button");
         if(addNewSynchButton.isDisplayed()) {
             System.out.print(" : FOUND");
             addNewSynchButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickOnCalendarButton() {
+    public static boolean clickOnCalendarButton() {
         System.out.print("Looking for 'Calendar' button");
         if(calendarButton.isDisplayed()) {
             System.out.print(" : FOUND");
             calendarButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnElipsis() {
+    public static boolean clickOnElipsisIcon() {
         System.out.print("Looking for 'Elipsis' button");
         if(elipsisButton.isDisplayed()) {
             System.out.print(" : FOUND");
             elipsisButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnActivateSynch() {
+    public static boolean clickOnActivateSynchLink() {
         System.out.print("Looking for 'Activate Synch' button");
         if(activateSynchLink.isDisplayed()) {
             System.out.print(" : FOUND");
             activateSynchLink.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnDeactivateSynchLink() {
+    public static boolean clickOnDeactivateSynchLink() {
         System.out.print("Looking for 'Submit' button");
-        if(deactivateSynchLink.isDisplayed()) {
+        if(deactivateSyncLink.isDisplayed()) {
             System.out.print(" : FOUND");
-            deactivateSynchLink.click();
-            System.out.print(" & CLICKED");
+            deactivateSyncLink.click();
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnSourceCredentialsIssueButton() {
+    public static boolean clickOnSourceCredentialsIssueButton() {
         System.out.print("Looking for 'Source Credentials Issue' button");
         if(sourceCredentialsIssueButton.isDisplayed()) {
             System.out.print(" : FOUND");
             sourceCredentialsIssueButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnTargetCredentialsIssue() {
+    public static boolean clickOnTargetCredentialsIssueButton() {
         System.out.print("Looking for 'Target Credentials Issue' button");
         if(targetCredentialsIssueButton.isDisplayed()) {
             System.out.print(" : FOUND");
             targetCredentialsIssueButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnActivationInstructions() {
+    public static boolean clickOnActivationInstructionsLink() {
         System.out.print("Looking for 'Activation Instructions' button");
         if(activationInstructionsButton.isDisplayed()) {
-            System.out.print(" : FOUND");
+            System.out.println(" : FOUND");
             activationInstructionsButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
   
-    public boolean clickOnEditSynch() {
+    public static boolean clickOnEditSynchLink() {
         System.out.print("Looking for 'Edit Synch' button");
         if(editSynchButton.isDisplayed()) {
             System.out.print(" : FOUND");
             editSynchButton.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 }

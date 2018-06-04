@@ -1,8 +1,6 @@
 package Locator;
 
-import test.BaseTest;
-
-public class FinishLocator extends BaseTest {
+public class FinishLocator {
     public static final String TITLE_PAGE = "Real Synch";
     public static final String WIZARD_STEP_NAVIGATOR3 = " ";
     public static final String SOURCE_LOGO = "/images/applications/voicepad.JPG";

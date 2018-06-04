@@ -3,8 +3,6 @@ package utils;
 public class Properties {
 	public static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
 	public static final String GECKO_DRIVER_PROPERTY = "webdriver.gecko.driver" ;
-	public static final long TIME_OFF_5 = 5000;
-	public static final long TIME_OFF_8 = 8000;
 	public static final String REGISTRATION_NAME = "Alan";
 	public static final String REGISTRATION_LAST_NAME = "Walker";
 	public static final String REGISTRATION_MAIL = "pete222@yopmail.com";
@@ -20,14 +18,16 @@ public class Properties {
 	public static final String VOICE_PAD_CLIENT_ID = "1680";
 	public static final String VOICE_PAD_USER = "teoteo999@mailinator.com";
 	public static final String VOICE_PAD_PWD = "teoteo999@mailinator.com";
+	public static final long TIME_OFF_1 = 1000;
+	public static final long TIME_OFF_2 = 2000;
 	public static final long TIME_OFF_3 = 3000;
-	public static final long TIME_OFF_15 = 15000;
+	public static final long TIME_OFF_4 = 4000;
+	public static final long TIME_OFF_5 = 5000;
 	public static final long TIME_OFF_6 = 6000;
+	public static final long TIME_OFF_7 = 7000;
+	public static final long TIME_OFF_8 = 8000;
 	public static final long TIME_OFF_9 = 9000;
 	public static final long TIME_OFF_10 = 10000;
+	public static final long TIME_OFF_15 = 15000;
 	public static final long TIME_OFF_16 = 16000;
-	public static final long TIME_OFF_1 = 1000;
-    public static final long TIME_OFF_2 = 2000;
-    public static final long TIME_OFF_7 = 7000;
-    public static final long TIME_OFF_4 = 4000;
 }

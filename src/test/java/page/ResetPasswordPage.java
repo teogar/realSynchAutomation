@@ -1,5 +1,6 @@
 package page;
-import Locator.ForgotPasswordLocator;
+
+import Locator.ResetPaswordLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,30 +8,47 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-public class ForgotPasswordPage extends BaseTest {
+public class ResetPasswordPage extends BaseTest {
 
-    public ForgotPasswordPage(WebDriver driver) {
+    public ResetPasswordPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
     }
 
-    @FindBy(how = How.NAME, using = ForgotPasswordLocator.USER_NAME_INPUT)
-    static WebElement userName;
+    @FindBy( how = How.XPATH, using = ResetPaswordLocator.TITLE_PAGE)
+    static WebElement titlePage;
 
-    @FindBy(how = How.XPATH,using = ForgotPasswordLocator.CANCEL_BUTTON)
+    @FindBy( how = How.XPATH, using = ResetPaswordLocator.NEW_PASSWORD_INPUT)
+    static WebElement newPasswordInput;
+
+    @FindBy( how = How.XPATH, using = ResetPaswordLocator.CONFIRM_PASSWORD_INPUT)
+    static WebElement confirmPasswordInput;
+
+    @FindBy( how = How.XPATH, using = ResetPaswordLocator.CANCEL_BUTTON)
     static WebElement cancelButton;
 
-    @FindBy(how = How.XPATH, using = ForgotPasswordLocator.SUBMIT_BUTTON)
+    @FindBy( how = How.XPATH, using = ResetPaswordLocator.SUBMIT_BUTTON)
     static WebElement submitButton;
 
-    @FindBy(how = How.XPATH, using = ForgotPasswordLocator.OK_BUTTON)
-    static WebElement okButton;
-
-    public static boolean sendUserName(String username) {
-        System.out.print("Looking for 'User Name' text box");
-        if(userName.isDisplayed()) {
+    public static boolean sendNewPassword(String newPassword) {
+        System.out.print("Looking for 'New Password' text box");
+        if(newPasswordInput.isDisplayed()) {
             System.out.print(" : FOUND");
-            userName.sendKeys(username);
+            newPasswordInput.sendKeys(newPassword);
+            System.out.println(" & FILLED");
+            return true;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static boolean sendConfirmPassword(String confirmPassword) {
+        System.out.print("Looking for 'Confirm Password' text box");
+        if(confirmPasswordInput.isDisplayed()) {
+            System.out.print(" : FOUND");
+            confirmPasswordInput.sendKeys(confirmPassword);
             System.out.println(" & SENT");
             return true;
         }
@@ -59,20 +77,6 @@ public class ForgotPasswordPage extends BaseTest {
         if(submitButton.isDisplayed()) {
             System.out.print(" : FOUND");
             submitButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-
-    public static boolean clickOnOkButton() {
-        System.out.print("Looking for 'OK' button");
-        if(okButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            okButton.click();
             System.out.println(" & CLICKED");
             return true;
         }

@@ -1,40 +1,66 @@
 package test;
 
 import org.testng.annotations.Test;
-import utils.Properties;
+import utils.Flows.BasicFlows;
 
-public class RealGeeksTest extends BaseTest{
-    @Test(groups = "RealGeeks.SaveDraftWithSalesForce")
-    public void SaveDraftWithSalesForce(){
-        System.out.println("Init 'RealGeeks.SaveDraftWithSalesForce' test");
-        try {
-            super.loginpage.sendUsername(Properties.AUTOMATION_USERNAME);
-            super.loginpage.sendPassword(Properties.AUTOMATION_PASSWORD);
-            super.loginpage.clickOnSubmitButton();
+import static page.DashBoardPage.clickOnAddNewSynchButton;
+import static utils.Properties.AUTOMATION_PASSWORD;
+import static utils.Properties.AUTOMATION_USERNAME;
 
-
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-        }
-
-    }
-    @Test(groups = "RealGeeks.SaveDraftWithFollowUpBoss")
-    public void SaveDraftWithFollowUpBoss(){
-        System.out.println("Init 'RealGeeks.SaveDraftWithFollowUpBoss' test");
-    }
-    @Test(groups = "RealGeeks.SaveDraftWithContactually")
-    public void SaveDraftWithContactually(){
-        System.out.println("Init 'RealGeeks.SaveDraftWithContactually' test");
-    }
-    @Test(groups = "RealGeeks.SaveDraftWithBoomTown")
-    public void SaveDraftWithBoomTown(){
-        System.out.println("Init 'RealGeeks.SaveDraftWithBoomTown' test");
+public class RealGeeksTest extends BasicFlows {
+    /**
+     * Desription: Choose RealGeeks as source and SalesForce as target
+     * this flow saves it as draft
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2SalesForceAsDraft() throws InterruptedException {
+        System.out.println("RealGeeks vs SalesForce saved as Draft");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("SalesForce");
+        saveSynchAsDraft();
     }
 
-    @Test(groups = "RealGeeks.ActiveSynchMissingCredentials")
-    public void ActiveSynchMissingCredentials(){
-        System.out.println("Init 'RealGeeks.ActiveSynchMissingCredentials' test");
+    /**
+     * Desription: Choose RealGeeks as source and FollowUpBoss as target
+     * this flow saves it as draft
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2FollowUpBossAsDraft() throws InterruptedException {
+        System.out.println("RealGeeks vs FollowUpBoss saved as Draft");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("FollowUpBoss");
+        saveSynchAsDraft();
     }
 
+    /**
+     * Desription: Choose VoicePad as source and Contactually as target
+     * this flow saves it as draft
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2ContactuallyAsDraft() throws InterruptedException {
+        System.out.println("RealGeeks vs Contactually saved as Draft");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("Contactually");
+        saveSynchAsDraft();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and BoomTown as target
+     * this flow saves it as draft
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2BoomTownAsDraft() throws InterruptedException {
+        System.out.println("RealGeeks vs BoomTown saved as Draft");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("BoomTown");
+        saveSynchAsDraft();
+    }
 }
-

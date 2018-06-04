@@ -1,72 +1,104 @@
 package page;
 
+import Locator.LoginLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
-import utils.Locators;
-import utils.Properties;
-
-import static org.testng.Assert.assertTrue;
 
 public class LoginPage extends BaseTest {
+
     public WebDriver pageDriver;
-
-    @FindBy(how = How.XPATH, using = Locators.RS_NAME_BOX)
-    WebElement userName;
-
-    @FindBy(how = How.XPATH, using = Locators.RS_PSW_BOX)
-    WebElement psw;
-
-    @FindBy(how = How.XPATH,using = Locators.RE_SINGIN_BTN)
-    WebElement singInBtn;
 
     public LoginPage(WebDriver driver) {
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
     }
 
-    public boolean logElements() {
+    @FindBy( how = How.XPATH, using = LoginLocator.TITLE_PAGE)
+    static WebElement title;
 
-        /**
-         * Assertions "The login elements are in place "
-         */
+    @FindBy( how = How.XPATH, using = LoginLocator.USER_INPUT)
+    static WebElement userNameInput;
 
-        if(userName.isDisplayed()
-                && psw.isDisplayed()
-                && singInBtn.isDisplayed()) {
-            System.out.println("The Elements are Displayed and allows Interactions");
+    @FindBy( how = How.XPATH, using = LoginLocator.PASSWORD_INPUT)
+    static WebElement passwordInput;
+
+    @FindBy( how = How.XPATH, using = LoginLocator.FORGOT_PASSWORD_LINK)
+    static WebElement forgotPasswordLink;
+
+    @FindBy( how = How.XPATH, using = LoginLocator.REGISTER_LINK)
+    static WebElement RegisterLink;
+
+    @FindBy( how = How.XPATH, using = LoginLocator.SUBMIT_BUTTON)
+    static WebElement SubmitLink;
+
+    public static boolean sendUsername(String username) {
+        System.out.print("Looking for 'Username' input");
+        if(userNameInput.isDisplayed()) {
+            System.out.print(" : FOUND");
+            userNameInput.sendKeys(username);
+            System.out.println(" & STRING SENT");
             return true;
-        } else {
-            System.out.println("Are Not Able to Interact");
-            System.exit(-1);
-            return false;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
         }
     }
 
-    /**
-     * The login elements, triggers events
-     */
-
-    public void Login(String user, String password) {
-        assertTrue(logElements());
-
-        userName.clear();
-        userName.sendKeys(user);
-        try {
-            Thread.sleep(Properties.TIME_OFF_3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    public static boolean sendPassword(String password) {
+        System.out.print("Looking for 'Password' input");
+        if(passwordInput.isDisplayed()) {
+            System.out.print(" : FOUND");
+            passwordInput.sendKeys(password);
+            System.out.println(" & STRING SENT");
+            return true;
         }
-        psw.clear();
-        psw.sendKeys(password);
-        singInBtn.click();
-        try {
-            Thread.sleep(Properties.TIME_OFF_3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static boolean clickOnRegisterLink() {
+        System.out.print("Looking for register link");
+        if(RegisterLink.isDisplayed()) {
+            System.out.println(" : DONE");
+            RegisterLink.click();
+            return true;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static boolean clickOnForgotLink() {
+        System.out.print("Looking for forgot password link");
+        if(forgotPasswordLink.isDisplayed()) {
+            System.out.println(" : DONE");
+            forgotPasswordLink.click();
+            return true;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static boolean clickSubmitButton() {
+        System.out.print("Looking for submit button");
+        if(SubmitLink.isDisplayed()) {
+            System.out.println(" : DONE");
+            SubmitLink.click();
+            return true;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
         }
     }
 }
