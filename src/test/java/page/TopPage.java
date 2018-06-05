@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
 public class TopPage extends BaseTest{
+
     public TopPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
@@ -21,7 +22,7 @@ public class TopPage extends BaseTest{
     static WebElement customerAssistanceButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
-    static WebElement avatarUserButton;
+    public static WebElement avatarUserButton;
 
     @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
     static WebElement accountSettingsButton;
@@ -35,7 +36,6 @@ public class TopPage extends BaseTest{
     @FindBy(how = How.XPATH, using = TopPageLocator.OK_BUTTTON)
     static WebElement okButton;
 
-    public static void clickOnGoToDashboard() {
         System.out.print("Looking for 'Go To Dashboard' button");
         if(goToDashboardButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -48,7 +48,7 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public boolean clickOnCustomerAssitanceButton() {
+    public static boolean clickOnCustomerAssitanceButton() {
         System.out.print("Looking for 'Customer Assistance' button");
         if(customerAssistanceButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -62,7 +62,7 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public boolean clickOnUserAvatarButton() {
+    public static boolean clickOnUserAvatarButton() {
         System.out.print("Looking for 'User Avatar' button");
         if(avatarUserButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -74,9 +74,9 @@ public class TopPage extends BaseTest{
             throw new RuntimeException();
         }
     }
-  
+
     public static boolean clickOnChangePasswordButton() {
-      System.out.print("Looking for 'Change Password' button");
+        System.out.print("Looking for 'Change Password' button");
         if(changePasswordButtton.isDisplayed()) {
             System.out.print(" : FOUND");
             changePasswordButtton.click();
@@ -89,12 +89,13 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public static void clickOnLogoutButton() {
-            System.out.print("Looking for 'Ok' button");
-            if(logoutButton.isDisplayed()) {
-                System.out.print(" : FOUND");
-                okButton.click();
-                System.out.println(" & CLICKED");
+    public static boolean clickOnLogoutButton() {
+        System.out.print("Looking for 'LogOut' button");
+        if(logoutButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            logoutButton.click();
+            System.out.println(" & CLICKED");
+            return true;
             }
         }
         else {
@@ -103,12 +104,13 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public static void clickOnAccountSettings() {
+    public static boolean clickOnAccountSettings() {
         System.out.print("Looking for 'Account Settings' button");
         if(accountSettingsButton.isDisplayed()) {
             System.out.print(" : FOUND");
             accountSettingsButton.click();
             System.out.println(" & CLICKED");
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");

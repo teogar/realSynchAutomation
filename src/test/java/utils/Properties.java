@@ -20,4 +20,6 @@ public class Properties {
 	public static final String VOICE_PAD_CLIENT_ID = "1680";
 	public static final String VOICE_PAD_USER = "teoteo999@mailinator.com";
 	public static final String VOICE_PAD_PWD = "teoteo999@mailinator.com";
+	public static final String BOOM_TOWN_EMAIL = "franciscojavier.corona@outlook.com";
+	public static final String BOOM_TOWN_PWD = "tFJC0r0n4";
 }

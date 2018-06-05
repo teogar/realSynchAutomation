@@ -1,7 +1,7 @@
 package Locator;
+
 import test.BaseTest;
 
-//Target Selection for Synch
 public class WizardLocator extends BaseTest {
 
     public static final String TITLE_PAGE = "//h2[contains(text(), \"New Synch\")]";
@@ -12,4 +12,3 @@ public class WizardLocator extends BaseTest {
     public static final String CONTACTUALLY_ICON = "//img[@src='/images/applications/contactually.JPG']";
     public static final String BOOMTOWN_ICON = "//img[@src='/images/applications/boomtown.JPG']";
 }
-

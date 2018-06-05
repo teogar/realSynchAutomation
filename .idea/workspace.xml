@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25d7f2b3-cce7-4b3d-ba22-029104cf01c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$ff$/src/test/java/page/VoicePadPage.java" afterPath="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" afterPath="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Locator/BoomTownLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/BoomTownPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Properties.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,13 +24,30 @@
     <favorites_list name="RealSynch" />
   </component>
   <component name="FileEditorManager">
-
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+      <file leaf-file-name="DashBoardPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1282">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="272">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CredentialsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,20 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicFlows.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/BasicFlows.java">
+      <file leaf-file-name="VoicePadTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangePasswordPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/page/ChangePasswordPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+            <state relative-caret-position="405">
+              <caret line="141" column="27" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,71 +67,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangePasswordLocator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/ChangePasswordLocator.java">
+      <file leaf-file-name="BasicFlows.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+            <state relative-caret-position="283">
+              <caret line="178" column="52" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentMethodPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/page/PaymentMethodPage.java">
+      <file leaf-file-name="InputCredentialsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+            <state relative-caret-position="456">
+              <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1782#1783#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentMethodLocator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/PaymentMethodLocator.java">
+      <file leaf-file-name="InputCredentialsLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountSettingsLocator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/AccountSettingsLocator.java">
+      <file leaf-file-name="BoomTownPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/BoomTownPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountSettingsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/page/AccountSettingsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            <state relative-caret-position="78">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopPageLocator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/TopPageLocator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -177,18 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/PropertyBasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DeactivateSynchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/VoicePadPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SalesForcePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/NewSynchPage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RealSynchTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ShowCase.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/pom1.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/page/ShowCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/scIdXTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/PropertyBasePage.java" />
@@ -211,25 +184,12 @@
         <option value="$PROJECT_DIR$/src/test/java/page/DashBoradPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/InputSourceCredentialsLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/Dashboard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Locator/BottomPageLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/DashBoardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealSynchTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
@@ -239,14 +199,20 @@
         <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/DashBoardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Properties.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Locator/BoomTownLocator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/BoomTownPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
       </list>
     </option>
   </component>
@@ -269,11 +235,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-675" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-663" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -283,92 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Locator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-              <item name="Locator" type="cbb8eebc:String" user="Locator" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-              <item name="page" type="cbb8eebc:String" user="page" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-              <item name="test" type="cbb8eebc:String" user="test" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-              <item name="utils" type="cbb8eebc:String" user="utils" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="RealSynch" type="cbb8eebc:String" user="RealSynch" />
-              <item name="src/test/resources" type="cbb8eebc:String" user="src/test/resources" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope">
@@ -416,6 +296,53 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Locator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Flows" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,8 +358,6 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="utils" />
-      <recent name="test" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -452,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BasicTests.addNewPaymentMethod">
+  <component name="RunManager" selected="TestNG.VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -460,10 +385,8 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -479,15 +402,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BasicTests.addNewPaymentMethod" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicFlows.boomTownCredentials" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RealSynch" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.Flows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BasicTests" />
-      <option name="METHOD_NAME" value="addNewPaymentMethod" />
+      <option name="PACKAGE_NAME" value="utils.Flows" />
+      <option name="MAIN_CLASS_NAME" value="utils.Flows.BasicFlows" />
+      <option name="METHOD_NAME" value="boomTownCredentials" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -503,15 +431,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="BasicTests.changePassword" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SiDxTest.SiDx2SalesForceWCredentialsAsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RealSynch" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BasicTests" />
-      <option name="METHOD_NAME" value="changePassword" />
+      <option name="MAIN_CLASS_NAME" value="test.SiDxTest" />
+      <option name="METHOD_NAME" value="SiDx2SalesForceWCredentialsAsDraft" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -527,15 +460,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="BasicTests.login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RealSynch" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BasicTests" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="test.VoicePadTest" />
+      <option name="METHOD_NAME" value="VoicePad2BoomTownWCredentialsAsDraft" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -551,15 +489,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="BasicTests.logout" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VoicePadTest.VoicePad2FollowUpBossWCredentialsAsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RealSynch" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BasicTests" />
-      <option name="METHOD_NAME" value="logout" />
+      <option name="MAIN_CLASS_NAME" value="test.VoicePadTest" />
+      <option name="METHOD_NAME" value="VoicePad2FollowUpBossWCredentialsAsDraft" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -575,15 +518,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="RealGeeksTest.SaveDraftWithSalesForce" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VoicePadTest.VoicePad2SalesForceWCredentialsAsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RealSynch" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.RealGeeksTest" />
-      <option name="METHOD_NAME" value="SaveDraftWithSalesForce" />
+      <option name="MAIN_CLASS_NAME" value="test.VoicePadTest" />
+      <option name="METHOD_NAME" value="VoicePad2SalesForceWCredentialsAsDraft" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -600,7 +548,6 @@
       <listeners />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -622,20 +569,26 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <list>
-      <item itemvalue="TestNG.RealGeeksTest.SaveDraftWithSalesForce" />
-      <item itemvalue="TestNG.BasicTests.login" />
-      <item itemvalue="TestNG.BasicTests.logout" />
-      <item itemvalue="TestNG.BasicTests.changePassword" />
-      <item itemvalue="TestNG.BasicTests.addNewPaymentMethod" />
+      <item itemvalue="TestNG.SiDxTest.SiDx2SalesForceWCredentialsAsDraft" />
+      <item itemvalue="TestNG.VoicePadTest.VoicePad2SalesForceWCredentialsAsDraft" />
+      <item itemvalue="TestNG.VoicePadTest.VoicePad2FollowUpBossWCredentialsAsDraft" />
+      <item itemvalue="TestNG.VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" />
+      <item itemvalue="TestNG.BasicFlows.boomTownCredentials" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BasicTests.addNewPaymentMethod" />
-        <item itemvalue="TestNG.BasicTests.changePassword" />
-        <item itemvalue="TestNG.BasicTests.logout" />
-        <item itemvalue="TestNG.BasicTests.login" />
-        <item itemvalue="TestNG.RealGeeksTest.SaveDraftWithSalesForce" />
+        <item itemvalue="TestNG.VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" />
+        <item itemvalue="TestNG.BasicFlows.boomTownCredentials" />
+        <item itemvalue="TestNG.VoicePadTest.VoicePad2FollowUpBossWCredentialsAsDraft" />
+        <item itemvalue="TestNG.VoicePadTest.VoicePad2SalesForceWCredentialsAsDraft" />
+        <item itemvalue="TestNG.SiDxTest.SiDx2SalesForceWCredentialsAsDraft" />
       </list>
     </recent_temporary>
   </component>
@@ -661,35 +614,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RealGeeksTest_SaveDraftWithSalesForce - 2018.06.01 at 09h 32m 33s.xml">
-      <configuration name="RealGeeksTest.SaveDraftWithSalesForce" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 12m 29s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RealGeeksTest_SaveDraftWithSalesForce - 2018.06.01 at 09h 36m 03s.xml">
-      <configuration name="RealGeeksTest.SaveDraftWithSalesForce" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 16m 42s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_login - 2018.06.01 at 14h 27m 53s.xml">
-      <configuration name="BasicTests.login" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 41m 09s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_logout - 2018.06.01 at 14h 30m 11s.xml">
-      <configuration name="BasicTests.logout" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 44m 16s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_logout - 2018.06.01 at 14h 32m 44s.xml">
-      <configuration name="BasicTests.logout" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 49m 20s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_changePassword - 2018.06.01 at 14h 36m 11s.xml">
-      <configuration name="BasicTests.changePassword" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 53m 24s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_changePassword - 2018.06.01 at 14h 37m 42s.xml">
-      <configuration name="BasicTests.changePassword" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 16h 57m 52s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_addNewPaymentMethod - 2018.06.01 at 15h 24m 00s.xml">
-      <configuration name="BasicTests.addNewPaymentMethod" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 17h 00m 57s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_addNewPaymentMethod - 2018.06.01 at 15h 27m 11s.xml">
-      <configuration name="BasicTests.addNewPaymentMethod" configurationId="TestNG" />
+    <history-entry file="BasicFlows_boomTownCredentials - 2018.06.04 at 17h 11m 00s.xml">
+      <configuration name="BasicFlows.boomTownCredentials" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BasicTests_addNewPaymentMethod - 2018.06.01 at 15h 31m 34s.xml">
-      <configuration name="BasicTests.addNewPaymentMethod" configurationId="TestNG" />
+    <history-entry file="VoicePadTest_VoicePad2BoomTownWCredentialsAsDraft - 2018.06.04 at 17h 12m 10s.xml">
+      <configuration name="VoicePadTest.VoicePad2BoomTownWCredentialsAsDraft" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -702,35 +655,57 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-675" width="1936" height="1056" extended-state="6" />
+    <frame x="-663" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4984375" weight="0.32897604" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.39978212" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49895832" visible="true" weight="0.32897604" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1640625" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35208333" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2140575" />
+      <window_info id="Learn" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.47712418" />
+      <window_info anchor="right" id="Fabric" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Fabric" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22838138" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Learn" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -768,259 +743,117 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/page/LoginPage1.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="59" />
+      <option name="time" value="53" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="TestNG">
-        <watch expression="loginpage" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/NewSynchPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.7.1/selenium-api-3.7.1.jar!/org/openqa/selenium/JavascriptExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.7.1/selenium-support-3.7.1.jar!/org/openqa/selenium/support/FindBy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LogoutPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/UpadateCredsPage.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0.jar!/com/google/common/base/Preconditions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="200">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ModifyPlanPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTost.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/UpdateCredsPage.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-848">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+        <state relative-caret-position="1088">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.7.1/selenium-support-3.7.1.jar!/org/openqa/selenium/support/PageFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
+    <entry file="file://$PROJECT_DIR$/pom1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/FinishPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/SalesForcePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="109" column="24" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="66" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="1071">
+          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="457">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/PropertyBasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/SalesForcePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/PropertyBasePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/HomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/NewSynchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="165" column="6" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2-sources.jar!/org/testng/SuiteRunnerWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/RealSynchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/NewSynchPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="1190">
+          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LogoutPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LogoutPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/RealSRegisterPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/Dashboard.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="-263">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SignUpLocator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Locators.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/SiDxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="23" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="99" column="24" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="99" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/RealSRegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        <state relative-caret-position="452">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1030,146 +863,114 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="60" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="60" />
+        <state relative-caret-position="-1044">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPopupPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/FinishPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/Dashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="24" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2234">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="50" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/TopPageLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1282">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/AccountSettingsLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/AccountSettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/ChangePasswordLocator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/ForgotPasswordLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/CredentialsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/BoomTownLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/BoomTownPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/InputCredentialsLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+          <folding>
+            <element signature="e#1782#1783#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="178" column="52" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+        <state relative-caret-position="405">
+          <caret line="141" column="27" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/PaymentMethodPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/PaymentMethodLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/BasicFlows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1178,6 +979,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>JDK_1.8.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -16,36 +16,36 @@ public class SourcePage extends BaseTest {
     }
 
     @FindBy( how = How.XPATH, using = SourceLocator.TITLE_PAGE)
-    WebElement title;
+    static WebElement title;
 
     @FindBy( how = How.XPATH, using = SourceLocator.WIZARD_STEP_NAVIGATOR1)
-    WebElement stepNavigator;
+    public static WebElement stepNavigator;
 
     @FindBy( how = How.XPATH, using = SourceLocator.REQUEST_NEW_PROVIDER_LINK)
-    WebElement newProviderLink;
+    static WebElement newProviderLink;
 
     @FindBy( how = How.XPATH, using = SourceLocator.VOICEPAD_LOGO)
-    WebElement voicePadLogo;
+    static WebElement voicePadLogo;
 
     @FindBy( how = How.XPATH, using = SourceLocator.BR360_LOGO)
-    WebElement Br360Logo;
+    static WebElement Br360Logo;
 
     @FindBy( how = How.XPATH, using = SourceLocator.REAL_GEEKS_LOGO)
-    WebElement RealgeeksLogo;
+    static WebElement RealgeeksLogo;
 
     @FindBy( how = How.XPATH, using = SourceLocator.SIDX_LOGO)
-    WebElement SidxLogo;
+    static WebElement SidxLogo;
 
     @FindBy( how = How.XPATH, using = SourceLocator.CANCEL_BUTTON)
-    WebElement cancelButton;
+    static WebElement cancelButton;
 
     @FindBy( how = How.XPATH, using = SourceLocator.BACK_BUTTON)
-    WebElement backButton;
+    static WebElement backButton;
 
     @FindBy( how = How.XPATH, using = SourceLocator.NEXT_BUTTON)
-    WebElement nextButton;
+    static WebElement nextButton;
 
-    public boolean clickRequestNewProvider() {
+    public static boolean clickOnRequestNewProvider() {
         System.out.print("Looking for new provider link");
         if(newProviderLink.isDisplayed()) {
             System.out.println(" : DONE");
@@ -54,11 +54,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickVoicePadLogo() {
+    public static boolean clickOnVoicePadLogo() {
         System.out.print("Looking for voice pad logo");
         if(voicePadLogo.isDisplayed()) {
             System.out.println(" : DONE");
@@ -67,11 +67,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickBr360Logo() {
+    public static boolean clickOnBr360Logo() {
         System.out.print("Looking for Br360 pad logo");
         if(Br360Logo.isDisplayed()) {
             System.out.println(" : DONE");
@@ -80,11 +80,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickRealGeekLogo() {
+    public static boolean clickOnRealGeekLogo() {
         System.out.print("Looking for real geek Logo");
         if(RealgeeksLogo.isDisplayed()) {
             System.out.println(" : DONE");
@@ -93,11 +93,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickSidxLogo() {
+    public static boolean clickOnSidxLogo() {
         System.out.print("Looking for SiDX logo");
         if(SidxLogo.isDisplayed()) {
             System.out.println(" : DONE");
@@ -106,11 +106,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickCancelButton() {
+    public static boolean clickOnCancelButton() {
         System.out.print("Looking for cancel button");
         if(cancelButton.isDisplayed()) {
             System.out.println(" : DONE");
@@ -119,11 +119,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickBackButton() {
+    public static boolean clickOnBackButton() {
         System.out.print("Looking for back button");
         if(backButton.isDisplayed()) {
             System.out.println(" : DONE");
@@ -132,11 +132,11 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 
-    public boolean clickNextButton() {
+    public static boolean clickOnNextButton() {
         System.out.print("Looking for next button");
         if(nextButton.isDisplayed()) {
             System.out.println(" : DONE");
@@ -145,7 +145,7 @@ public class SourcePage extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            return false;
+            throw new RuntimeException();
         }
     }
 }
