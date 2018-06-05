@@ -5,17 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import page.BoomTownPage;
-import page.CredentialsPage;
-import page.DashBoardPage;
-import page.InputCredentialsPage;
-import page.LoginPage;
-import page.ResetPasswordPage;
-import page.SourcePage;
-import page.TopPage;
-import page.WizardPage;
 import test.BaseTest;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -27,30 +18,30 @@ public class BasicFlows extends BaseTest {
 
     @Test
     public boolean login(String user, String pwd) {
-        LoginPage.sendUsername(user);
-        LoginPage.sendPassword(pwd);
-        LoginPage.clickSubmitButton();
+        loginPage.sendUsername(user);
+        loginPage.sendPassword(pwd);
+        loginPage.clickOnSubmitButton();
         return true;
     }
 
     @Test
     public boolean logout() {
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnLogoutButton();
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnLogoutButton();
         return true;
     }
 
     @Test
     public boolean modifyPassword(String pwd, String confirmpwd) {
-        TopPage.clickOnUserAvatarButton();
-        ResetPasswordPage.sendNewPassword(pwd);
-        ResetPasswordPage.sendConfirmPassword(confirmpwd);
+        topPage.clickOnUserAvatarButton();
+        resetPasswordPage.sendNewPassword(pwd);
+        resetPasswordPage.sendConfirmPassword(confirmpwd);
         return true;
     }
 
     @Test
     public boolean initSynch() {
-        DashBoardPage.clickOnAddNewSynchButton();
+        dashBoardPage.clickOnAddNewSynchButton();
         return true;
     }
 
@@ -62,22 +53,22 @@ public class BasicFlows extends BaseTest {
 
         switch (source) {
             case "Br360":
-                SourcePage.clickOnBr360Logo();
+                sourcePage.clickOnBr360Logo();
                 break;
             case "VoicePad":
-                SourcePage.clickOnVoicePadLogo();
+                sourcePage.clickOnVoicePadLogo();
                 break;
             case "RealGeeks":
-                SourcePage.clickOnRealGeekLogo();
+                sourcePage.clickOnRealGeekLogo();
                 break;
             case "SiDx":
-                SourcePage.clickOnSidxLogo();
+                sourcePage.clickOnSidxLogo();
                 break;
             default:
                 System.out.println("Source not found, please check your source name");
                 return false;
         }
-        SourcePage.clickOnNextButton();
+        sourcePage.clickOnNextButton();
         return true;
     }
 
@@ -89,16 +80,16 @@ public class BasicFlows extends BaseTest {
 
         switch (target) {
             case "SalesForce":
-                WizardPage.clickOnSalesForceLogo();
+                wizardPage.clickOnSalesForceLogo();
                 break;
             case "FollowUpBoss":
-                WizardPage.clickOnFollowUpBossLogo();
+                wizardPage.clickOnFollowUpBossLogo();
                 break;
             case "Contactually":
-                WizardPage.clickOnContactuallyLogo();
+                wizardPage.clickOnContactuallyLogo();
                 break;
             case "BoomTown":
-                WizardPage.clickOnBoomTownLogo();
+                wizardPage.clickOnBoomTownLogo();
                 break;
             default:
                 System.out.println("Target not found, please check your target name");
@@ -109,74 +100,74 @@ public class BasicFlows extends BaseTest {
 
     @Test
     public boolean deactivateSynch() {
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnDeactivateSynchLink();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnDeactivateSynchLink();
         return true;
     }
 
     @Test
     public boolean reactivateSynch() {
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnActivateSynchLink();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnActivateSynchLink();
         return true;
     }
 
     @Test
     public boolean saveSynchAsDraft() throws InterruptedException {
         Thread.sleep(3000);
-        CredentialsPage.clickOnCancelButton();
+        credentialsPage.clickOnCancelButton();
         Thread.sleep(500);
-        CredentialsPage.clickOnYesAlertButton();
+        credentialsPage.clickOnYesAlertButton();
         Thread.sleep(500);
-        CredentialsPage.clickOnOkAlertButton();
+        credentialsPage.clickOnOkAlertButton();
         return true;
     }
 
     @Test
     public boolean voicePadCredentials(String ID) {
-        CredentialsPage.clickOnSourceInputButton();
-        InputCredentialsPage.enterClientId(ID);
-        InputCredentialsPage.clickOnClose();
+        credentialsPage.clickOnSourceInputButton();
+        inputCredentialsPage.enterClientId(ID);
+        inputCredentialsPage.clickOnClose();
         return true;
     }
 
     @Test
     public boolean salesForceCredentials(String ID, String PWD, String TKN) throws InterruptedException {
-        CredentialsPage.clickOnTargetInputButton();
-        InputCredentialsPage.enterUser(ID);
-        InputCredentialsPage.enterPassword(PWD);
-        InputCredentialsPage.enterToken(TKN);
-        InputCredentialsPage.selectUrl2();
-        InputCredentialsPage.clickOnClose();
+        credentialsPage.clickOnTargetInputButton();
+        inputCredentialsPage.enterUser(ID);
+        inputCredentialsPage.enterPassword(PWD);
+        inputCredentialsPage.enterToken(TKN);
+        inputCredentialsPage.selectUrl2();
+        inputCredentialsPage.clickOnClose();
         Thread.sleep(300);
-        CredentialsPage.clickOnNextButton();
+        credentialsPage.clickOnNextButton();
         return true;
     }
 
     @Test
     public boolean followUpBossCredentials(String APIKey) {
-        CredentialsPage.clickOnTargetInputButton();
-        InputCredentialsPage.enterToken(FOLLOW_UP_BOSS_API_KEY);
-        InputCredentialsPage.clickOnVerifyButton();
-        InputCredentialsPage.clickOnClose();
-        CredentialsPage.clickOnNextButton();
+        credentialsPage.clickOnTargetInputButton();
+        inputCredentialsPage.enterToken(FOLLOW_UP_BOSS_API_KEY);
+        inputCredentialsPage.clickOnVerifyButton();
+        inputCredentialsPage.clickOnClose();
+        credentialsPage.clickOnNextButton();
         return true;
     }
 
     @Test
     public boolean contactuallyCredentials() {
-        CredentialsPage.clickOnTargetInputButton();
-        InputCredentialsPage.enterToken(CONTACTUALLY_API_KEY);
-        InputCredentialsPage.clickOnVerifyButton();
-        InputCredentialsPage.clickOnClose();
-        CredentialsPage.clickOnNextButton();
+        credentialsPage.clickOnTargetInputButton();
+        inputCredentialsPage.enterToken(CONTACTUALLY_API_KEY);
+        inputCredentialsPage.clickOnVerifyButton();
+        inputCredentialsPage.clickOnClose();
+        credentialsPage.clickOnNextButton();
         return true;
     }
 
     @Test
     public boolean boomTownCredentials(String mail, String pwd) {
-        CredentialsPage.clickOnTargetInputButton();
-        InputCredentialsPage.clickOnBoomVerifyButton();
+        credentialsPage.clickOnTargetInputButton();
+        inputCredentialsPage.clickOnBoomVerifyButton();
         Set<String> st= driver.getWindowHandles();
         Iterator<String> it = st.iterator();
         String parent =  it.next();

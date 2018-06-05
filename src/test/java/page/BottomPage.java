@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-public class BottomPage {
+public class BottomPage extends BaseTest {
     public BottomPage(WebDriver driver) {
         WebDriver pageDriver = driver;
         PageFactory.initElements(pageDriver, this);

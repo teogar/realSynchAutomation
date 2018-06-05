@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.Test;
+import page.LoginPage;
 import utils.Flows.BasicFlows;
 
 import static page.DashBoardPage.clickOnAddNewSynchButton;
@@ -67,12 +68,4 @@ public class SiDxTest extends BasicFlows {
         selectTatrget("BoomTown");
         saveSynchAsDraft();
     }
-
-    public void login(String username,String password) {
-        super.loginpage.sendUsername(username);
-        super.loginpage.sendPassword(password);
-        super.loginpage.clickOnSubmitButton();
-    }
-
-
 }

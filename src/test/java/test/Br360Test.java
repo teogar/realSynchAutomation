@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import utils.Flows.BasicFlows;
 
 import static page.DashBoardPage.clickOnAddNewSynchButton;
+import page.LoginPage;
 import static utils.Properties.AUTOMATION_PASSWORD;
 import static utils.Properties.AUTOMATION_USERNAME;
 
@@ -67,11 +68,5 @@ public class Br360Test extends BasicFlows {
         selectTatrget("BoomTown");
         saveSynchAsDraft();
         logout();
-    }
-
-    public void login(String username,String password) {
-        super.loginpage.sendUsername(username);
-        super.loginpage.sendPassword(password);
-        super.loginpage.clickOnSubmitButton();
     }
 }
