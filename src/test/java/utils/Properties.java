@@ -16,6 +16,8 @@ public class Properties {
 	public static final String SALES_FORCE_CREDENTIAL = "hmarin@itexico.net.rsbxv1";
 	public static final String SALES_FORCE_PWD = "Tgar$ia2018";
 	public static final String SALES_FORCE_TOKEN = "zNI1ISNV5Jx0cndV8plhuwZp";
+	public static final String FOLLOW_UP_BOSS_API_KEY = "3058d941b787f637417f368f0eb8d53d75c877";
+	public static final String CONTACTUALLY_API_KEY = "7cao7358zg41vtcx6ow0c9g3mopbxx4i";
 	public static final String REAL_SYNCH_FORGOT_PWD = "pete696@yopmail.com";
 	public static final String VOICE_PAD_CLIENT_ID = "1680";
 	public static final String VOICE_PAD_USER = "teoteo999@mailinator.com";
