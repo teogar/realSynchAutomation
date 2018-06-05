@@ -22,7 +22,7 @@ public class TopPage extends BaseTest{
     static WebElement customerAssistanceButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
-    public static WebElement avatarUserButton;
+    static WebElement avatarUserButton;
 
     @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
     static WebElement accountSettingsButton;
@@ -36,14 +36,27 @@ public class TopPage extends BaseTest{
     @FindBy(how = How.XPATH, using = TopPageLocator.OK_BUTTTON)
     static WebElement okButton;
 
-    public static boolean clickOnDashboardButton() {
+    public static void clickOnOkButton(){
+        System.out.print("Looking for 'OK' button");
+        if(okButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            okButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnGoToDashboardButton(){
         System.out.print("Looking for 'Go To Dashboard' button");
-        if (goToDashboardButton.isDisplayed()) {
+        if(goToDashboardButton.isDisplayed()) {
             System.out.print(" : FOUND");
             goToDashboardButton.click();
             System.out.println(" & CLICKED");
-            return true;
-        } else {
+        }
+        else {
             System.out.println(" : NOT FOUND");
             throw new RuntimeException();
         }
@@ -55,7 +68,7 @@ public class TopPage extends BaseTest{
             System.out.print(" : FOUND");
             customerAssistanceButton.click();
             System.out.println(" & CLICKED");
-          return true;
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -98,7 +111,7 @@ public class TopPage extends BaseTest{
             logoutButton.click();
             System.out.println(" & CLICKED");
             return true;
-            }
+        }
         else {
             System.out.println(" : NOT FOUND");
             throw new RuntimeException();
