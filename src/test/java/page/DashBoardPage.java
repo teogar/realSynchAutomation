@@ -17,7 +17,7 @@ public class DashBoardPage extends BaseTest {
 
     @FindBy( how = How.XPATH, using = DashBoardLocator.TITLE_PAGE)
     WebElement title;
-
+  
     @FindBy(how = How.XPATH, using = DashBoardLocator.ADD_NEW_SYNC_BUTTON)
     WebElement addNewSynchButton;
 
