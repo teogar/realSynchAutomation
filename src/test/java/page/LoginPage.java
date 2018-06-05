@@ -101,4 +101,17 @@ public class LoginPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
+    public static void clickOnForgotPasswordButton() {
+        System.out.print("Looking for 'Forgot Password' button");
+        if(forgotPasswordLink.isDisplayed()) {
+            System.out.print(" : FOUND");
+            forgotPasswordLink.click();
+            System.out.print(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
 }

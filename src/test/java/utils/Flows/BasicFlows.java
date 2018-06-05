@@ -4,20 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import page.BoomTownPage;
-import page.CredentialsPage;
-import page.DashBoardPage;
-import page.InputCredentialsPage;
-import page.LoginPage;
-import page.ResetPasswordPage;
-import page.SourcePage;
-import page.TopPage;
-import page.WizardPage;
+import page.*;
 import test.BaseTest;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static utils.Properties.CONTACTUALLY_API_KEY;
 import static utils.Properties.FOLLOW_UP_BOSS_API_KEY;
@@ -191,5 +183,123 @@ public class BasicFlows extends BaseTest {
         boomTown.clickOnLogin();
         //driver.switchTo().window(parent);
         return true;
+    }
+
+    public void forgotPassword(String username){
+        LoginPage.clickOnForgotPasswordButton();
+        ForgotPasswordPage.sendPwd(username);
+    }
+
+    public void signUp(String team, String firstName, String lastName, String email, String password, String company, String phoneNumber){
+
+        switch(team) {
+            case "Beta":
+                break;
+            case "Lite":
+                break;
+            case "Team":
+                break;
+            case "Super Team/Broker":
+                break;
+        }
+        SignUpPage.sendFirstNameInput(firstName);
+        SignUpPage.sendLastNameInput(lastName);
+        SignUpPage.sendEmailInput(email);
+        SignUpPage.sendPasswordInput(password);
+        SignUpPage.sendConfirmPasswordInput(password);
+        SignUpPage.sendCompanyInput(company);
+        SignUpPage.sendPhoneNumberInput(phoneNumber);
+        SignUpPage.clickOnSubmitButton();
+
+
+    }
+/*
+    public void login(String username,String password){
+        LoginPage.sendUsername(username);
+        LoginPage.sendPassword(password);
+        LoginPage.clickSubmitButton();
+    }
+    public void logout(){
+        TopPage.clickOnUserAvatarButton();
+        TopPage.clickOnLogoutButton();
+    }
+    public void deactivateSynch(){
+        DashBoardPage.clickOnElipsisIcon();
+        DashBoardPage.clickOnActivateSynchLink();
+        DashBoardPage.clickOnYesButton();
+        DashBoardPage.clickOnOkButton();
+    }
+*/
+    public void modifyUserInformation(String firstName, String lastName, String email){
+        TopPage.clickOnUserAvatarButton();
+        TopPage.clickOnAccountSettings();
+    }
+
+    public void modifyExistingPaymentMethod(String cardHolder, String cardNumber, String expiresAt, boolean defaultPayment){
+        TopPage.clickOnUserAvatarButton();
+        TopPage.clickOnAccountSettings();
+        PaymentMethodPage.clickOnPaymentMethodButton();
+        PaymentMethodPage.clickOnEditPaymentMethodButton();
+        PaymentMethodPage.sendEditCardHolderName("Automation Tester2");
+        PaymentMethodPage.sendEditMonthExpires("03");
+        PaymentMethodPage.sendEditYearExpires("2025");
+        PaymentMethodPage.clickOnEditSaveButton();
+    }
+    public void addNewPaymentMethod(String cardHolder, String cardNumber, String expiresAt, String cvv, String zipcode, boolean defaultPayment) throws InterruptedException {
+        TopPage.clickOnUserAvatarButton();
+        TopPage.clickOnAccountSettings();
+        TimeUnit.SECONDS.sleep(10);
+        PaymentMethodPage.clickOnPaymentMethodButton();
+        PaymentMethodPage.clickOnAddNewPaymentMethodButtonn();
+        PaymentMethodPage.sendNewCardHolderName(cardHolder);
+        PaymentMethodPage.sendNewCardNumber(cardNumber);
+        PaymentMethodPage.sendNewExpiresAt(expiresAt);
+        PaymentMethodPage.sendNewCVV(cvv);
+        PaymentMethodPage.sendNewZipCode(zipcode);
+        PaymentMethodPage.clickOnNewSaveButton();
+    }
+    public void changePassword(String newPassword){
+        TopPage.clickOnUserAvatarButton();
+        TopPage.clickOnChangePasswordButton();
+        ChangePasswordPage.sendNewPassword(newPassword);
+        ChangePasswordPage.sendConfirmNewPassword(newPassword);
+        ChangePasswordPage.clickOnSaveButton();
+        ChangePasswordPage.clickOnOkButton();
+    }
+    public void activateSynch(){
+        DashBoardPage.clickOnElipsisIcon();
+        DashBoardPage.clickOnActivateSynchLink();
+        DashBoardPage.clickOnYesButton();
+        DashBoardPage.clickOnOkButton();
+    }
+
+    public void showActivationInstuctions(){
+        DashBoardPage.clickOnElipsisIcon();
+        DashBoardPage.clickOnActivationInstructionsLink();
+        DashBoardPage.clickOnDoneButton();
+    }
+
+    public void editDraftSynch(){
+        DashBoardPage.clickOnElipsisIcon();
+        DashBoardPage.clickOnEditSynchLink();
+        // next button
+        // cancel
+        // ok
+    }
+
+    public void editAndActivateSynch(){
+        DashBoardPage.clickOnElipsisIcon();
+        DashBoardPage.clickOnEditSynchLink();
+        // next button
+        // activate
+        // ok
+    }
+
+    public void showSynchInformation(){
+        String synchStatus;
+
+        DashBoardPage.clickOnCalendarButton();
+        synchStatus = DashBoardPage.getSynchInformation();
+        System.out.println(synchStatus);
     }
 }

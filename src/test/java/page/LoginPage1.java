@@ -19,10 +19,10 @@ public class LoginPage1 extends BaseTest {
     static WebElement title;
 
     @FindBy( how = How.NAME, using = LoginLocator.USER_INPUT)
-    WebElement userNameInput;
+    static WebElement userNameInput;
 
     @FindBy( how = How.NAME, using = LoginLocator.PASSWORD_INPUT)
-    WebElement passwordInput;
+    static WebElement passwordInput;
 
     @FindBy( how = How.CLASS_NAME, using = LoginLocator.FORGOT_PASSWORD_LINK)
     static WebElement forgotPasswordLink;

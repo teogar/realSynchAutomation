@@ -28,7 +28,7 @@ public class ForgotPasswordPage extends BaseTest {
     @FindBy(how = How.XPATH, using = LoginLocator.FORGOT_PASSWORD_LINK)
     static WebElement forgotPsw;
 
-    @FindBy(how = How.XPATH,using = ForgotPasswordLocator.USERNAME_INPUT)
+    @FindBy(how = How.NAME,using = ForgotPasswordLocator.USER_NAME_INPUT)
     static WebElement rsForgotPswBox;
 
     @FindBy(how = How.XPATH, using = ForgotPasswordLocator.SUBMIT_BUTTON)
@@ -81,17 +81,18 @@ public class ForgotPasswordPage extends BaseTest {
 
     public static boolean clickOnOkButton() {
         System.out.print("Looking for 'OK' button");
-        if(okButton.isDisplayed()) {
+        if (okButton.isDisplayed()) {
             System.out.print(" : FOUND");
             okButton.click();
             System.out.println(" & CLICKED");
             return true;
-        }
-        else {
+        } else {
             System.out.println(" : NOT FOUND");
             throw new RuntimeException();
         }
-    public static void pswRecovery() {
+    }
+
+    public static void pswRecovery(){
         if(forgotPsw.isDisplayed()) {
             System.out.println("The Forgot PSW link is Displayed");
         } else {

@@ -54,6 +54,27 @@ public class DashBoardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_BUTTON)
     static WebElement editSynchButton;
 
+    @FindBy(how = How.XPATH, using = DashBoardLocator.OK_BUTTON)
+    static WebElement okButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.BACK_ACTIVATION_INSTRUCTIONS_BUTTON)
+    static WebElement backButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.CLOSE_ACTIVATION_INSTRUCTIONS_BUTTON)
+    static WebElement closeButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.DONE_ACTIVATION_INSTRUCTIONS_BUTTON)
+    static WebElement doneButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.DEACTIVATE_POP_UP_CANCEL)
+    static WebElement deactivateCancelButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.DEACTIVATE_POP_UP_YES)
+    static WebElement deactivateYesButton;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.SYNCH_INFORMATION_LABEL)
+    static WebElement synchInformation;
+
     public static String getSynchStatusText() {
         System.out.print("Looking for 'Synch Status' text");
         if(synchStatus.isDisplayed()) {
@@ -209,6 +230,95 @@ public class DashBoardPage extends BaseTest {
             editSynchButton.click();
             System.out.println(" & CLICKED");
             return true;
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+    public static void clickOnCancelButton() {
+        System.out.print("Looking for 'deactivateCancelButton' button");
+        if(deactivateCancelButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            deactivateCancelButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnYesButton() {
+        System.out.print("Looking for 'deactivateYesButton' button");
+        if(deactivateYesButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            deactivateYesButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnBackButton() {
+        System.out.print("Looking for 'backButton' button");
+        if(backButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            backButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnCloseButton() {
+        System.out.print("Looking for 'closeButton' button");
+        if(closeButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            closeButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnDoneButton() {
+        System.out.print("Looking for 'doneButton' button");
+        if(doneButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            doneButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnOkButton() {
+        System.out.print("Looking for 'okButton' button");
+        if(okButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            okButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static String getSynchInformation(){
+        System.out.print("Looking for 'synchInformation' label");
+        if(synchInformation.isDisplayed()) {
+            System.out.println(" : FOUND and STRING RETRIEVED");
+            return synchInformation.getText();
         }
         else {
             System.out.println(" : NOT FOUND");
