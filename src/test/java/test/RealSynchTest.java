@@ -17,35 +17,6 @@ import static utils.Properties.VOICE_PAD_CLIENT_ID;
 
 public class RealSynchTest extends BaseTest {
 
-/**
-    @Test(groups = {"unit 8"})
-    public void actSynchVoicePad2REalgeek() {
-        super.loginPage.Login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
-        super.activateSynch();
-        super.VoicePad();
-        super.Realgeek();
-        logout();
-    }
-
-    @Test(groups = {"unit 9"})
-    public void actSynchBr360Pad2REalgeek() {
-        super.loginPage.Login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
-        super.activateSynch();
-        super.Br360();
-        super.Realgeek();
-        logout();
-    }
-
-    //Deprecated
-     @Test(groups = {"unit 8"})
-     public void actSynch() {
-     super.loginPage.Login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
-     super.activateSynchPage.activateSynch();
-     super.logoutPage.logOut();
-     }
-
-    **/
-
     @Test(groups = "unit 1")
     public void signUpRealSynchTest() {
         System.out.println("INITIALIAZED PLAN SELECTION AND USER REG.");
@@ -133,5 +104,4 @@ public class RealSynchTest extends BaseTest {
         super.newSynchPage.saveSyncAsDraft();
         super.logoutPage.logOut();
     }
-
 }

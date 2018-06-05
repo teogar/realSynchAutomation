@@ -48,12 +48,13 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public static void clickOnCustomerAssitanceButton() {
+    public boolean clickOnCustomerAssitanceButton() {
         System.out.print("Looking for 'Customer Assistance' button");
         if(customerAssistanceButton.isDisplayed()) {
             System.out.print(" : FOUND");
             customerAssistanceButton.click();
             System.out.println(" & CLICKED");
+          return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -61,7 +62,7 @@ public class TopPage extends BaseTest{
         }
     }
 
-    public static void clickOnUserAvatarButton() {
+    public boolean clickOnUserAvatarButton() {
         System.out.print("Looking for 'User Avatar' button");
         if(avatarUserButton.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -73,12 +74,14 @@ public class TopPage extends BaseTest{
             throw new RuntimeException();
         }
     }
-    public static void clickOnChangePasswordButton() {
-        System.out.print("Looking for 'Change Password' button");
+  
+    public static boolean clickOnChangePasswordButton() {
+      System.out.print("Looking for 'Change Password' button");
         if(changePasswordButtton.isDisplayed()) {
             System.out.print(" : FOUND");
             changePasswordButtton.click();
             System.out.println(" & CLICKED");
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -87,11 +90,6 @@ public class TopPage extends BaseTest{
     }
 
     public static void clickOnLogoutButton() {
-        System.out.print("Looking for 'LogOut' button");
-        if(logoutButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            logoutButton.click();
-            System.out.println(" & CLICKED");
             System.out.print("Looking for 'Ok' button");
             if(logoutButton.isDisplayed()) {
                 System.out.print(" : FOUND");
@@ -117,19 +115,4 @@ public class TopPage extends BaseTest{
             throw new RuntimeException();
         }
     }
-/*
-    public boolean clickOn(WebElement button){
-        System.out.print("Looking for '" + button.name + "' button");
-        if(button.isDisplayed()) {
-            System.out.print(" : FOUND");
-            button.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return false;
-        }
-    }
-*/
 }

@@ -35,16 +35,7 @@ public class WizardPage extends BaseTest {
 
     @FindBy( how = How.XPATH, using = WizardLocator.BOOMTOWN_ICON)
     WebElement boomTowIcon;
-/*
-    @FindBy( how = How.XPATH, using = WizardLocator.CANCEL_BUTTON)
-    WebElement cancelButton;
 
-    @FindBy( how = How.XPATH, using = WizardLocator.BACK_BUTTON)
-    WebElement backButton;
-
-    @FindBy( how = How.XPATH, using = WizardLocator.NEXT_BUTTON)
-    WebElement nextButton;
-*/
     public boolean clickOnStep2Navigator() {
         System.out.print("Looking for 'Step 2 Wizard Navigator' button");
         if(stepNavigator.isDisplayed()) {
@@ -123,45 +114,4 @@ public class WizardPage extends BaseTest {
             return false;
         }
     }
-    /*
-    public boolean clickOnCancelButton() {
-        System.out.print("Looking for 'Cancel' button");
-        if(cancelButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            cancelButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return false;
-        }
-    }
-    public boolean clickOnBackButton() {
-        System.out.print("Looking for 'Back' button");
-        if(backButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            backButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return false;
-        }
-    }
-    public boolean clickOnNextButton() {
-        System.out.print("Looking for 'Next' button");
-        if(nextButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            nextButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return false;
-        }
-    }
-    */
 }

@@ -18,11 +18,11 @@ public class LoginPage1 extends BaseTest {
     @FindBy( how = How.XPATH, using = LoginLocator.TITLE_PAGE)
     static WebElement title;
 
-    @FindBy( how = How.XPATH, using = LoginLocator.USER_INPUT)
-    static WebElement userNameInput;
+    @FindBy( how = How.NAME, using = LoginLocator.USER_INPUT)
+    WebElement userNameInput;
 
-    @FindBy( how = How.XPATH, using = LoginLocator.PASSWORD_INPUT)
-    static WebElement passwordInput;
+    @FindBy( how = How.NAME, using = LoginLocator.PASSWORD_INPUT)
+    WebElement passwordInput;
 
     @FindBy( how = How.CLASS_NAME, using = LoginLocator.FORGOT_PASSWORD_LINK)
     static WebElement forgotPasswordLink;
@@ -59,12 +59,14 @@ public class LoginPage1 extends BaseTest {
         }
     }
 
-    public static void clickOnSubmitButton() {
+    public boolean clickOnSubmitButton() {
         System.out.print("Looking for 'Submit' button");
         if(SubmitLink.isDisplayed()) {
             System.out.print(" : FOUND");
             SubmitLink.click();
-            System.out.println(" & CLICKED");
+
+            System.out.print(" & CLICKED");
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -72,7 +74,7 @@ public class LoginPage1 extends BaseTest {
         }
     }
 
-    public static void clickOnForgotPasswordButton() {
+    public boolean clickOnForgotPasswordButton() {
         System.out.print("Looking for 'Forgot Password' button");
         if(forgotPasswordLink.isDisplayed()) {
             System.out.print(" : FOUND");
@@ -94,8 +96,6 @@ public class LoginPage1 extends BaseTest {
         }
         else {
             System.out.println(" : NOT FOUND");
-            throw new RuntimeException();        }
+            throw new RuntimeException();
     }
-
-
 }

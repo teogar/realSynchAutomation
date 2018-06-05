@@ -3,16 +3,10 @@ package test;
 import org.testng.annotations.Test;
 import utils.Properties;
 
-
 public class RealGeeksTest extends BaseTest{
     @Test(groups = "RealGeeks.SaveDraftWithSalesForce")
     public void SaveDraftWithSalesForce(){
         System.out.println("Init 'RealGeeks.SaveDraftWithSalesForce' test");
-        try {
-            super.basicFlows.login(Properties.AUTOMATION_USERNAME,Properties.AUTOMATION_PASSWORD);
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-        }
     }
     @Test(groups = "RealGeeks.SaveDraftWithFollowUpBoss")
     public void SaveDraftWithFollowUpBoss(){
@@ -31,7 +25,4 @@ public class RealGeeksTest extends BaseTest{
     public void ActiveSynchMissingCredentials(){
         System.out.println("Init 'RealGeeks.ActiveSynchMissingCredentials' test");
     }
-
-
 }
-
