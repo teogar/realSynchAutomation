@@ -33,13 +33,14 @@ public class TopPage extends BaseTest{
     @FindBy(how = How.XPATH, using = TopPageLocator.LOGOUT_BUTTON)
     static WebElement logoutButton;
 
-    public static boolean clickOnGoToDashboard() {
+    @FindBy(how = How.XPATH, using = TopPageLocator.OK_BUTTTON)
+    static WebElement okButton;
+
         System.out.print("Looking for 'Go To Dashboard' button");
         if(goToDashboardButton.isDisplayed()) {
             System.out.print(" : FOUND");
             goToDashboardButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -53,7 +54,7 @@ public class TopPage extends BaseTest{
             System.out.print(" : FOUND");
             customerAssistanceButton.click();
             System.out.println(" & CLICKED");
-            return true;
+          return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -67,7 +68,6 @@ public class TopPage extends BaseTest{
             System.out.print(" : FOUND");
             avatarUserButton.click();
             System.out.println(" & CLICKED");
-            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -96,6 +96,7 @@ public class TopPage extends BaseTest{
             logoutButton.click();
             System.out.println(" & CLICKED");
             return true;
+            }
         }
         else {
             System.out.println(" : NOT FOUND");

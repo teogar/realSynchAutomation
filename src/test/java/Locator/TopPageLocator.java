@@ -7,4 +7,5 @@ public class TopPageLocator{
     public static final String ACCOUNT_SETTINGS_BUTTON = "//*[contains(text(), \"Account Settings\")]";
     public static final String CHANGE_PASSWORD_BUTTON = "//*[contains(text(), \"Change Password\")]";
     public static final String LOGOUT_BUTTON = "//a[contains(text(), 'Log out')]";
+    public static final String OK_BUTTTON = "//button[@class='confirm']";
 }

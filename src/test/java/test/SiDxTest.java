@@ -67,4 +67,12 @@ public class SiDxTest extends BasicFlows {
         selectTatrget("BoomTown");
         saveSynchAsDraft();
     }
+
+    public void login(String username,String password) {
+        super.loginpage.sendUsername(username);
+        super.loginpage.sendPassword(password);
+        super.loginpage.clickOnSubmitButton();
+    }
+
+
 }
