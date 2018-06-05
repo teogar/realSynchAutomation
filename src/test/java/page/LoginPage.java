@@ -8,9 +8,9 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-public class LoginPage1 extends BaseTest {
+public class LoginPage extends BaseTest {
     public WebDriver pageDriver;
-    public LoginPage1(WebDriver driver){
+    public LoginPage(WebDriver driver){
         pageDriver = driver;
         PageFactory.initElements(pageDriver, this);
     }
@@ -19,10 +19,10 @@ public class LoginPage1 extends BaseTest {
     static WebElement title;
 
     @FindBy( how = How.NAME, using = LoginLocator.USER_INPUT)
-    WebElement userNameInput;
+    static WebElement userNameInput;
 
     @FindBy( how = How.NAME, using = LoginLocator.PASSWORD_INPUT)
-    WebElement passwordInput;
+    static WebElement passwordInput;
 
     @FindBy( how = How.CLASS_NAME, using = LoginLocator.FORGOT_PASSWORD_LINK)
     static WebElement forgotPasswordLink;
@@ -59,12 +59,11 @@ public class LoginPage1 extends BaseTest {
         }
     }
 
-    public boolean clickOnSubmitButton() {
+    public static boolean clickOnSubmitButton() {
         System.out.print("Looking for 'Submit' button");
         if(SubmitLink.isDisplayed()) {
             System.out.print(" : FOUND");
             SubmitLink.click();
-
             System.out.print(" & CLICKED");
             return true;
         }
@@ -74,12 +73,13 @@ public class LoginPage1 extends BaseTest {
         }
     }
 
-    public boolean clickOnForgotPasswordButton() {
+    public static boolean clickOnForgotPasswordButton() {
         System.out.print("Looking for 'Forgot Password' button");
         if(forgotPasswordLink.isDisplayed()) {
             System.out.print(" : FOUND");
             forgotPasswordLink.click();
             System.out.print(" & CLICKED");
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
@@ -87,15 +87,17 @@ public class LoginPage1 extends BaseTest {
         }
     }
 
-    public static void clickOnRegisterButton() {
+    public static boolean clickOnRegisterButton() {
         System.out.print("Looking for 'Register' button");
         if(RegisterLink.isDisplayed()) {
             System.out.print(" : FOUND");
             RegisterLink.click();
             System.out.print(" & CLICKED");
+            return true;
         }
         else {
             System.out.println(" : NOT FOUND");
             throw new RuntimeException();
+        }
     }
 }
