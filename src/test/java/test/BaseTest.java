@@ -1,6 +1,5 @@
 package test;
 
-import Locator.VerificationInstructionsLocator;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -8,7 +7,22 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import page.*;
+import page.CredentialsPage;
+import page.DashBoardPage;
+import page.FinishPage;
+import page.ForgotPasswordPage;
+import page.InputCredentialsPage;
+import page.LoginPage;
+import page.ResetPasswordPage;
+import page.SourcePage;
+import page.TopPage;
+import page.WizardPage;
+import page.BottomPage;
+import page.AccountSettingsPage;
+import page.SignUpPage;
+import page.ChangePasswordPage;
+import page.PaymentMethodPage;
+import page.VerificationInstructionsPage;
 import utils.Properties;
 
 import java.net.MalformedURLException;
@@ -17,7 +31,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     public RemoteWebDriver driver;
-
     public CredentialsPage credentialsPage;
     public DashBoardPage dashBoardPage;
     public FinishPage finishPage;
@@ -45,19 +58,19 @@ public class BaseTest {
         /**
          * Selenium Setup
          **/
-        System.out.println("Running Selenium Config");
-        System.out.println("Starting Real Synch Automation Test");
+      System.out.println("Running Selenium Config");
+      System.out.println("Starting Real Synch Automation Test");
         System.setProperty(Properties.CHROME_DRIVER_PROPERTY, TEST_CHROME_PATH);
-        System.setProperty(Properties.GECKO_DRIVER_PROPERTY, DRIVER_FIREFOX_PATH);
+      System.setProperty(Properties.GECKO_DRIVER_PROPERTY, DRIVER_FIREFOX_PATH);
 
         /**
          * Initializing Objects (Classes)
          **/
-        FirefoxProfile firefoxProfile = new FirefoxProfile();
-        firefoxProfile.setPreference("layout.css.devPixelsPerPx", "0.75");
-        DesiredCapabilities desiredCapabilities = DesiredCapabilities.firefox();
-        desiredCapabilities.setCapability(FirefoxDriver.PROFILE, firefoxProfile);
-        driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), desiredCapabilities);
+      FirefoxProfile firefoxProfile = new FirefoxProfile();
+      firefoxProfile.setPreference("layout.css.devPixelsPerPx", "0.75");
+      DesiredCapabilities desiredCapabilities = DesiredCapabilities.firefox();
+      desiredCapabilities.setCapability(FirefoxDriver.PROFILE, firefoxProfile);
+      driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), desiredCapabilities);
 
         credentialsPage = new CredentialsPage(driver);
         dashBoardPage = new DashBoardPage(driver);
@@ -76,8 +89,8 @@ public class BaseTest {
         paymentMethodPage = new PaymentMethodPage(driver);
         verificationInstructionsPage = new VerificationInstructionsPage(driver);
 
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.navigate().to("https://realsynch-integration.herokuapp.com/login");
+      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+      driver.navigate().to("https://realsynch-integration.herokuapp.com/login");
     }
 
     /**

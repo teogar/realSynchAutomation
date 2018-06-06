@@ -22,7 +22,7 @@ public class TopPage extends BaseTest{
     static WebElement customerAssistanceButton;
 
     @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
-    static WebElement avatarUserButton;
+    public static WebElement avatarUserButton;
 
     @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
     static WebElement accountSettingsButton;

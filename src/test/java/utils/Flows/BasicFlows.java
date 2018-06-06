@@ -4,16 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-<<<<<<< HEAD
 import page.BoomTownPage;
-=======
-import page.*;
->>>>>>> Updated model for dev branch
 import test.BaseTest;
 
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 
 import static utils.Properties.CONTACTUALLY_API_KEY;
 import static utils.Properties.FOLLOW_UP_BOSS_API_KEY;
@@ -190,8 +187,8 @@ public class BasicFlows extends BaseTest {
     }
 
     public void forgotPassword(String username){
-        LoginPage.clickOnForgotPasswordButton();
-        ForgotPasswordPage.sendPwd(username);
+        loginPage.clickOnForgotPasswordButton();
+        forgotPasswordPage.sendPwd(username);
     }
 
     public void signUp(String team, String firstName, String lastName, String email, String password, String company, String phoneNumber){
@@ -206,94 +203,78 @@ public class BasicFlows extends BaseTest {
             case "Super Team/Broker":
                 break;
         }
-        SignUpPage.sendFirstNameInput(firstName);
-        SignUpPage.sendLastNameInput(lastName);
-        SignUpPage.sendEmailInput(email);
-        SignUpPage.sendPasswordInput(password);
-        SignUpPage.sendConfirmPasswordInput(password);
-        SignUpPage.sendCompanyInput(company);
-        SignUpPage.sendPhoneNumberInput(phoneNumber);
-        SignUpPage.clickOnSubmitButton();
+        signUpPage.sendFirstNameInput(firstName);
+        signUpPage.sendLastNameInput(lastName);
+        signUpPage.sendEmailInput(email);
+        signUpPage.sendPasswordInput(password);
+        signUpPage.sendConfirmPasswordInput(password);
+        signUpPage.sendCompanyInput(company);
+        signUpPage.sendPhoneNumberInput(phoneNumber);
+        signUpPage.clickOnSubmitButton();
 
 
     }
-/*
-    public void login(String username,String password){
-        LoginPage.sendUsername(username);
-        LoginPage.sendPassword(password);
-        LoginPage.clickSubmitButton();
-    }
-    public void logout(){
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnLogoutButton();
-    }
-    public void deactivateSynch(){
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnActivateSynchLink();
-        DashBoardPage.clickOnYesButton();
-        DashBoardPage.clickOnOkButton();
-    }
-*/
+
     public void modifyUserInformation(String firstName, String lastName, String email){
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnAccountSettings();
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
     }
 
     public void modifyExistingPaymentMethod(String cardHolder, String cardNumber, String expiresAt, boolean defaultPayment){
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnAccountSettings();
-        PaymentMethodPage.clickOnPaymentMethodButton();
-        PaymentMethodPage.clickOnEditPaymentMethodButton();
-        PaymentMethodPage.sendEditCardHolderName("Automation Tester2");
-        PaymentMethodPage.sendEditMonthExpires("03");
-        PaymentMethodPage.sendEditYearExpires("2025");
-        PaymentMethodPage.clickOnEditSaveButton();
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
+        paymentMethodPage.clickOnPaymentMethodButton();
+        paymentMethodPage.clickOnEditPaymentMethodButton();
+        paymentMethodPage.sendEditCardHolderName("Automation Tester2");
+        paymentMethodPage.sendEditMonthExpires("03");
+        paymentMethodPage.sendEditYearExpires("2025");
+        paymentMethodPage.clickOnEditSaveButton();
     }
     public void addNewPaymentMethod(String cardHolder, String cardNumber, String expiresAt, String cvv, String zipcode, boolean defaultPayment) throws InterruptedException {
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnAccountSettings();
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
         TimeUnit.SECONDS.sleep(10);
-        PaymentMethodPage.clickOnPaymentMethodButton();
-        PaymentMethodPage.clickOnAddNewPaymentMethodButtonn();
-        PaymentMethodPage.sendNewCardHolderName(cardHolder);
-        PaymentMethodPage.sendNewCardNumber(cardNumber);
-        PaymentMethodPage.sendNewExpiresAt(expiresAt);
-        PaymentMethodPage.sendNewCVV(cvv);
-        PaymentMethodPage.sendNewZipCode(zipcode);
-        PaymentMethodPage.clickOnNewSaveButton();
+        paymentMethodPage.clickOnPaymentMethodButton();
+        paymentMethodPage.clickOnAddNewPaymentMethodButtonn();
+        paymentMethodPage.sendNewCardHolderName(cardHolder);
+        paymentMethodPage.sendNewCardNumber(cardNumber);
+        paymentMethodPage.sendNewExpiresAt(expiresAt);
+        paymentMethodPage.sendNewCVV(cvv);
+        paymentMethodPage.sendNewZipCode(zipcode);
+        paymentMethodPage.clickOnNewSaveButton();
     }
     public void changePassword(String newPassword){
-        TopPage.clickOnUserAvatarButton();
-        TopPage.clickOnChangePasswordButton();
-        ChangePasswordPage.sendNewPassword(newPassword);
-        ChangePasswordPage.sendConfirmNewPassword(newPassword);
-        ChangePasswordPage.clickOnSaveButton();
-        ChangePasswordPage.clickOnOkButton();
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnChangePasswordButton();
+        changePasswordPage.sendNewPassword(newPassword);
+        changePasswordPage.sendConfirmNewPassword(newPassword);
+        changePasswordPage.clickOnSaveButton();
+        changePasswordPage.clickOnOkButton();
     }
     public void activateSynch(){
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnActivateSynchLink();
-        DashBoardPage.clickOnYesButton();
-        DashBoardPage.clickOnOkButton();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnActivateSynchLink();
+        dashBoardPage.clickOnYesButton();
+        dashBoardPage.clickOnOkButton();
     }
 
     public void showActivationInstuctions(){
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnActivationInstructionsLink();
-        DashBoardPage.clickOnDoneButton();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnActivationInstructionsLink();
+        dashBoardPage.clickOnDoneButton();
     }
 
     public void editDraftSynch(){
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnEditSynchLink();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnEditSynchLink();
         // next button
         // cancel
         // ok
     }
 
     public void editAndActivateSynch(){
-        DashBoardPage.clickOnElipsisIcon();
-        DashBoardPage.clickOnEditSynchLink();
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnEditSynchLink();
         // next button
         // activate
         // ok
@@ -302,8 +283,8 @@ public class BasicFlows extends BaseTest {
     public void showSynchInformation(){
         String synchStatus;
 
-        DashBoardPage.clickOnCalendarButton();
-        synchStatus = DashBoardPage.getSynchInformation();
+        dashBoardPage.clickOnCalendarButton();
+        synchStatus = dashBoardPage.getSynchInformation();
         System.out.println(synchStatus);
     }
 }
