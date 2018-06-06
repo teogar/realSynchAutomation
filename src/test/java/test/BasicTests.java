@@ -3,22 +3,25 @@ package test;
 import org.testng.annotations.Test;
 import utils.Flows.BasicFlows;
 
-public class BasicTests extends BasicFlows {
+import static utils.Properties.*;
 
+
+public class BasicTests extends BasicFlows {
     @Test(groups = "BasicTests.LogIn")
     public void login(){
         System.out.println("Init 'BasicTests.LogIn' test");
         try{
-            login("automationtester@mailinator.com","itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
         }catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
+
     @Test(groups = "BasicTests.LogoutTest")
     public void LogoutTest(){
         System.out.println("Init 'BasicTests.LogoutTest' test");
         try{
-            login("automationtester@mailinator.com","itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             logout();
         }catch (RuntimeException e) {
             e.printStackTrace();
@@ -39,7 +42,7 @@ public class BasicTests extends BasicFlows {
     public void changePassword(){
         System.out.println("Init 'BasicTests.changePassword' test");
         try{
-            login("automationtester@mailinator.com","itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             changePassword("itexico2*");
             changePassword("itexico1*");
         }catch (RuntimeException e) {
@@ -50,7 +53,7 @@ public class BasicTests extends BasicFlows {
     public void addNewPaymentMethod() {
         System.out.println("Init 'BasicTests.addNewPaymentMethod' test");
         try {
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             addNewPaymentMethod("Automation Tester 3", "4111111111111111","0225","098","90210",true);
         } catch (RuntimeException e) {
             e.printStackTrace();
@@ -63,7 +66,8 @@ public class BasicTests extends BasicFlows {
     public void signUp() {
         System.out.println("Init 'BasicTests.signUp' test");
         try{
-            signUp("beta","Automation","Tester","automationtester2@mailinator.com","itexico2*","Tex","1234567890");
+            loginPage.clickOnRegisterButton();
+            signUp(REGISTRATION_TEAM,REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL,REGISTRATION_PASSWORD,REGISTRATION_COMPANY,REGISTRATION_PHONE);
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -73,7 +77,7 @@ public class BasicTests extends BasicFlows {
     public void activateSynchNoCredentials() {
         System.out.println("Init 'BasicTests.activateSynchNoCredentials' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             //newSynchNoCredentials();
             activateSynch();
         } catch (RuntimeException e) {
@@ -85,7 +89,7 @@ public class BasicTests extends BasicFlows {
     public void activateSynchWithCredentials() {
         System.out.println("Init 'BasicTests.activateSynchWithCredentials' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             //newSynchWithCredentials();
             activateSynch();
         } catch (RuntimeException e) {
@@ -97,7 +101,7 @@ public class BasicTests extends BasicFlows {
     public void showActivationInstructions() {
         System.out.println("Init 'BasicTests.showActivationInstructions' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             showActivationInstuctions();
         } catch (RuntimeException e) {
             e.printStackTrace();
@@ -108,41 +112,83 @@ public class BasicTests extends BasicFlows {
     public void deactivateSynchTest() {
         System.out.println("Init 'BasicTests.deactivateSynchTest' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             deactivateSynch();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.editDraftSynch")
-    public void editDraftSynch() {
-        System.out.println("Init 'BasicTests.editDraftSynch' test");
+    @Test(groups = "BasicTests.editDraftSynchTest")
+    public void editDraftSynchTest() {
+        System.out.println("Init 'BasicTests.editDraftSynchTest' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             editDraftSynch();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.editAndActivateSynch")
-    public void editAndActivateSynch() {
-        System.out.println("Init 'BasicTests.editAndActivateSynch' test");
+    @Test(groups = "BasicTests.editAndActivateSynchTest")
+    public void editAndActivateSynchTest() {
+        System.out.println("Init 'BasicTests.editAndActivateSynchTest' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             editAndActivateSynch();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.showSynchInformation")
-    public void showSynchInformation() {
-        System.out.println("Init 'BasicTests.showSynchInformation' test");
+    @Test(groups = "BasicTests.showSynchInformationTest")
+    public void showSynchInformationTest() {
+        System.out.println("Init 'BasicTests.showSynchInformationTest' test");
         try{
-            login("automationtester@mailinator.com", "itexico1*");
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             showSynchInformation();
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(groups = "BasicTests.modifyUserInformationTest")
+    public void modifyUserInformationTest() {
+        System.out.println("Init 'BasicTests.modifyUserInformationTest' test");
+        try{
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
+            modifyUserInformation(REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(groups = "BasicTests.modifyExistingPaymentMethodTest")
+    public void modifyExistingPaymentMethodTest() {
+        System.out.println("Init 'BasicTests.modifyExistingPaymentMethodTest' test");
+        try{
+            login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
+            modifyExistingPaymentMethod(EDIT_PAYMENT_METHOD_CARDHOLDER_NAME, EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES, EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(groups = "BasicTests.displaySourceVerificationInstructions")
+    public void displaySourceVerificationInstructions() {
+        System.out.println("Init 'BasicTests.displaySourceVerificationInstructions' test");
+        try{
+            showSourceVerificationInstructions();
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(groups = "BasicTests.displayTargetVerificationInstructions")
+    public void displayTargetVerificationInstructions() {
+        System.out.println("Init 'BasicTests.displayTargetVerificationInstructions' test");
+        try{
+            showTargetVerificationInstructions();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
