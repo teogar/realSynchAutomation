@@ -14,7 +14,7 @@ import static utils.Properties.VOICE_PAD_CLIENT_ID;
 
 public class SiDxTest extends BasicFlows {
     /**
-     * Desription: Choose SiDx as source and SalesForce as target
+     * Description: Choose SiDx as source and SalesForce as target
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
@@ -28,7 +28,7 @@ public class SiDxTest extends BasicFlows {
     }
 
     /**
-     * Desription: Choose SiDx as source and FollowUpBoss as target
+     * Description: Choose SiDx as source and FollowUpBoss as target
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
@@ -42,7 +42,7 @@ public class SiDxTest extends BasicFlows {
     }
 
     /**
-     * Desription: Choose SiDx as source and Contactually as target
+     * Description: Choose SiDx as source and Contactually as target
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
@@ -56,7 +56,7 @@ public class SiDxTest extends BasicFlows {
     }
 
     /**
-     * Desription: Choose SiDx as source and BoomTown as target
+     * Description: Choose SiDx as source and BoomTown as target
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
@@ -68,4 +68,58 @@ public class SiDxTest extends BasicFlows {
         selectTatrget("BoomTown");
         saveSynchAsDraft();
     }
+
+    /**
+     * Description: Choose SiDx as source and SalesForce as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void SiDx2SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("SiDx vs SalesForce saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("SiDx");
+        selectTatrget("SalesForce");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
+
+    /**
+     * Description: Choose SiDx as source and FollowUpBoss as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void SiDx2FollowUpBossAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("SiDx vs FollowUpBoss saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("SiDx");
+        selectTatrget("FollowUpBoss");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
+
+    /**
+     * Description: Choose SiDx as source and Contactually as target
+     * this flow saves it as draft displaying verification instructions
+      */
+    @Test(groups = "unit 1")
+    public void SiDx2ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("SiDx vs Contactually saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("SiDx");
+        selectTatrget("Contactually");
+        saveSynchAsDraftDisplayingVerificationsInstructions();    }
+
+    /**
+     * Description: Choose SiDx as source and BoomTown as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void SiDx2BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("SiDx vs BoomTown saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("SiDx");
+        selectTatrget("BoomTown");
+        saveSynchAsDraftDisplayingVerificationsInstructions();    }
 }

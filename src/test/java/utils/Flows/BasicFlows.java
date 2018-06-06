@@ -11,7 +11,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-
 import static utils.Properties.CONTACTUALLY_API_KEY;
 import static utils.Properties.FOLLOW_UP_BOSS_API_KEY;
 
@@ -126,6 +125,19 @@ public class BasicFlows extends BaseTest {
     }
 
     @Test
+    public boolean saveSynchAsDraftDisplayingVerificationsInstructions() throws InterruptedException {
+        showSourceVerificationInstructions();
+        showTargetVerificationInstructions();
+        Thread.sleep(3000);
+        credentialsPage.clickOnCancelButton();
+        Thread.sleep(500);
+        credentialsPage.clickOnYesAlertButton();
+        Thread.sleep(500);
+        credentialsPage.clickOnOkAlertButton();
+        return true;
+    }
+
+    @Test
     public boolean voicePadCredentials(String ID) {
         credentialsPage.clickOnSourceInputButton();
         inputCredentialsPage.enterClientId(ID);
@@ -218,16 +230,22 @@ public class BasicFlows extends BaseTest {
     public void modifyUserInformation(String firstName, String lastName, String email){
         topPage.clickOnUserAvatarButton();
         topPage.clickOnAccountSettings();
+        /*
+        Commented since this page doesn´t support modifications at the time 6/6/2018
+        accountSettingsPage.sendFirstName(firstName);
+        accountSettingsPage.sendLastName(lastName);
+        accountSettingsPage.sendEmail(email);
+        */
     }
 
-    public void modifyExistingPaymentMethod(String cardHolder, String cardNumber, String expiresAt, boolean defaultPayment){
+    public void modifyExistingPaymentMethod(String cardHolder, String monthExpiresAt, String yearExpiresAt){
         topPage.clickOnUserAvatarButton();
         topPage.clickOnAccountSettings();
         paymentMethodPage.clickOnPaymentMethodButton();
         paymentMethodPage.clickOnEditPaymentMethodButton();
-        paymentMethodPage.sendEditCardHolderName("Automation Tester2");
-        paymentMethodPage.sendEditMonthExpires("03");
-        paymentMethodPage.sendEditYearExpires("2025");
+        paymentMethodPage.sendEditCardHolderName(cardHolder);
+        paymentMethodPage.sendEditMonthExpires(monthExpiresAt);
+        paymentMethodPage.sendEditYearExpires(yearExpiresAt);
         paymentMethodPage.clickOnEditSaveButton();
     }
     public void addNewPaymentMethod(String cardHolder, String cardNumber, String expiresAt, String cvv, String zipcode, boolean defaultPayment) throws InterruptedException {
@@ -261,13 +279,21 @@ public class BasicFlows extends BaseTest {
     public void showActivationInstuctions(){
         dashBoardPage.clickOnElipsisIcon();
         dashBoardPage.clickOnActivationInstructionsLink();
-        dashBoardPage.clickOnDoneButton();
+        while(dashBoardPage.checkForNextButton()){
+            dashBoardPage.clickOnNextButton();
+        }
+        if(dashBoardPage.checkForDoneButton()){
+            dashBoardPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
     }
 
     public void editDraftSynch(){
         dashBoardPage.clickOnElipsisIcon();
         dashBoardPage.clickOnEditSynchLink();
-        // next button
+
         // cancel
         // ok
     }
@@ -287,4 +313,30 @@ public class BasicFlows extends BaseTest {
         synchStatus = dashBoardPage.getSynchInformation();
         System.out.println(synchStatus);
     }
+
+    public void showSourceVerificationInstructions(){
+        credentialsPage.clickOnSourceVerificationInstructions();
+        while(verificationInstructionsPage.checkForNextButton()){
+            verificationInstructionsPage.clickOnNextButton();
+        }
+        if(verificationInstructionsPage.checkForDoneButton()){
+            verificationInstructionsPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
+    }
+
+    public void showTargetVerificationInstructions(){
+        credentialsPage.clickOnTargetVerificationInstructions();
+        while(verificationInstructionsPage.checkForNextButton()){
+            verificationInstructionsPage.clickOnNextButton();
+        }
+        if(verificationInstructionsPage.checkForDoneButton()){
+            verificationInstructionsPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
+     }
 }

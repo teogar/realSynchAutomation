@@ -63,4 +63,64 @@ public class RealGeeksTest extends BasicFlows {
         selectTatrget("BoomTown");
         saveSynchAsDraft();
     }
+
+    /**
+     * Desription: Choose RealGeeks as source and SalesForce as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("RealGeeks vs SalesForce saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("SalesForce");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose RealGeeks as source and FollowUpBoss as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2FollowUpBossAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("RealGeeks vs FollowUpBoss saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("FollowUpBoss");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and Contactually as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("RealGeeks vs Contactually saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("Contactually");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and BoomTown as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void RealGeeks2BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("RealGeeks vs BoomTown saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("RealGeeks");
+        selectTatrget("BoomTown");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
 }

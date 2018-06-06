@@ -142,4 +142,134 @@ public class VoicePadTest extends BasicFlows {
         boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD);
         saveSynchAsDraft();
     }
+
+    //_________________________________________________________________________
+
+    /**
+     * Desription: Choose VoicePad as source and SalesForce as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs SalesForce saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("SalesForce");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and FollowUpBoss as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2FollowupbossAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs FollowUpBoss saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("FollowUpBoss");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and Contactually as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs Contactually saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("Contactually");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose VoicePad as source and BoomTown as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs BoomTown saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("BoomTown");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Description: Add new Synch, VoicePad as source
+     * and SalesForce as target, fill out Credentials
+     * & save it as Draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2SalesForceWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs SalesForce with credentials saved as draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("SalesForce");
+        voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
+
+    /**
+     * Description: Add new Synch, VoicePad as source
+     * and FollowUpBoss as target, fill out Credentials
+     * & save it as Draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2FollowUpBossWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("FollowUpBoss");
+        voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
+
+    /**
+     * Description: Add new Synch, VoicePad as source
+     * and FollowUpBoss as target, fill out Credentials
+     * & save it as Draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2ContractuallyWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs Contractually with credentials saved as draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("Contractually");
+        voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
+
+    /**
+     * Description: Add new Synch, VoicePad as source
+     * and FollowUpBoss as target, fill out Credentials
+     * & save it as Draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void VoicePad2BoomTownWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("VoicePad vs BoomTown with credentials saved as draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("VoicePad");
+        selectTatrget("BoomTown");
+        voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD);
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+    }
 }

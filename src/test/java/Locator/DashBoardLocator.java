@@ -17,6 +17,7 @@ public class DashBoardLocator {
     public static final String OK_BUTTON = "//button[contains(text(),'Ok')]";
     public static final String CLOSE_ACTIVATION_INSTRUCTIONS_BUTTON = "//span[@class='fa fa-fw fa-close']";
     public static final String BACK_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-arrow-left']";
+    public static final String NEXT_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-arrow-right']";
     public static final String DONE_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-check']";
     public static final String DEACTIVATE_POP_UP_CANCEL = "//button[contains(text(),'Cancel')]";
     public static final String DEACTIVATE_POP_UP_YES = "//button[contains(text(),'Yes')]";

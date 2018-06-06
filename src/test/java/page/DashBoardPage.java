@@ -60,6 +60,9 @@ public class DashBoardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = DashBoardLocator.BACK_ACTIVATION_INSTRUCTIONS_BUTTON)
     static WebElement backButton;
 
+    @FindBy(how = How.XPATH, using = DashBoardLocator.NEXT_ACTIVATION_INSTRUCTIONS_BUTTON)
+    static WebElement nextButton;
+
     @FindBy(how = How.XPATH, using = DashBoardLocator.CLOSE_ACTIVATION_INSTRUCTIONS_BUTTON)
     static WebElement closeButton;
 
@@ -168,7 +171,7 @@ public class DashBoardPage extends BaseTest {
     }
   
     public static boolean clickOnDeactivateSynchLink() {
-        System.out.print("Looking for 'Submit' button");
+        System.out.print("Looking for 'Deactivate synch' button");
         if(deactivateSyncLink.isDisplayed()) {
             System.out.print(" : FOUND");
             deactivateSyncLink.click();
@@ -314,6 +317,19 @@ public class DashBoardPage extends BaseTest {
         }
     }
 
+    public static void clickOnNextButton() {
+        System.out.print("Looking for 'nextButton' button");
+        if(nextButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            nextButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
     public static String getSynchInformation(){
         System.out.print("Looking for 'synchInformation' label");
         if(synchInformation.isDisplayed()) {
@@ -324,5 +340,29 @@ public class DashBoardPage extends BaseTest {
             System.out.println(" : NOT FOUND");
             throw new RuntimeException();
         }
+    }
+
+    public static boolean checkForNextButton(){
+        System.out.print("Checking if the 'Next' button is displayed");
+        try {
+            if(nextButton.isDisplayed()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        catch (Exception e) { return false; }
+    }
+
+    public static boolean checkForDoneButton(){
+        System.out.print("Checking if the 'Done' button is displayed");
+        try {
+            if(doneButton.isDisplayed()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        catch (Exception e) { return false; }
     }
 }
