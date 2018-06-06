@@ -1,5 +1,6 @@
 package test;
 
+import Locator.VerificationInstructionsLocator;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -31,7 +32,8 @@ public class BaseTest {
     public AccountSettingsPage accountSettingsPage;
     public ChangePasswordPage changePasswordPage;
     public SignUpPage signUpPage;
-
+    public PaymentMethodPage paymentMethodPage;
+    public VerificationInstructionsPage verificationInstructionsPage;
 
     public ChromeOptions options  = new ChromeOptions();
     public static final String TEST_CHROME_PATH ="/Users/rchacon/Documents/RealSynch/src/chromedriver";
@@ -71,6 +73,8 @@ public class BaseTest {
         accountSettingsPage = new AccountSettingsPage(driver);
         changePasswordPage = new ChangePasswordPage(driver);
         signUpPage = new SignUpPage(driver);
+        paymentMethodPage = new PaymentMethodPage(driver);
+        verificationInstructionsPage = new VerificationInstructionsPage(driver);
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.navigate().to("https://realsynch-integration.herokuapp.com/login");
