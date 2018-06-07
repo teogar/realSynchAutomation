@@ -54,7 +54,7 @@ public class BasicTests extends BasicFlows {
         System.out.println("Init 'BasicTests.addNewPaymentMethod' test");
         try {
             login(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            addNewPaymentMethod("Automation Tester 3", "4111111111111111","0225","098","90210",true);
+            addNewPaymentMethod(PAYMENT_METHOD_CARDHOLDER_NAME, PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER,PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT,PAYMENT_METHOD_CARDHOLDER_CVV,PAYMENT_METHOD_CARDHOLDER_ZIPCODE,true);
         } catch (RuntimeException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

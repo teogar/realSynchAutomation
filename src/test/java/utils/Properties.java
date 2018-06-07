@@ -16,6 +16,7 @@ public class Properties {
 	public static final String AUTOMATION_PASSWORD = "itexico1*" ;
 	public static final String NEW_PASSWORD = "itexico2*" ;
 	public static final String AUTOMATION_USERNAME = "automationtester@mailinator.com";
+
 	public static final String SALES_FORCE_CREDENTIAL = "hmarin@itexico.net.rsbxv1";
 	public static final String SALES_FORCE_PWD = "Tgar$ia2018";
 	public static final String SALES_FORCE_TOKEN = "zNI1ISNV5Jx0cndV8plhuwZp";
@@ -27,7 +28,14 @@ public class Properties {
 	public static final String VOICE_PAD_PWD = "teoteo999@mailinator.com";
 	public static final String BOOM_TOWN_EMAIL = "franciscojavier.corona@outlook.com";
 	public static final String BOOM_TOWN_PWD = "tFJC0r0n4";
+
 	public static final String EDIT_PAYMENT_METHOD_CARDHOLDER_NAME = "John Connor";
 	public static final String EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES = "02";
 	public static final String EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES = "2025";
+
+	public static final String PAYMENT_METHOD_CARDHOLDER_NAME = "John Connor";
+	public static final String PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT = "0225";
+	public static final String PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER = "4111111111111111";
+	public static final String PAYMENT_METHOD_CARDHOLDER_CVV = "202";
+	public static final String PAYMENT_METHOD_CARDHOLDER_ZIPCODE = "90210";
 }
