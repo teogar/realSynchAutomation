@@ -69,4 +69,65 @@ public class Br360Test extends BasicFlows {
         saveSynchAsDraft();
         logout();
     }
+
+
+    /**
+     * Description: Choose Br360 as source and SalesForce as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void Br3602SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("Br360 vs SalesForce saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("Br360");
+        selectTatrget("SalesForce");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose Br360 as source and FollowUpBoss as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void Br3602FollowupbossAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("Br360 vs FollowUpBoss saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("Br360");
+        selectTatrget("FollowUpBoss");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose Br360 as source and Contactually as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void Br3602ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("Br360 vs Contactually saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("Br360");
+        selectTatrget("Contactually");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
+
+    /**
+     * Desription: Choose Br360 as source and BoomTown as target
+     * this flow saves it as draft displaying verification instructions
+     */
+    @Test(groups = "unit 1")
+    public void Br3602BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
+        System.out.println("Br360 vs BoomTown saved as Draft displaying verification instructions");
+        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSource("Br360");
+        selectTatrget("BoomTown");
+        saveSynchAsDraftDisplayingVerificationsInstructions();
+        logout();
+    }
 }

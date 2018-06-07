@@ -14,5 +14,14 @@ public class DashBoardLocator {
     public static final String DEACTIVATE_SYNCH_LINK = "//button[contains(text(),'Deactivate')]";
     public static final String ACTIVATION_INSTRUCTIONS_SYNCH_BUTTON = "//button[contains(text(),'Activation Instructions')]";
     public static final String EDIT_SYNCH_BUTTON = "//button[contains(text(),'Edit')]";
+    public static final String OK_BUTTON = "//button[contains(text(),'Ok')]";
+    public static final String CLOSE_ACTIVATION_INSTRUCTIONS_BUTTON = "//span[@class='fa fa-fw fa-close']";
+    public static final String BACK_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-arrow-left']";
+    public static final String NEXT_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-arrow-right']";
+    public static final String DONE_ACTIVATION_INSTRUCTIONS_BUTTON = "//i[@class='fa fa-check']";
+    public static final String DEACTIVATE_POP_UP_CANCEL = "//button[contains(text(),'Cancel')]";
+    public static final String DEACTIVATE_POP_UP_YES = "//button[contains(text(),'Yes')]";
+    public static final String SYNCH_INFORMATION_LABEL = "//div[@class='ui-g synch_sumary']";
+
 }
 

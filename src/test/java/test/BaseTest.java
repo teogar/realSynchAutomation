@@ -17,6 +17,12 @@ import page.ResetPasswordPage;
 import page.SourcePage;
 import page.TopPage;
 import page.WizardPage;
+import page.BottomPage;
+import page.AccountSettingsPage;
+import page.SignUpPage;
+import page.ChangePasswordPage;
+import page.PaymentMethodPage;
+import page.VerificationInstructionsPage;
 import utils.Properties;
 
 import java.net.MalformedURLException;
@@ -35,6 +41,12 @@ public class BaseTest {
     public SourcePage sourcePage;
     public TopPage topPage;
     public WizardPage wizardPage;
+    public BottomPage bottomPage;
+    public AccountSettingsPage accountSettingsPage;
+    public ChangePasswordPage changePasswordPage;
+    public SignUpPage signUpPage;
+    public PaymentMethodPage paymentMethodPage;
+    public VerificationInstructionsPage verificationInstructionsPage;
 
     public ChromeOptions options  = new ChromeOptions();
     public static final String TEST_CHROME_PATH ="/Users/rchacon/Documents/RealSynch/src/chromedriver";
@@ -60,16 +72,22 @@ public class BaseTest {
       desiredCapabilities.setCapability(FirefoxDriver.PROFILE, firefoxProfile);
       driver = new RemoteWebDriver(new URL("http://45.33.121.99:4444/wd/hub"), desiredCapabilities);
 
-      credentialsPage = new CredentialsPage(driver);
-      dashBoardPage = new DashBoardPage(driver);
-      finishPage = new FinishPage(driver);
-      forgotPasswordPage = new ForgotPasswordPage(driver);
-      inputCredentialsPage = new InputCredentialsPage(driver);
-      loginPage = new LoginPage(driver);
-      resetPasswordPage = new ResetPasswordPage(driver);
-      sourcePage = new SourcePage(driver);
-      topPage = new TopPage(driver);
-      wizardPage = new WizardPage(driver);
+        credentialsPage = new CredentialsPage(driver);
+        dashBoardPage = new DashBoardPage(driver);
+        finishPage = new FinishPage(driver);
+        forgotPasswordPage = new ForgotPasswordPage(driver);
+        inputCredentialsPage = new InputCredentialsPage(driver);
+        loginPage = new LoginPage(driver);
+        resetPasswordPage = new ResetPasswordPage(driver);
+        sourcePage = new SourcePage(driver);
+        topPage = new TopPage(driver);
+        wizardPage = new WizardPage(driver);
+        bottomPage = new BottomPage(driver);
+        accountSettingsPage = new AccountSettingsPage(driver);
+        changePasswordPage = new ChangePasswordPage(driver);
+        signUpPage = new SignUpPage(driver);
+        paymentMethodPage = new PaymentMethodPage(driver);
+        verificationInstructionsPage = new VerificationInstructionsPage(driver);
 
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       driver.navigate().to("https://realsynch-integration.herokuapp.com/login");

@@ -15,4 +15,5 @@ public class CredentialsLocator {
     public static final String NO_BUTON = "//button[contains(text(),'No')]";
     public static final String YES_BUTTON = "//button[contains(text(),'Yes')]";
     public static final String OK_BUTTON = "//button[contains(text(),'OK')]";
+
 }

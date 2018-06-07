@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25d7f2b3-cce7-4b3d-ba22-029104cf01c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/ChangePasswordLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/ChangePasswordLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/SignUpLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/SignUpLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/BoomTownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/BoomTownPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/BottomPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/BottomPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/TopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/TopPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BasicTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,14 +20,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+      <file leaf-file-name="BasicFlows.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="306" column="47" selection-start-line="306" selection-start-column="47" selection-end-line="306" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2227">
+              <caret line="134" column="69" selection-start-line="134" selection-start-column="69" selection-end-line="134" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashBoardPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4012">
+              <caret line="242" column="37" selection-start-line="242" selection-start-column="37" selection-end-line="242" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashBoardLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerificationInstructionsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/VerificationInstructionsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="106" column="5" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="89" column="47" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -74,7 +129,13 @@
       <find>RS_REG_FIRST_NAME</find>
       <find>ava</find>
       <find>pass</find>
+      <find>Dash</find>
+      <find>clickOnForgotPasswordButton</find>
+      <find>sign</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Description</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="ONTO" value="refs/heads/dev_oscar.reynoso" />
@@ -95,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/test/scIdXTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/PropertyBasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/RealSRegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
@@ -128,12 +187,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/CredentialsLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/TopPageLocator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/DashBoardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
@@ -144,8 +201,12 @@
         <option value="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Locator/BoomTownLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/BoomTownPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/BasicTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java" />
       </list>
     </option>
   </component>
@@ -168,11 +229,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-350" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1928" />
+    <option name="y" value="-675" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -182,7 +243,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="realSynchAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Flows" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -228,47 +330,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Locator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RealSynch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RealSynch" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,19 +338,19 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/utils" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/test/Page" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/test" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/utils" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/Page" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -495,12 +557,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <list>
       <item itemvalue="TestNG.SiDxTest.SiDx2SalesForceWCredentialsAsDraft" />
       <item itemvalue="TestNG.VoicePadTest.VoicePad2SalesForceWCredentialsAsDraft" />
@@ -581,29 +637,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-331" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="-1928" y="-675" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49947917" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.32897604" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22790202" />
-      <window_info id="Learn" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Fabric" order="4" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -611,7 +665,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Fabric" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.228125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -627,11 +682,10 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22838138" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -665,7 +719,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second delivery to POM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second delivery to POM" />
+    <MESSAGE value="6/6 Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/6 Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,21 +735,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.7.1/selenium-api-3.7.1.jar!/org/openqa/selenium/JavascriptExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.7.1/selenium-support-3.7.1.jar!/org/openqa/selenium/support/FindBy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UpadateCredsPage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0.jar!/com/google/common/base/Preconditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -767,12 +807,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/DeactivateSynchPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/ShowCasePage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Locators.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/SourcePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/SourceLocator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/FinishLocator.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Locator/DashBoardLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/WizardLocator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/SalesForcePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/page/VoicePadPage.java" />
@@ -788,18 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Locator/LoginLocator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -812,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="4012">
+          <caret line="242" column="37" selection-start-line="242" selection-start-column="37" selection-end-line="242" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -883,17 +918,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="178" column="52" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="141" column="27" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage1.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/TopPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="89" column="47" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="134" column="69" selection-start-line="134" selection-start-column="69" selection-end-line="134" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Flows/BasicFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="306" column="47" selection-start-line="306" selection-start-column="47" selection-end-line="306" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

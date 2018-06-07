@@ -9,6 +9,7 @@ import test.BaseTest;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static utils.Properties.CONTACTUALLY_API_KEY;
 import static utils.Properties.FOLLOW_UP_BOSS_API_KEY;
@@ -124,6 +125,19 @@ public class BasicFlows extends BaseTest {
     }
 
     @Test
+    public boolean saveSynchAsDraftDisplayingVerificationsInstructions() throws InterruptedException {
+        showSourceVerificationInstructions();
+        showTargetVerificationInstructions();
+        Thread.sleep(3000);
+        credentialsPage.clickOnCancelButton();
+        Thread.sleep(500);
+        credentialsPage.clickOnYesAlertButton();
+        Thread.sleep(500);
+        credentialsPage.clickOnOkAlertButton();
+        return true;
+    }
+
+    @Test
     public boolean voicePadCredentials(String ID) {
         credentialsPage.clickOnSourceInputButton();
         inputCredentialsPage.enterClientId(ID);
@@ -183,4 +197,147 @@ public class BasicFlows extends BaseTest {
         //driver.switchTo().window(parent);
         return true;
     }
+
+    public void forgotPassword(String username){
+        loginPage.clickOnForgotPasswordButton();
+        forgotPasswordPage.sendPwd(username);
+    }
+
+    public void signUp(String team, String firstName, String lastName, String email, String password, String company, String phoneNumber){
+
+        switch(team) {
+            case "Beta":
+                break;
+            case "Lite":
+                break;
+            case "Team":
+                break;
+            case "Super Team/Broker":
+                break;
+        }
+        signUpPage.sendFirstNameInput(firstName);
+        signUpPage.sendLastNameInput(lastName);
+        signUpPage.sendEmailInput(email);
+        signUpPage.sendPasswordInput(password);
+        signUpPage.sendConfirmPasswordInput(password);
+        signUpPage.sendCompanyInput(company);
+        signUpPage.sendPhoneNumberInput(phoneNumber);
+        signUpPage.clickOnSubmitButton();
+
+
+    }
+
+    public void modifyUserInformation(String firstName, String lastName, String email){
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
+        /*
+        Commented since this page doesn´t support modifications at the time 6/6/2018
+        accountSettingsPage.sendFirstName(firstName);
+        accountSettingsPage.sendLastName(lastName);
+        accountSettingsPage.sendEmail(email);
+        */
+    }
+
+    public void modifyExistingPaymentMethod(String cardHolder, String monthExpiresAt, String yearExpiresAt){
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
+        paymentMethodPage.clickOnPaymentMethodButton();
+        paymentMethodPage.clickOnEditPaymentMethodButton();
+        paymentMethodPage.sendEditCardHolderName(cardHolder);
+        paymentMethodPage.sendEditMonthExpires(monthExpiresAt);
+        paymentMethodPage.sendEditYearExpires(yearExpiresAt);
+        paymentMethodPage.clickOnEditSaveButton();
+    }
+    public void addNewPaymentMethod(String cardHolder, String cardNumber, String expiresAt, String cvv, String zipcode, boolean defaultPayment) throws InterruptedException {
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnAccountSettings();
+        TimeUnit.SECONDS.sleep(10);
+        paymentMethodPage.clickOnPaymentMethodButton();
+        paymentMethodPage.clickOnAddNewPaymentMethodButtonn();
+        paymentMethodPage.sendNewCardHolderName(cardHolder);
+        paymentMethodPage.sendNewCardNumber(cardNumber);
+        paymentMethodPage.sendNewExpiresAt(expiresAt);
+        paymentMethodPage.sendNewCVV(cvv);
+        paymentMethodPage.sendNewZipCode(zipcode);
+        paymentMethodPage.clickOnNewSaveButton();
+    }
+    public void changePassword(String newPassword){
+        topPage.clickOnUserAvatarButton();
+        topPage.clickOnChangePasswordButton();
+        changePasswordPage.sendNewPassword(newPassword);
+        changePasswordPage.sendConfirmNewPassword(newPassword);
+        changePasswordPage.clickOnSaveButton();
+        changePasswordPage.clickOnOkButton();
+    }
+    public void activateSynch(){
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnActivateSynchLink();
+        dashBoardPage.clickOnYesButton();
+        dashBoardPage.clickOnOkButton();
+    }
+
+    public void showActivationInstuctions(){
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnActivationInstructionsLink();
+        while(dashBoardPage.checkForNextButton()){
+            dashBoardPage.clickOnNextButton();
+        }
+        if(dashBoardPage.checkForDoneButton()){
+            dashBoardPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
+    }
+
+    public void editDraftSynch(){
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnEditSynchLink();
+        //Edit information of synch here
+        credentialsPage.clickOnNextButton();
+        finishPage.clickCancelButton();
+    }
+
+    public void editAndActivateSynch(){
+        dashBoardPage.clickOnElipsisIcon();
+        dashBoardPage.clickOnEditSynchLink();
+        //Edit information of synch here
+        credentialsPage.clickOnNextButton();
+        finishPage.clickActivateButton();
+        credentialsPage.clickOnOkAlertButton();
+    }
+
+    public void showSynchInformation(){
+        String synchStatus;
+
+        dashBoardPage.clickOnCalendarButton();
+        synchStatus = dashBoardPage.getSynchInformation();
+        System.out.println(synchStatus);
+    }
+
+    public void showSourceVerificationInstructions(){
+        credentialsPage.clickOnSourceVerificationInstructions();
+        while(verificationInstructionsPage.checkForNextButton()){
+            verificationInstructionsPage.clickOnNextButton();
+        }
+        if(verificationInstructionsPage.checkForDoneButton()){
+            verificationInstructionsPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
+    }
+
+    public void showTargetVerificationInstructions(){
+        credentialsPage.clickOnTargetVerificationInstructions();
+        while(verificationInstructionsPage.checkForNextButton()){
+            verificationInstructionsPage.clickOnNextButton();
+        }
+        if(verificationInstructionsPage.checkForDoneButton()){
+            verificationInstructionsPage.clickOnDoneButton();
+        }
+        else{
+            throw new RuntimeException("Done button is not displayed");
+        }
+     }
 }
