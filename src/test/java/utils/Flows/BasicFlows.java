@@ -293,17 +293,18 @@ public class BasicFlows extends BaseTest {
     public void editDraftSynch(){
         dashBoardPage.clickOnElipsisIcon();
         dashBoardPage.clickOnEditSynchLink();
-
-        // cancel
-        // ok
+        //Edit information of synch here
+        credentialsPage.clickOnNextButton();
+        finishPage.clickCancelButton();
     }
 
     public void editAndActivateSynch(){
         dashBoardPage.clickOnElipsisIcon();
         dashBoardPage.clickOnEditSynchLink();
-        // next button
-        // activate
-        // ok
+        //Edit information of synch here
+        credentialsPage.clickOnNextButton();
+        finishPage.clickActivateButton();
+        credentialsPage.clickOnOkAlertButton();
     }
 
     public void showSynchInformation(){
