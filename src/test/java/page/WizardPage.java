@@ -1,6 +1,6 @@
 package page;
 
-import Locator.WizardLocator;
+import locator.WizardLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +19,7 @@ public class WizardPage extends BaseTest {
     static WebElement title;
 
     @FindBy( how = How.XPATH, using = WizardLocator.WIZARD_STEP_NAVIGATOR2)
-    static WebElement stepNavigator;
+    static public WebElement stepNavigator;
 
     @FindBy( how = How.XPATH, using = WizardLocator.REQUEST_NEW_PROVIDER_LINK)
     static WebElement newProviderLink;

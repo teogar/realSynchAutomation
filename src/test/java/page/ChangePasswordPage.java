@@ -1,6 +1,6 @@
 package page;
 
-import Locator.ChangePasswordLocator;
+import locator.ChangePasswordLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

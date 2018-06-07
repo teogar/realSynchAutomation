@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
-import Locator.CredentialsLocator;
+import locator.CredentialsLocator;
 
 public class CredentialsPage extends BaseTest {
 
@@ -55,7 +55,7 @@ public class CredentialsPage extends BaseTest {
     static WebElement yesButton;
 
     @FindBy( how = How.XPATH, using = CredentialsLocator.OK_BUTTON)
-    static WebElement okButton;
+    static public WebElement okButton;
 
     public static boolean clickOnStep3Navigator() {
         System.out.print("Looking for 'Step 2 Wizard Navigator' button");
@@ -156,7 +156,7 @@ public class CredentialsPage extends BaseTest {
     }
 
     public static boolean clickOnNextButton() {
-        System.out.print("Looking for 'Back' button");
+        System.out.print("Looking for 'Next' button");
         if(nextButton.isDisplayed()) {
             System.out.print(" : FOUND");
             nextButton.click();

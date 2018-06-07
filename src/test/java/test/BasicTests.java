@@ -1,7 +1,7 @@
 package test;
 
 import org.testng.annotations.Test;
-import utils.Flows.BasicFlows;
+import flows.BasicFlows;
 
 import static utils.Properties.*;
 

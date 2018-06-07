@@ -1,16 +1,16 @@
 package test;
 
 import org.testng.annotations.Test;
-import page.LoginPage;
-import utils.Flows.BasicFlows;
+import flows.BasicFlows;
 
 import static page.DashBoardPage.clickOnAddNewSynchButton;
 import static utils.Properties.AUTOMATION_PASSWORD;
 import static utils.Properties.AUTOMATION_USERNAME;
-import static utils.Properties.SALES_FORCE_CREDENTIAL;
-import static utils.Properties.SALES_FORCE_PWD;
-import static utils.Properties.SALES_FORCE_TOKEN;
-import static utils.Properties.VOICE_PAD_CLIENT_ID;
+import static utils.SourceTarget.BOOMTOWN;
+import static utils.SourceTarget.CONTACTUALLY;
+import static utils.SourceTarget.FOLLOWUPBOSS;
+import static utils.SourceTarget.SALESFROCE;
+import static utils.SourceTarget.SIDX;
 
 public class SiDxTest extends BasicFlows {
     /**
@@ -22,9 +22,10 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs SalesForce saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("SalesForce");
+        selectSource(SIDX);
+        selectTarget(SALESFROCE);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
@@ -36,9 +37,10 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs FollowUpBoss saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("FollowUpBoss");
+        selectSource(SIDX);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
@@ -50,9 +52,10 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs Contactually saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("Contactually");
+        selectSource(SIDX);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
@@ -64,9 +67,10 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs BoomTown saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("BoomTown");
+        selectSource(SIDX);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraft();
+        logout();
     }
 
     /**

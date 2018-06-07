@@ -1,6 +1,6 @@
 package page;
 
-import Locator.PaymentMethodLocator;
+import locator.PaymentMethodLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

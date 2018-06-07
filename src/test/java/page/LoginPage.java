@@ -1,6 +1,6 @@
 package page;
 
-import Locator.LoginLocator;
+import locator.LoginLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,7 +64,7 @@ public class LoginPage extends BaseTest {
         if(SubmitLink.isDisplayed()) {
             System.out.print(" : FOUND");
             SubmitLink.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
@@ -78,7 +78,7 @@ public class LoginPage extends BaseTest {
         if(forgotPasswordLink.isDisplayed()) {
             System.out.print(" : FOUND");
             forgotPasswordLink.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {
@@ -92,7 +92,7 @@ public class LoginPage extends BaseTest {
         if(RegisterLink.isDisplayed()) {
             System.out.print(" : FOUND");
             RegisterLink.click();
-            System.out.print(" & CLICKED");
+            System.out.println(" & CLICKED");
             return true;
         }
         else {

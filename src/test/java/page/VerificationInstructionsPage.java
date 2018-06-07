@@ -1,6 +1,6 @@
 package page;
 
-import Locator.VerificationInstructionsLocator;
+import locator.VerificationInstructionsLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,6 +1,6 @@
 package page;
 
-import Locator.DashBoardLocator;
+import locator.DashBoardLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,23 +21,20 @@ public class DashBoardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = DashBoardLocator.ADD_NEW_SYNC_BUTTON)
     static WebElement addNewSynchButton;
 
-    @FindBy(how = How.XPATH, using = DashBoardLocator.SOURCE_NAME)
-    static WebElement sourceName;
-
-    @FindBy(how = How.XPATH, using = DashBoardLocator.TARGET_NAME)
-    static WebElement targetName;
-
     @FindBy(how = How.XPATH, using = DashBoardLocator.CALENDAR_ICON)
     static WebElement calendarButton;
 
-    @FindBy(how = How.XPATH, using = DashBoardLocator.ELIPSIS_BUTTON)
+    @FindBy(how = How.XPATH, using = DashBoardLocator.ELIPSIS_LINK)
     static WebElement elipsisButton;
 
-    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATE_SYNCH_BUTTON)
+    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATE_SYNCH_LINK)
     static WebElement activateSynchLink;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.DEACTIVATE_SYNCH_LINK)
     static WebElement deactivateSyncLink;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_LINK)
+    static WebElement editSynchButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.SYNCH_STATUS)
     static WebElement synchStatus;
@@ -48,11 +45,8 @@ public class DashBoardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = DashBoardLocator.TARGET_CREDENTIALSISSUE_BUTTON)
     static WebElement targetCredentialsIssueButton;
 
-    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_BUTTON)
+    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_LINK)
     static WebElement activationInstructionsButton;
-
-    @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_BUTTON)
-    static WebElement editSynchButton;
 
     @FindBy(how = How.XPATH, using = DashBoardLocator.OK_BUTTON)
     static WebElement okButton;
@@ -90,29 +84,11 @@ public class DashBoardPage extends BaseTest {
         }
     }
 
-    public static String getSourceNameText() {
-        System.out.print("Looking for 'Source name' text");
-        if(sourceName.isDisplayed()) {
-            System.out.println(" : FOUND & RETRIEVED");
-            return sourceName.getText();
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return "NOT FOUND";
-        }
-    }
-  
-    public static String getTargetNameText() {
-        System.out.print("Looking for 'Target name' text");
-        if(targetName.isDisplayed()) {
-            System.out.println(" : FOUND & RETRIEVED");
-            return targetName.getText();
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            return "NOT FOUND";
-        }
-    }
+    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_LINK)
+    static WebElement activationInstructionsLink;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_LINK)
+    static WebElement editSynchLink;
 
     public static boolean clickOnAddNewSynchButton(){
         System.out.print("Looking for 'Add new synch button' button");
@@ -183,40 +159,12 @@ public class DashBoardPage extends BaseTest {
             throw new RuntimeException();
         }
     }
-  
-    public static boolean clickOnSourceCredentialsIssueButton() {
-        System.out.print("Looking for 'Source Credentials Issue' button");
-        if(sourceCredentialsIssueButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            sourceCredentialsIssueButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-  
-    public static boolean clickOnTargetCredentialsIssueButton() {
-        System.out.print("Looking for 'Target Credentials Issue' button");
-        if(targetCredentialsIssueButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            targetCredentialsIssueButton.click();
-            System.out.println(" & CLICKED");
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-  
+
     public static boolean clickOnActivationInstructionsLink() {
         System.out.print("Looking for 'Activation Instructions' button");
-        if(activationInstructionsButton.isDisplayed()) {
+        if(activationInstructionsLink.isDisplayed()) {
             System.out.println(" : FOUND");
-            activationInstructionsButton.click();
+            activationInstructionsLink.click();
             System.out.println(" & CLICKED");
             return true;
         }
@@ -228,9 +176,9 @@ public class DashBoardPage extends BaseTest {
   
     public static boolean clickOnEditSynchLink() {
         System.out.print("Looking for 'Edit Synch' button");
-        if(editSynchButton.isDisplayed()) {
+        if(editSynchLink.isDisplayed()) {
             System.out.print(" : FOUND");
-            editSynchButton.click();
+            editSynchLink.click();
             System.out.println(" & CLICKED");
             return true;
         }
@@ -239,6 +187,7 @@ public class DashBoardPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void clickOnCancelButton() {
         System.out.print("Looking for 'deactivateCancelButton' button");
         if(deactivateCancelButton.isDisplayed()) {

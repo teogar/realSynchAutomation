@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
-import Locator.SourceLocator;
+import locator.SourceLocator;
 
 public class SourcePage extends BaseTest {
 

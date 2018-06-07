@@ -1,6 +1,6 @@
 package page;
 
-import Locator.BottomPageLocator;
+import locator.BottomLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,14 +14,17 @@ public class BottomPage extends BaseTest {
         PageFactory.initElements(pageDriver, this);
     }
 
-    @FindBy( how = How.XPATH, using = BottomPageLocator.CANCEL_BUTTON)
+    @FindBy( how = How.XPATH, using = BottomLocator.CANCEL_BUTTON)
     static WebElement cancelButton;
 
-    @FindBy(how = How.XPATH, using = BottomPageLocator.BACK_BUTTON)
+    @FindBy(how = How.XPATH, using = BottomLocator.BACK_BUTTON)
     static WebElement backButton;
 
-    @FindBy(how = How.XPATH, using = BottomPageLocator.NEXT_BUTTON)
+    @FindBy(how = How.XPATH, using = BottomLocator.NEXT_BUTTON)
     static WebElement nextButton;
+
+    @FindBy(how = How.XPATH, using = BottomLocator.ACTIVATE_BUTTON)
+    public static WebElement activateButton;
 
     public static void clickOnCancelButton() {
         System.out.print("Looking for 'Cancel' button");
@@ -52,6 +55,19 @@ public class BottomPage extends BaseTest {
         if(nextButton.isDisplayed()) {
             System.out.print(" : FOUND");
             nextButton.click();
+            System.out.println(" & CLICKED");
+        }
+        else {
+            System.out.println(" : NOT FOUND");
+            throw new RuntimeException();
+        }
+    }
+
+    public static void clickOnActivateButton() {
+        System.out.print("Looking for 'Activate' button");
+        if(activateButton.isDisplayed()) {
+            System.out.print(" : FOUND");
+            activateButton.click();
             System.out.println(" & CLICKED");
         }
         else {

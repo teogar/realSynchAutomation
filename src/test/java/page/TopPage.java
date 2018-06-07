@@ -1,6 +1,6 @@
 package page;
 
-import Locator.TopPageLocator;
+import locator.TopLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,25 +15,25 @@ public class TopPage extends BaseTest{
         PageFactory.initElements(pageDriver, this);
     }
 
-    @FindBy( how = How.XPATH, using = TopPageLocator.GOTODASHBOARD_BUTTON)
+    @FindBy( how = How.XPATH, using = TopLocator.GOTODASHBOARD_BUTTON)
     static WebElement goToDashboardButton;
 
-    @FindBy(how = How.XPATH, using = TopPageLocator.CUSTOMERASSITANCE_BUTTON)
+    @FindBy(how = How.XPATH, using = TopLocator.CUSTOMERASSITANCE_BUTTON)
     static WebElement customerAssistanceButton;
 
-    @FindBy(how = How.XPATH, using = TopPageLocator.AVATAR_USER_BUTTON)
+    @FindBy(how = How.XPATH, using = TopLocator.AVATAR_USER_BUTTON)
     public static WebElement avatarUserButton;
 
-    @FindBy( how = How.XPATH, using = TopPageLocator.ACCOUNT_SETTINGS_BUTTON)
+    @FindBy( how = How.XPATH, using = TopLocator.ACCOUNT_SETTINGS_BUTTON)
     static WebElement accountSettingsButton;
 
-    @FindBy(how = How.XPATH, using = TopPageLocator.CHANGE_PASSWORD_BUTTON)
+    @FindBy(how = How.XPATH, using = TopLocator.CHANGE_PASSWORD_BUTTON)
     static WebElement changePasswordButtton;
 
-    @FindBy(how = How.XPATH, using = TopPageLocator.LOGOUT_BUTTON)
+    @FindBy(how = How.XPATH, using = TopLocator.LOGOUT_BUTTON)
     static WebElement logoutButton;
 
-    @FindBy(how = How.XPATH, using = TopPageLocator.OK_BUTTTON)
+    @FindBy(how = How.XPATH, using = TopLocator.OK_BUTTTON)
     static WebElement okButton;
 
     public static void clickOnOkButton(){

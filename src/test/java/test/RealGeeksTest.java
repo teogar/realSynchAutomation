@@ -1,11 +1,16 @@
 package test;
 
 import org.testng.annotations.Test;
-import utils.Flows.BasicFlows;
+import flows.BasicFlows;
 
 import static page.DashBoardPage.clickOnAddNewSynchButton;
 import static utils.Properties.AUTOMATION_PASSWORD;
 import static utils.Properties.AUTOMATION_USERNAME;
+import static utils.SourceTarget.BOOMTOWN;
+import static utils.SourceTarget.CONTACTUALLY;
+import static utils.SourceTarget.FOLLOWUPBOSS;
+import static utils.SourceTarget.REALGEEKS;
+import static utils.SourceTarget.SALESFROCE;
 
 public class RealGeeksTest extends BasicFlows {
     /**
@@ -17,8 +22,8 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs SalesForce saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("SalesForce");
+        selectSource(REALGEEKS);
+        selectTarget(SALESFROCE);
         saveSynchAsDraft();
     }
 
@@ -31,9 +36,10 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs FollowUpBoss saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("FollowUpBoss");
+        selectSource(REALGEEKS);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
@@ -45,9 +51,10 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs Contactually saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("Contactually");
+        selectSource(REALGEEKS);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
@@ -59,9 +66,10 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs BoomTown saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("BoomTown");
+        selectSource(REALGEEKS);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraft();
+        logout();
     }
 
     /**
