@@ -8,7 +8,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-
 public class ChangePasswordPage extends BaseTest {
     public ChangePasswordPage(WebDriver driver) {
         WebDriver pageDriver = driver;
@@ -42,6 +41,7 @@ public class ChangePasswordPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void clickOnSaveButton() {
         System.out.print("Looking for 'saveButton' button");
         if(saveButton.isDisplayed()) {
@@ -54,6 +54,7 @@ public class ChangePasswordPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void sendNewPassword(String newPassword) {
         System.out.print("Looking for 'password' input");
         if(newPasswordInput.isDisplayed()) {
@@ -66,6 +67,7 @@ public class ChangePasswordPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void sendConfirmNewPassword(String newPassword) {
         System.out.print("Looking for 'confirmpassword' input");
         if(confirmNewPasswordInput.isDisplayed()) {
@@ -78,6 +80,7 @@ public class ChangePasswordPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void clickOnOkButton() {
         System.out.print("Looking for 'okButton' button");
         if(okButton.isDisplayed()) {
@@ -90,6 +93,4 @@ public class ChangePasswordPage extends BaseTest {
             throw new RuntimeException();
         }
     }
-
-
 }

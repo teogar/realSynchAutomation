@@ -8,7 +8,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 
-
 public class AccountSettingsPage extends BaseTest{
     public AccountSettingsPage(WebDriver driver) {
         WebDriver pageDriver = driver;
@@ -34,6 +33,7 @@ public class AccountSettingsPage extends BaseTest{
             throw new RuntimeException();
         }
     }
+
     public static void sendLastName(String lastName) {
         System.out.print("Looking for 'lastNameInput' input");
         if(lastNameInput.isDisplayed()) {
@@ -46,6 +46,7 @@ public class AccountSettingsPage extends BaseTest{
             throw new RuntimeException();
         }
     }
+
     public static void sendEmail(String email) {
         System.out.print("Looking for 'email' input");
         if(emailInput.isDisplayed()) {

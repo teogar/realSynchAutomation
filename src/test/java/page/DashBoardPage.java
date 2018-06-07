@@ -72,6 +72,12 @@ public class DashBoardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = DashBoardLocator.SYNCH_INFORMATION_LABEL)
     static WebElement synchInformation;
 
+    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_LINK)
+    static WebElement activationInstructionsLink;
+
+    @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_LINK)
+    static WebElement editSynchLink;
+
     public static String getSynchStatusText() {
         System.out.print("Looking for 'Synch Status' text");
         if(synchStatus.isDisplayed()) {
@@ -83,12 +89,6 @@ public class DashBoardPage extends BaseTest {
             return "NOT FOUND";
         }
     }
-
-    @FindBy(how = How.XPATH, using = DashBoardLocator.ACTIVATION_INSTRUCTIONS_SYNCH_LINK)
-    static WebElement activationInstructionsLink;
-
-    @FindBy(how = How.XPATH, using = DashBoardLocator.EDIT_SYNCH_LINK)
-    static WebElement editSynchLink;
 
     public static boolean clickOnAddNewSynchButton(){
         System.out.print("Looking for 'Add new synch button' button");
@@ -188,37 +188,12 @@ public class DashBoardPage extends BaseTest {
         }
     }
 
-    public static void clickOnCancelButton() {
-        System.out.print("Looking for 'deactivateCancelButton' button");
-        if(deactivateCancelButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            deactivateCancelButton.click();
-            System.out.println(" & CLICKED");
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
 
     public static void clickOnYesButton() {
         System.out.print("Looking for 'deactivateYesButton' button");
         if(deactivateYesButton.isDisplayed()) {
             System.out.print(" : FOUND");
             deactivateYesButton.click();
-            System.out.println(" & CLICKED");
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-
-    public static void clickOnBackButton() {
-        System.out.print("Looking for 'backButton' button");
-        if(backButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            backButton.click();
             System.out.println(" & CLICKED");
         }
         else {
@@ -258,19 +233,6 @@ public class DashBoardPage extends BaseTest {
         if(okButton.isDisplayed()) {
             System.out.print(" : FOUND");
             okButton.click();
-            System.out.println(" & CLICKED");
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-
-    public static void clickOnNextButton() {
-        System.out.print("Looking for 'nextButton' button");
-        if(nextButton.isDisplayed()) {
-            System.out.print(" : FOUND");
-            nextButton.click();
             System.out.println(" & CLICKED");
         }
         else {

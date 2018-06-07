@@ -76,7 +76,7 @@ public class BasicFlows extends BaseTest {
                 System.out.println("Source not found, please check your source name");
                 return false;
         }
-        sourcePage.clickOnNextButton();
+        bottomPage.clickOnNextButton();
         return true;
     }
 
@@ -295,7 +295,7 @@ public class BasicFlows extends BaseTest {
         dashBoardPage.clickOnElipsisIcon();
         dashBoardPage.clickOnActivationInstructionsLink();
         while(dashBoardPage.checkForNextButton()){
-            dashBoardPage.clickOnNextButton();
+            bottomPage.clickOnNextButton();
         }
         if(dashBoardPage.checkForDoneButton()){
             dashBoardPage.clickOnDoneButton();

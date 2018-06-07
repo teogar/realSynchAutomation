@@ -82,8 +82,8 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs SalesForce saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("SalesForce");
+        selectSource(SIDX);
+        selectTarget(SALESFROCE);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 
@@ -96,8 +96,8 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs FollowUpBoss saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("FollowUpBoss");
+        selectSource(SIDX);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 
@@ -110,8 +110,8 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs Contactually saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("Contactually");
+        selectSource(SIDX);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraftDisplayingVerificationsInstructions();    }
 
     /**
@@ -123,7 +123,7 @@ public class SiDxTest extends BasicFlows {
         System.out.println("SiDx vs BoomTown saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("SiDx");
-        selectTatrget("BoomTown");
+        selectSource(SIDX);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraftDisplayingVerificationsInstructions();    }
 }

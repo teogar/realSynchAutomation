@@ -81,8 +81,8 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs SalesForce saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("SalesForce");
+        selectSource(REALGEEKS);
+        selectTarget(SALESFROCE);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -96,8 +96,8 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs FollowUpBoss saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("FollowUpBoss");
+        selectSource(REALGEEKS);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -111,8 +111,8 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs Contactually saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("Contactually");
+        selectSource(REALGEEKS);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -126,8 +126,8 @@ public class RealGeeksTest extends BasicFlows {
         System.out.println("RealGeeks vs BoomTown saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("RealGeeks");
-        selectTatrget("BoomTown");
+        selectSource(REALGEEKS);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }

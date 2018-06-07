@@ -38,6 +38,7 @@ public class BottomPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void clickOnBackButton() {
         System.out.print("Looking for 'Back' button");
         if(backButton.isDisplayed()) {
@@ -50,6 +51,7 @@ public class BottomPage extends BaseTest {
             throw new RuntimeException();
         }
     }
+
     public static void clickOnNextButton() {
         System.out.print("Looking for 'Next' button");
         if(nextButton.isDisplayed()) {

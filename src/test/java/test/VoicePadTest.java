@@ -22,7 +22,11 @@ import static utils.Properties.SALES_FORCE_CREDENTIAL;
 import static utils.Properties.SALES_FORCE_PWD;
 import static utils.Properties.SALES_FORCE_TOKEN;
 import static utils.Properties.VOICE_PAD_CLIENT_ID;
-
+import static utils.SourceTarget.BOOMTOWN;
+import static utils.SourceTarget.CONTACTUALLY;
+import static utils.SourceTarget.FOLLOWUPBOSS;
+import static utils.SourceTarget.SALESFROCE;
+import static utils.SourceTarget.VOICEPAD;
 
 public class VoicePadTest extends BasicFlows {
 
@@ -37,8 +41,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.SALESFROCE);
+        selectSource(VOICEPAD);
+        selectTarget(SALESFROCE);
         saveSynchAsDraft();
         logout();
     }
@@ -52,8 +56,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.FOLLOWUPBOSS);
+        selectSource(VOICEPAD);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraft();
         logout();
     }
@@ -67,8 +71,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contactually saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.CONTACTUALLY);
+        selectSource(VOICEPAD);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraft();
         logout();
     }
@@ -82,8 +86,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown saved as Draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.BOOMTOWN);
+        selectSource(VOICEPAD);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraft();
         logout();
     }
@@ -98,8 +102,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce with credentials saved as draft");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.SALESFROCE);
+        selectSource(VOICEPAD);
+        selectTarget(SALESFROCE);
         voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
         SalesForceFlows salesForceFlows = new SalesForceFlows();
         salesForceFlows.salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
@@ -118,7 +122,7 @@ public class VoicePadTest extends BasicFlows {
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.FOLLOWUPBOSS);
+        selectTarget(FOLLOWUPBOSS);
         voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
         FollowUpBossFlows followUpBossFlows = new FollowUpBossFlows();
         followUpBossFlows.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
@@ -137,7 +141,7 @@ public class VoicePadTest extends BasicFlows {
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(SourceTarget.VOICEPAD);
-        selectTarget(SourceTarget.CONTACTUALLY);
+        selectTarget(CONTACTUALLY);
         voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
         FollowUpBossFlows followUpBossFlows = new FollowUpBossFlows();
         followUpBossFlows.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
@@ -156,7 +160,7 @@ public class VoicePadTest extends BasicFlows {
         assertTrue(login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD));
         assertTrue(clickOnAddNewSynchButton());
         assertTrue(selectSource(SourceTarget.VOICEPAD));
-        assertTrue(selectTarget(SourceTarget.BOOMTOWN));
+        assertTrue(selectTarget(BOOMTOWN));
         assertTrue(voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID));
         BoomTownFlows boomTownFlows = new BoomTownFlows();
         assertTrue(boomTownFlows.boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
@@ -179,6 +183,7 @@ public class VoicePadTest extends BasicFlows {
         scrollToElelement(ACTIVATE_BUTTON);
         bottomPage.clickOnActivateButton();
         finishPage.clickOnOKPopupButton();
+        logout();
     }
 
     @Test(groups = "with_credentials")
@@ -193,6 +198,7 @@ public class VoicePadTest extends BasicFlows {
         scrollToElelement(ACTIVATE_BUTTON);
         bottomPage.clickOnActivateButton();
         finishPage.clickOnOKPopupButton();
+        logout();
     }
 
     //_________________________________________________________________________
@@ -206,8 +212,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("SalesForce");
+        selectSource(VOICEPAD);
+        selectTarget(SALESFROCE);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -221,8 +227,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("FollowUpBoss");
+        selectSource(VOICEPAD);
+        selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -236,8 +242,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contactually saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("Contactually");
+        selectSource(VOICEPAD);
+        selectTarget(CONTACTUALLY);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -251,8 +257,8 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown saved as Draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("BoomTown");
+        selectSource(VOICEPAD);
+        selectTarget(BOOMTOWN);
         saveSynchAsDraftDisplayingVerificationsInstructions();
         logout();
     }
@@ -267,10 +273,11 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce with credentials saved as draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("SalesForce");
-        voicePadCredentials(VOICE_PAD_CLIENT_ID);
-        salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
+        selectSource(VOICEPAD);
+        selectTarget(SALESFROCE);
+        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        SalesForceFlows SF = new SalesForceFlows();
+        SF.salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 
@@ -284,10 +291,11 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("FollowUpBoss");
-        voicePadCredentials(VOICE_PAD_CLIENT_ID);
-        followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
+        selectSource(VOICEPAD);
+        selectTarget(FOLLOWUPBOSS);
+        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        FollowUpBossFlows FUB = new FollowUpBossFlows();
+        FUB.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 
@@ -301,10 +309,11 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contractually with credentials saved as draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("Contractually");
-        voicePadCredentials(VOICE_PAD_CLIENT_ID);
-        followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
+        selectSource(VOICEPAD);
+        selectTarget(CONTACTUALLY);
+        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        FollowUpBossFlows FUB = new FollowUpBossFlows();
+        FUB.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 
@@ -318,10 +327,11 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown with credentials saved as draft displaying verification instructions");
         login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource("VoicePad");
-        selectTatrget("BoomTown");
-        voicePadCredentials(VOICE_PAD_CLIENT_ID);
-        boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD);
+        selectSource(VOICEPAD);
+        selectTarget(BOOMTOWN);
+        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        BoomTownFlows boom = new BoomTownFlows();
+        boom.boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD);
         saveSynchAsDraftDisplayingVerificationsInstructions();
     }
 }

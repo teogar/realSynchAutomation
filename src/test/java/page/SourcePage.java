@@ -109,43 +109,4 @@ public class SourcePage extends BaseTest {
             throw new RuntimeException();
         }
     }
-
-    public static boolean clickOnCancelButton() {
-        System.out.print("Looking for cancel button");
-        if(cancelButton.isDisplayed()) {
-            System.out.println(" : DONE");
-            cancelButton.click();
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-
-    public static boolean clickOnBackButton() {
-        System.out.print("Looking for back button");
-        if(backButton.isDisplayed()) {
-            System.out.println(" : DONE");
-            backButton.click();
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
-
-    public static boolean clickOnNextButton() {
-        System.out.print("Looking for next button");
-        if(nextButton.isDisplayed()) {
-            System.out.println(" : DONE");
-            nextButton.click();
-            return true;
-        }
-        else {
-            System.out.println(" : NOT FOUND");
-            throw new RuntimeException();
-        }
-    }
 }
