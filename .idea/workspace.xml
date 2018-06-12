@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f0622e0-0a04-4f07-a715-408bbdb31eee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/BasicFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/BasicFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/BoomTownFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/BoomTownFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/Br360Flows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/Br360Flows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/ContactuallyFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/ContactuallyFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/FollowUpBossFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/FollowUpBossFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/SalesForceFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/SalesForceFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/flows/VoicePadFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/flows/VoicePadFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,29 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Br360Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealGeeksTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiDxTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/SiDxTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -130,7 +100,6 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/RealSynch.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RealSynchRealReport.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/test/BasicTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/BasicFlows.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/BoomTownFlows.java" />
@@ -139,10 +108,11 @@
         <option value="$PROJECT_DIR$/src/test/java/flows/FollowUpBossFlows.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/ContactuallyFlows.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/Br360Flows.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -493,6 +463,14 @@
       <option name="presentableId" value="Default" />
       <updated>1528480916156</updated>
     </task>
+    <task id="LOCAL-00001" summary="Solving Errors">
+      <created>1528837576284</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1528837576284</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,6 +552,9 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Solving Errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving Errors" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/flows/BasicFlows.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6511">
@@ -985,6 +959,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/SiDxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="151" column="69" selection-start-line="151" selection-start-column="69" selection-end-line="151" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -998,31 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/SiDxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
