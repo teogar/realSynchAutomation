@@ -39,49 +39,49 @@ public class TopPage extends BaseTest{
     static WebElement okButton;
 
     public static boolean clickOnOkButton(){
-        System.out.print("clickOnOkButton");
+        System.out.println("clickOnOkButton");
         assertTrue(okButton.isDisplayed());
         okButton.click();
         return true;
     }
 
     public static boolean clickOnGoToDashboardButton(){
-        System.out.print("clickOnGoToDashboardButton");
+        System.out.println("clickOnGoToDashboardButton");
         assertTrue(goToDashboardButton.isDisplayed());
         goToDashboardButton.click();
         return true;
     }
 
     public static boolean clickOnCustomerAssitanceButton() {
-        System.out.print("clickOnCustomerAssitanceButton");
+        System.out.println("clickOnCustomerAssitanceButton");
         assertTrue(customerAssistanceButton.isDisplayed());
         customerAssistanceButton.click();
         return true;
     }
 
     public static boolean clickOnUserAvatarButton() {
-        System.out.print("clickOnUserAvatarButton");
+        System.out.println("clickOnUserAvatarButton");
         assertTrue(avatarUserButton.isDisplayed());
         avatarUserButton.click();
         return true;
     }
 
     public static boolean clickOnChangePasswordButton() {
-        System.out.print("clickOnChangePasswordButton");
+        System.out.println("clickOnChangePasswordButton");
         assertTrue(changePasswordButtton.isDisplayed());
         changePasswordButtton.click();
         return true;
     }
 
     public static boolean clickOnLogoutButton() {
-        System.out.print("clickOnLogoutButton");
+        System.out.println("clickOnLogoutButton");
         assertTrue(logoutButton.isDisplayed());
         logoutButton.click();
         return true;
     }
 
     public static boolean clickOnAccountSettings() {
-        System.out.print("clickOnAccountSettings");
+        System.out.println("clickOnAccountSettings");
         assertTrue(accountSettingsButton.isDisplayed());
         accountSettingsButton.click();
         return true;

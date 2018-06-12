@@ -1,7 +1,7 @@
 package test;
 
-import org.testng.annotations.Test;
 import flows.BasicFlows;
+import org.testng.annotations.Test;
 
 import static page.DashBoardPage.clickOnAddNewSynchButton;
 import static utils.Properties.AUTOMATION_PASSWORD;
@@ -20,7 +20,7 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2SalesForceAsDraft() throws InterruptedException {
         System.out.println("RealGeeks vs SalesForce saved as Draft");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(SALESFROCE);
@@ -34,12 +34,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2FollowUpBossAsDraft() throws InterruptedException {
         System.out.println("RealGeeks vs FollowUpBoss saved as Draft");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraft();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -49,12 +49,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2ContactuallyAsDraft() throws InterruptedException {
         System.out.println("RealGeeks vs Contactually saved as Draft");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(CONTACTUALLY);
         saveSynchAsDraft();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -64,12 +64,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2BoomTownAsDraft() throws InterruptedException {
         System.out.println("RealGeeks vs BoomTown saved as Draft");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(BOOMTOWN);
         saveSynchAsDraft();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -79,12 +79,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
         System.out.println("RealGeeks vs SalesForce saved as Draft displaying verification instructions");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(SALESFROCE);
         saveSynchAsDraftDisplayingVerificationsInstructions();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -94,12 +94,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2FollowUpBossAsDraftShowVerificationInstructions() throws InterruptedException {
         System.out.println("RealGeeks vs FollowUpBoss saved as Draft displaying verification instructions");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(FOLLOWUPBOSS);
         saveSynchAsDraftDisplayingVerificationsInstructions();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -109,12 +109,12 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
         System.out.println("RealGeeks vs Contactually saved as Draft displaying verification instructions");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(CONTACTUALLY);
         saveSynchAsDraftDisplayingVerificationsInstructions();
-        logout();
+        logoutFLow();
     }
 
     /**
@@ -124,11 +124,11 @@ public class RealGeeksTest extends BasicFlows {
     @Test(groups = "unit 1")
     public void RealGeeks2BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
         System.out.println("RealGeeks vs BoomTown saved as Draft displaying verification instructions");
-        login(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSource(REALGEEKS);
         selectTarget(BOOMTOWN);
         saveSynchAsDraftDisplayingVerificationsInstructions();
-        logout();
+        logoutFLow();
     }
 }

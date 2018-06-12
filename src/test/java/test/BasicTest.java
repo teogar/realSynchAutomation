@@ -1,34 +1,51 @@
 package test;
 
-import org.testng.annotations.Test;
 import flows.BasicFlows;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import utils.RealSynch;
 
 import static org.testng.Assert.assertTrue;
-import static utils.Properties.*;
+import static utils.Properties.AUTOMATION_PASSWORD;
+import static utils.Properties.AUTOMATION_USERNAME;
+import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES;
+import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_NAME;
+import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES;
+import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER;
+import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_CVV;
+import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT;
+import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_NAME;
+import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_ZIPCODE;
+import static utils.Properties.REGISTRATION_COMPANY;
+import static utils.Properties.REGISTRATION_FIRST_NAME;
+import static utils.Properties.REGISTRATION_LAST_NAME;
+import static utils.Properties.REGISTRATION_MAIL;
+import static utils.Properties.REGISTRATION_PASSWORD;
+import static utils.Properties.REGISTRATION_PHONE;
+import static utils.Properties.REGISTRATION_TEAM;
 
-
+@Listeners(RealSynch.class)
 public class BasicTest extends BasicFlows {
+
     @Test(groups = "BasicTests.LogIn")
-    public void login(){
-        System.out.println("loginTest");
+    public void loginTest() {
         assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
     }
 
     @Test(groups = "BasicTests.LogoutTest")
-    public void LogoutTest(){
-        System.out.println("LogoutTest");
+    public void LogoutTest() {
             assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
             assertTrue(logoutFLow());
     }
 
     @Test(groups = "BasicTests.Logout")
-    public void forgotPassword(){
+    public void forgotPassword() {
         System.out.println("forgotPassword");
         assertTrue(forgotPassword("automationtester@mailinator.com"));
     }
 
     @Test(groups = "BasicTests.changePassword")
-    public void changePassword(){
+    public void changePassword() {
         System.out.println("changePassword");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);

@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f0622e0-0a04-4f07-a715-408bbdb31eee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/BasicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/RealSynch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RealSynch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MessageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestngAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/CredentialsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/FinishPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/FinishPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/InputCredentialsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/SourcePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/SourcePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/TopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/TopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Br360Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MessageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestngAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/flows/BasicFlows$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/flows/BasicFlows$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/flows/BasicFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/flows/BasicFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/ForgotPasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/ForgotPasswordPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/InputCredentialsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/InputCredentialsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/TopPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/TopPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/BasicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Br360Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Br360Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/RealGeeksTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/RealGeeksTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/SiDxTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/SiDxTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/VoicePadTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/VoicePadTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +52,34 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BasicTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicFlows.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/flows/BasicFlows.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,10 +130,16 @@
         <option value="$PROJECT_DIR$/src/test/java/page/WizardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/locator/VerificationInstructionsLocator.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/VerificationInstructionsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/BoomTownFlows.java" />
         <option value="$PROJECT_DIR$/src/test/java/flows/BasicFlows.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/RealSynch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/RealSynchRealReport.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/VoicePadTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/SiDxTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/Br360Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/BasicTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/TopPage.java" />
       </list>
     </option>
   </component>
@@ -98,8 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,6 +193,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TEST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEST" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -146,6 +216,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BasicTest.login">
+  <component name="RunManager" selected="TestNG.BasicTest.loginTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -189,7 +261,7 @@
       <patterns />
     </configuration>
     <configuration name="BasicFlows.login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEST" />
+      <module name="RealSynch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="flows.*" />
@@ -217,8 +289,37 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="BasicTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RealSynch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="JDK_1.8.0" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.BasicTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="$USER_HOME$/rchacon/Test/RealSynch/RealSynch.iml" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="BasicTest.login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEST" />
+      <module name="RealSynch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -246,92 +347,66 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Br360Test.Br3602SalesForceAsDraft" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEST" />
+    <configuration name="BasicTest.loginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RealSynch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="JDK_1.8.0" />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Br360Test" />
-      <option name="METHOD_NAME" value="Br3602SalesForceAsDraft" />
-      <option name="GROUP_NAME" />
+      <option name="MAIN_CLASS_NAME" value="test.BasicTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="$USER_HOME$/rchacon/Test/RealSynch/RealSynch.iml" />
       <properties />
       <listeners />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
     </configuration>
-    <configuration name="Test1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEST" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="Test2.testSalutationMessage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEST" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test2" />
-      <option name="METHOD_NAME" value="testSalutationMessage" />
-      <option name="GROUP_NAME" />
+    <configuration name="RealSynchRealReport.testRealReportOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RealSynch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="JDK_1.8.0" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="utils" />
+      <option name="MAIN_CLASS_NAME" value="utils.RealSynchRealReport" />
+      <option name="METHOD_NAME" value="testRealReportOne" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="$USER_HOME$/rchacon/Test/RealSynch/RealSynch.iml" />
       <properties />
       <listeners />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
     </configuration>
     <configuration name="TestngAnnotation" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
-      <module name="TEST" />
+      <module name="RealSynch" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -380,19 +455,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.TestngAnnotation" />
-      <item itemvalue="TestNG.Test1" />
-      <item itemvalue="TestNG.Test2.testSalutationMessage" />
-      <item itemvalue="TestNG.Br360Test.Br3602SalesForceAsDraft" />
       <item itemvalue="TestNG.BasicTest.login" />
       <item itemvalue="TestNG.BasicFlows.login" />
+      <item itemvalue="TestNG.RealSynchRealReport.testRealReportOne" />
+      <item itemvalue="TestNG.BasicTest.loginTest" />
+      <item itemvalue="TestNG.BasicTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BasicTest.loginTest" />
+        <item itemvalue="TestNG.BasicTest" />
         <item itemvalue="TestNG.BasicTest.login" />
+        <item itemvalue="TestNG.RealSynchRealReport.testRealReportOne" />
         <item itemvalue="TestNG.BasicFlows.login" />
-        <item itemvalue="TestNG.Br360Test.Br3602SalesForceAsDraft" />
-        <item itemvalue="TestNG.Test2.testSalutationMessage" />
-        <item itemvalue="TestNG.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -410,24 +485,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasicTest_login - 2018.06.11 at 14h 04m 40s.xml">
-      <configuration name="BasicTest.login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BasicTest_login - 2018.06.11 at 14h 06m 10s.xml">
-      <configuration name="BasicTest.login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BasicTest_login - 2018.06.11 at 14h 07m 29s.xml">
-      <configuration name="BasicTest.login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BasicFlows_login - 2018.06.11 at 17h 14m 07s.xml">
-      <configuration name="BasicFlows.login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BasicFlows_login - 2018.06.11 at 17h 14m 37s.xml">
-      <configuration name="BasicFlows.login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BasicTest_login - 2018.06.11 at 17h 15m 27s.xml">
-      <configuration name="BasicTest.login" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BasicTest_login - 2018.06.11 at 17h 16m 25s.xml">
       <configuration name="BasicTest.login" configurationId="TestNG" />
     </history-entry>
@@ -439,6 +496,24 @@
     </history-entry>
     <history-entry file="BasicTest_login - 2018.06.12 at 10h 57m 42s.xml">
       <configuration name="BasicTest.login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RealSynchRealReport_testRealReportOne - 2018.06.12 at 14h 22m 11s.xml">
+      <configuration name="RealSynchRealReport.testRealReportOne" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BasicTest_login - 2018.06.12 at 14h 24m 17s.xml">
+      <configuration name="BasicTest.login" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BasicTest_loginTest - 2018.06.12 at 14h 53m 29s.xml">
+      <configuration name="BasicTest.loginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BasicTest_loginTest - 2018.06.12 at 14h 56m 26s.xml">
+      <configuration name="BasicTest.loginTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BasicTest - 2018.06.12 at 15h 02m 21s.xml">
+      <configuration name="BasicTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BasicTest_loginTest - 2018.06.12 at 15h 03m 13s.xml">
+      <configuration name="BasicTest.loginTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -459,25 +534,25 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021299" side_tool="true" weight="0.3299389" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.3299389" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.26374745" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3299389" />
-      <window_info anchor="bottom" id="Dependency Viewer" sideWeight="0.49946752" weight="0.3299389" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3299389" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.24973376" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.18940938" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.19595315" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" sideWeight="0.50151974" side_tool="true" weight="0.24973376" />
       <window_info anchor="right" id="Fabric" order="3" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918533" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="8" sideWeight="0.49946752" weight="0.3299389" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18940938" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -494,6 +569,52 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RealSynch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RealSynchRealReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestngAnnotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -566,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -626,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/locator/SignUpLocator.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TEST.iml">
+    <entry file="file://$PROJECT_DIR$/RealSynch.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
@@ -661,13 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/locator/LoginLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -764,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/ResetPasswordPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -819,37 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/page/TopPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="83" column="51" lean-forward="true" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/flows/BoomTownFlows.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/flows/BasicFlows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,6 +934,111 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3964#3965#0" expanded="true" />
             <element signature="e#3997#3998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/RealGeeksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Br360Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/SiDxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/VoicePadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RealSynchRealReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RealSynch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/TopPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/locator/LoginLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/page/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/flows/BasicFlows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/BasicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
           </folding>
         </state>
       </provider>

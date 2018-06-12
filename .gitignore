@@ -1,0 +1,5 @@
+*.class
+.DS_Store
+.idea/compiler.xml
+.idea/workspace.xml
+src/.DS_Store
