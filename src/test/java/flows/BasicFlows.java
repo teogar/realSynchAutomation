@@ -48,17 +48,17 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean finishSynch() {
-        System.out.println("finishSynch");
+    public boolean finishSynchFlow() {
+        System.out.println("finishSynchFlow");
         assertTrue(bottomPage.clickOnNextButton());
         assertTrue(bottomPage.clickOnActivateButton());
         assertTrue(finishPage.clickOnOKPopupButton());
         return true;
     }
 
-    public boolean selectSource(SourceTarget source) {
-        System.out.println("selectSource");
-        scrollToElelement(SourceLocator.WIZARD_STEP_NAVIGATOR1);
+    public boolean selectSourceFlow(SourceTarget source) {
+        System.out.println("selectSourceFlow");
+        scrollToElelementFlow(SourceLocator.WIZARD_STEP_NAVIGATOR1);
         switch (source) {
             case BR360:
                 assertTrue(sourcePage.clickOnBr360Logo());
@@ -80,8 +80,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean selectTarget(SourceTarget target) {
-        System.out.println("selectTarget");
+    public boolean selectTargetFlow(SourceTarget target) {
+        System.out.println("selectTargetFlow");
         WebElement element = driver.findElement(By.xpath(WizardLocator.WIZARD_STEP_NAVIGATOR2));
         JavascriptExecutor js = driver;
         js.executeScript("arguments[0].scrollIntoView();", element);
@@ -105,22 +105,22 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean deactivateSynch() {
-        System.out.println("deactivateSynch");
+    public boolean deactivateSynchFlow() {
+        System.out.println("deactivateSynchFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnDeactivateSynchLink());
         return true;
     }
 
-    public boolean reactivateSynch() {
-        System.out.println("reactivateSynch");
+    public boolean reactivateSynchFlow() {
+        System.out.println("reactivateSynchFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnActivateSynchLink());
         return true;
     }
 
-    public boolean saveSynchAsDraft() throws InterruptedException {
-        System.out.println("saveSynchAsDraft");
+    public boolean saveSynchAsDraftFlow() throws InterruptedException {
+        System.out.println("saveSynchAsDraftFlow");
         Thread.sleep(3000);
         assertTrue(credentialsPage.clickOnCancelButton());
         Thread.sleep(500);
@@ -131,10 +131,10 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean saveSynchAsDraftDisplayingVerificationsInstructions() throws InterruptedException {
-        System.out.println("saveSynchAsDraftDisplayingVerificationsInstructions");
-        assertTrue(showSourceVerificationInstructions());
-        assertTrue(showTargetVerificationInstructions());
+    public boolean saveSynchAsDraftDisplayingVerificationsInstructionsFlow() throws InterruptedException {
+        System.out.println("saveSynchAsDraftDisplayingVerificationsInstructionsFlow");
+        assertTrue(showSourceVerificationInstructionsFlow());
+        assertTrue(showTargetVerificationInstructionsFlow());
         Thread.sleep(3000);
         assertTrue(credentialsPage.clickOnCancelButton());
         Thread.sleep(500);
@@ -144,8 +144,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean scrollToElelement(String locator) {
-        System.out.println("scrollToElelement");
+    public boolean scrollToElelementFlow(String locator) {
+        System.out.println("scrollToElelementFlow");
         By Locator = new By.ByXPath(locator);
         WebElement element = driver.findElement(Locator);
         //JavascriptExecutor js = driver;
@@ -153,8 +153,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean editSynch(String status, String source, String target) {
-        System.out.println("editSynch");
+    public boolean editSynchFlow(String status, String source, String target) {
+        System.out.println("editSynchFlow");
         int free = 0;
         List<WebElement> statusList = driver.findElements(By.className(STATUS_COLUMN));
         List<WebElement> sourceList = driver.findElements(By.className(SOURCE_COLUMN));
@@ -175,8 +175,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean editSynch(String source, String SCredential, String target, String TCredential) {
-        System.out.println("editSynch");
+    public boolean editSynchFlow(String source, String SCredential, String target, String TCredential) {
+        System.out.println("editSynchFlow");
         int free = 0;
         List<WebElement> statusList = driver.findElements(By.className(STATUS_COLUMN));
         List<WebElement> sourceList = driver.findElements(By.className(SOURCE_COLUMN));
@@ -185,9 +185,9 @@ public class BasicFlows extends BaseTest {
             free = statusList.indexOf(element)+1;
             if(element.getText().equalsIgnoreCase("Draft"))
                 if(sourceList.get(statusList.indexOf(element)).getText().equalsIgnoreCase(source) &&
-                        verifyCredentials(SCredential, free))
+                        verifyCredentialsFlow(SCredential, free))
                     if(targetList.get(statusList.indexOf(element)).getText().equalsIgnoreCase(target) &&
-                            verifyCredentials(TCredential, free))
+                            verifyCredentialsFlow(TCredential, free))
                         break;
         }
         String property = "(//*[@class='fa fa-ellipsis-h'])[" + free + "]";
@@ -199,8 +199,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean verifyCredentials(String status, int index) {
-        System.out.println("verifyCredentials");
+    public boolean verifyCredentialsFlow(String status, int index) {
+        System.out.println("verifyCredentialsFlow");
         index = --index;
         String property = "source-" + String.valueOf(index);
         List<WebElement> element = driver.findElements(By.id(property));
@@ -213,16 +213,16 @@ public class BasicFlows extends BaseTest {
         return false;
     }
 
-    public boolean forgotPassword(String username){
-        System.out.println("forgotPassword");
+    public boolean forgotPasswordFlow(String username){
+        System.out.println("forgotPasswordTest");
         assertTrue(loginPage.clickOnForgotPasswordButton());
         assertTrue(forgotPasswordPage.sendPwd(username));
         return true;
     }
 
-    public boolean signUp(String team, String firstName, String lastName, String email, String password, String
+    public boolean signUpFlow(String team, String firstName, String lastName, String email, String password, String
             company, String phoneNumber){
-        System.out.println("signUp");
+        System.out.println("signUpTest");
         switch(team) {
             case "Beta":
                 break;
@@ -244,8 +244,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean modifyUserInformation(String firstName, String lastName, String email){
-        System.out.println("modifyUserInformation");
+    public boolean modifyUserInformationFlow(String firstName, String lastName, String email){
+        System.out.println("modifyUserInformationFlow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnAccountSettings());
         /*
@@ -257,8 +257,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean modifyExistingPaymentMethod(String cardHolder, String monthExpiresAt, String yearExpiresAt){
-        System.out.println("modifyExistingPaymentMethod");
+    public boolean modifyExistingPaymentMethodFlow(String cardHolder, String monthExpiresAt, String yearExpiresAt){
+        System.out.println("modifyExistingPaymentMethodFlow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnAccountSettings());
         assertTrue(paymentMethodPage.clickOnPaymentMethodButton());
@@ -270,9 +270,9 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean addNewPaymentMethod(String cardHolder, String cardNumber, String expiresAt, String cvv, String
+    public boolean addNewPaymentMethodFlow(String cardHolder, String cardNumber, String expiresAt, String cvv, String
             zipcode, boolean defaultPayment) throws InterruptedException {
-        System.out.println("addNewPaymentMethod");
+        System.out.println("addNewPaymentMethodTest");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnAccountSettings());
         TimeUnit.SECONDS.sleep(10);
@@ -287,8 +287,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean changePassword(String newPassword) {
-        System.out.println("changePassword");
+    public boolean changePasswordFlow(String newPassword) {
+        System.out.println("changePasswordTest");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnChangePasswordButton());
         assertTrue(changePasswordPage.sendNewPassword(newPassword));
@@ -298,8 +298,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean activateSynch(){
-        System.out.println("activateSynch");
+    public boolean activateSynchFlow(){
+        System.out.println("activateSynchFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnActivateSynchLink());
         assertTrue(dashBoardPage.clickOnYesButton());
@@ -307,8 +307,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean showActivationInstuctions(){
-        System.out.println("showActivationInstuctions");
+    public boolean showActivationInstuctionsFlow(){
+        System.out.println("showActivationInstuctionsFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnActivationInstructionsLink());
         while(dashBoardPage.checkForNextButton()){
@@ -323,8 +323,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean editDraftSynch(){
-        System.out.println("editDraftSynch");
+    public boolean editDraftSynchFlow(){
+        System.out.println("editDraftSynchFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnEditSynchLink());
         //Edit information of synch here
@@ -333,8 +333,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean editAndActivateSynch(){
-        System.out.println("editAndActivateSynch");
+    public boolean editAndActivateSynchFlow(){
+        System.out.println("editAndActivateSynchFlow");
         assertTrue(dashBoardPage.clickOnElipsisIcon());
         assertTrue(dashBoardPage.clickOnEditSynchLink());
         //Edit information of synch here
@@ -344,8 +344,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean showSynchInformation(){
-        System.out.println("showSynchInformation");
+    public boolean showSynchInformationFlow(){
+        System.out.println("showSynchInformationFlow");
         String synchStatus;
         assertTrue(dashBoardPage.clickOnCalendarButton());
         synchStatus = dashBoardPage.getSynchInformation();
@@ -353,8 +353,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean showSourceVerificationInstructions(){
-        System.out.println("showSourceVerificationInstructions");
+    public boolean showSourceVerificationInstructionsFlow(){
+        System.out.println("showSourceVerificationInstructionsFlow");
         assertTrue(credentialsPage.clickOnSourceVerificationInstructions());
         while(verificationInstructionsPage.checkForNextButton()){
             assertTrue(verificationInstructionsPage.clickOnNextButton());
@@ -368,8 +368,8 @@ public class BasicFlows extends BaseTest {
         return true;
     }
 
-    public boolean showTargetVerificationInstructions(){
-        System.out.println("showTargetVerificationInstructions");
+    public boolean showTargetVerificationInstructionsFlow(){
+        System.out.println("showTargetVerificationInstructionsFlow");
         assertTrue(credentialsPage.clickOnTargetVerificationInstructions());
         while(verificationInstructionsPage.checkForNextButton()){
             assertTrue(verificationInstructionsPage.clickOnNextButton());

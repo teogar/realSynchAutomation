@@ -4,7 +4,7 @@ import test.BaseTest;
 
 public class VoicePadFlows extends BaseTest {
 
-    public boolean voicePadCredentials(String ID) {
+    public boolean voicePadCredentialsFlow(String ID) {
         credentialsPage.clickOnSourceInputButton();
         inputCredentialsPage.enterClientId(ID);
         inputCredentialsPage.clickOnClose();

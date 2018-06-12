@@ -6,7 +6,7 @@ import test.BaseTest;
 public class SalesForceFlows extends BaseTest {
 
     @Test
-    public boolean salesForceCredentials(String ID, String PWD, String TKN) throws InterruptedException {
+    public boolean salesForceCredentialsFlow(String ID, String PWD, String TKN) throws InterruptedException {
         credentialsPage.clickOnTargetInputButton();
         inputCredentialsPage.enterUser(ID);
         inputCredentialsPage.enterPassword(PWD);

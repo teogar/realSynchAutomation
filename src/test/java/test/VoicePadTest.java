@@ -6,7 +6,9 @@ import flows.ContactuallyFlows;
 import flows.FollowUpBossFlows;
 import flows.SalesForceFlows;
 import flows.VoicePadFlows;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import utils.RealSynch;
 
 import static locator.BottomLocator.ACTIVATE_BUTTON;
 import static org.testng.Assert.assertTrue;
@@ -27,7 +29,7 @@ import static utils.SourceTarget.FOLLOWUPBOSS;
 import static utils.SourceTarget.SALESFROCE;
 import static utils.SourceTarget.VOICEPAD;
 
-
+@Listeners(RealSynch.class)
 public class VoicePadTest extends BasicFlows {
 
     VoicePadFlows voicePadFlows = new VoicePadFlows();
@@ -37,13 +39,13 @@ public class VoicePadTest extends BasicFlows {
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
-    public void VoicePad2SalesForceAsDraft() throws InterruptedException {
+    public void VoicePad2SalesForceAsDraftTest() throws InterruptedException {
         System.out.println("VoicePad vs SalesForce saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(SALESFROCE);
-        saveSynchAsDraft();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(SALESFROCE);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -52,13 +54,13 @@ public class VoicePadTest extends BasicFlows {
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
-    public void VoicePad2FollowupbossAsDraft() throws InterruptedException {
+    public void VoicePad2FollowupbossAsDraftTest() throws InterruptedException {
         System.out.println("VoicePad vs FollowUpBoss saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(FOLLOWUPBOSS);
-        saveSynchAsDraft();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(FOLLOWUPBOSS);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -67,13 +69,13 @@ public class VoicePadTest extends BasicFlows {
      * this flow saves it as draft
      */
     @Test(groups = "unit 1")
-    public void VoicePad2ContactuallyAsDraft() throws InterruptedException {
+    public void VoicePad2ContactuallyAsDraftTest() throws InterruptedException {
         System.out.println("VoicePad vs Contactually saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(CONTACTUALLY);
-        saveSynchAsDraft();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(CONTACTUALLY);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -86,9 +88,9 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(BOOMTOWN);
-        saveSynchAsDraft();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(BOOMTOWN);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -102,12 +104,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(SALESFROCE);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(SALESFROCE);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         SalesForceFlows salesForceFlows = new SalesForceFlows();
-        salesForceFlows.salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
-        saveSynchAsDraft();
+        salesForceFlows.salesForceCredentialsFlow(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -121,12 +123,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(FOLLOWUPBOSS);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(FOLLOWUPBOSS);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         FollowUpBossFlows followUpBossFlows = new FollowUpBossFlows();
-        followUpBossFlows.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
-        saveSynchAsDraft();
+        followUpBossFlows.followUpBossCredentialsFlow(FOLLOW_UP_BOSS_API_KEY);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -140,12 +142,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contractually with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(CONTACTUALLY);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(CONTACTUALLY);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         FollowUpBossFlows followUpBossFlows = new FollowUpBossFlows();
-        followUpBossFlows.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
-        saveSynchAsDraft();
+        followUpBossFlows.followUpBossCredentialsFlow(FOLLOW_UP_BOSS_API_KEY);
+        saveSynchAsDraftFlow();
         logoutFLow();
     }
 
@@ -159,12 +161,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown with credentials saved as draft");
         assertTrue(loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD));
         assertTrue(clickOnAddNewSynchButton());
-        assertTrue(selectSource(VOICEPAD));
-        assertTrue(selectTarget(BOOMTOWN));
-        assertTrue(voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID));
+        assertTrue(selectSourceFlow(VOICEPAD));
+        assertTrue(selectTargetFlow(BOOMTOWN));
+        assertTrue(voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID));
         BoomTownFlows boomTownFlows = new BoomTownFlows();
-        assertTrue(boomTownFlows.boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
-        assertTrue(saveSynchAsDraft());
+        assertTrue(boomTownFlows.boomTownCredentialsFlows(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
+        assertTrue(saveSynchAsDraftFlow());
         logoutFLow();
     }
 
@@ -175,12 +177,12 @@ public class VoicePadTest extends BasicFlows {
     public void completeVoicepad2Contactually() throws InterruptedException {
         System.out.println("complete a synch without credentials VoicePad2Contactually");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
-        editSynch("Draft", "VoicePad", "Contactually");
+        editSynchFlow("Draft", "VoicePad", "Contactually");
         VoicePadFlows voicePad = new VoicePadFlows();
-        voicePad.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        voicePad.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         ContactuallyFlows contactually = new ContactuallyFlows();
-        contactually.contactuallyCredentials(CONTACTUALLY_API_KEY);
-        scrollToElelement(ACTIVATE_BUTTON);
+        contactually.contactuallyCredentialsFlow(CONTACTUALLY_API_KEY);
+        scrollToElelementFlow(ACTIVATE_BUTTON);
         bottomPage.clickOnActivateButton();
         finishPage.clickOnOKPopupButton();
     }
@@ -189,12 +191,12 @@ public class VoicePadTest extends BasicFlows {
     public void completeVoicepad2ContactuallyCredentials() throws InterruptedException {
         System.out.println("complete a synch without credentials VoicePad2Contactually");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
-        editSynch("VoicePad", "no", "Contactually", "yes");
+        editSynchFlow("VoicePad", "no", "Contactually", "yes");
         VoicePadFlows voicePad = new VoicePadFlows();
-        voicePad.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        voicePad.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         ContactuallyFlows contactually = new ContactuallyFlows();
-        contactually.contactuallyCredentials(CONTACTUALLY_API_KEY);
-        scrollToElelement(ACTIVATE_BUTTON);
+        contactually.contactuallyCredentialsFlow(CONTACTUALLY_API_KEY);
+        scrollToElelementFlow(ACTIVATE_BUTTON);
         bottomPage.clickOnActivateButton();
         finishPage.clickOnOKPopupButton();
     }
@@ -210,9 +212,9 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(SALESFROCE);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(SALESFROCE);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
         logoutFLow();
     }
 
@@ -225,9 +227,9 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(FOLLOWUPBOSS);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(FOLLOWUPBOSS);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
         logoutFLow();
     }
 
@@ -240,9 +242,9 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contactually saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(CONTACTUALLY);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(CONTACTUALLY);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
         logoutFLow();
     }
 
@@ -255,9 +257,9 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(BOOMTOWN);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(BOOMTOWN);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
         logoutFLow();
     }
 
@@ -271,12 +273,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs SalesForce with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(SALESFROCE);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(SALESFROCE);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         SalesForceFlows salesForceFlows = new SalesForceFlows();
-        salesForceFlows.salesForceCredentials(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        salesForceFlows.salesForceCredentialsFlow(SALES_FORCE_CREDENTIAL, SALES_FORCE_PWD, SALES_FORCE_TOKEN);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
     }
 
     /**
@@ -289,12 +291,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(FOLLOWUPBOSS);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(FOLLOWUPBOSS);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         FollowUpBossFlows followUpBossFlows = new FollowUpBossFlows();
-        followUpBossFlows.followUpBossCredentials(FOLLOW_UP_BOSS_API_KEY);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        followUpBossFlows.followUpBossCredentialsFlow(FOLLOW_UP_BOSS_API_KEY);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
     }
 
     /**
@@ -307,12 +309,12 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs Contractually with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(CONTACTUALLY);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(CONTACTUALLY);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         ContactuallyFlows contactuallyFlows = new ContactuallyFlows();
-        contactuallyFlows.contactuallyCredentials(CONTACTUALLY_API_KEY);
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        contactuallyFlows.contactuallyCredentialsFlow(CONTACTUALLY_API_KEY);
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
     }
 
     /**
@@ -325,11 +327,11 @@ public class VoicePadTest extends BasicFlows {
         System.out.println("VoicePad vs BoomTown with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
-        selectSource(VOICEPAD);
-        selectTarget(BOOMTOWN);
-        voicePadFlows.voicePadCredentials(VOICE_PAD_CLIENT_ID);
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(BOOMTOWN);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         BoomTownFlows boomTownFlows = new BoomTownFlows();
-        assertTrue(boomTownFlows.boomTownCredentials(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
-        saveSynchAsDraftDisplayingVerificationsInstructions();
+        assertTrue(boomTownFlows.boomTownCredentialsFlows(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
+        saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
     }
 }

@@ -39,28 +39,25 @@ public class BasicTest extends BasicFlows {
     }
 
     @Test(groups = "BasicTests.Logout")
-    public void forgotPassword() {
-        System.out.println("forgotPassword");
-        assertTrue(forgotPassword("automationtester@mailinator.com"));
+    public void forgotPasswordTest() {
+        assertTrue(forgotPasswordFlow("automationtester@mailinator.com"));
     }
 
-    @Test(groups = "BasicTests.changePassword")
-    public void changePassword() {
-        System.out.println("changePassword");
+    @Test(groups = "BasicTests.changePasswordTest")
+    public void changePasswordTest() {
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            changePassword("itexico2*");
-            changePassword("itexico1*");
+            changePasswordFlow("itexico2*");
+            changePasswordFlow("itexico1*");
         }catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
-    @Test(groups = "BasicTests.addNewPaymentMethod")
-    public void addNewPaymentMethod() {
-        System.out.println("addNewPaymentMethod");
+    @Test(groups = "BasicTests.addNewPaymentMethodTest")
+    public void addNewPaymentMethodTest() {
         try {
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            addNewPaymentMethod(PAYMENT_METHOD_CARDHOLDER_NAME, PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER,PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT,PAYMENT_METHOD_CARDHOLDER_CVV,PAYMENT_METHOD_CARDHOLDER_ZIPCODE,true);
+            addNewPaymentMethodFlow(PAYMENT_METHOD_CARDHOLDER_NAME, PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER,PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT,PAYMENT_METHOD_CARDHOLDER_CVV,PAYMENT_METHOD_CARDHOLDER_ZIPCODE,true);
         } catch (RuntimeException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -68,47 +65,43 @@ public class BasicTest extends BasicFlows {
         }
     }
 
-    @Test(groups = "BasicTests.signUp")
-    public void signUp() {
-        System.out.println("signUp");
+    @Test(groups = "BasicTests.signUpTest")
+    public void signUpTest() {
         try{
             loginPage.clickOnRegisterButton();
-            signUp(REGISTRATION_TEAM,REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL,REGISTRATION_PASSWORD,REGISTRATION_COMPANY,REGISTRATION_PHONE);
+            signUpFlow(REGISTRATION_TEAM,REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL,REGISTRATION_PASSWORD,REGISTRATION_COMPANY,REGISTRATION_PHONE);
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.activateSynchNoCredentials")
-    public void activateSynchNoCredentials() {
-        System.out.println("activateSynchNoCredentials");
+    @Test(groups = "BasicTests.activateSynchNoCredentialsTest")
+    public void activateSynchNoCredentialsTest() {
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             //newSynchNoCredentials();
-            activateSynch();
+            activateSynchFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.activateSynchWithCredentials")
-    public void activateSynchWithCredentials() {
-        System.out.println("activateSynchWithCredentials");
+    @Test(groups = "BasicTests.activateSynchWithCredentialsTest")
+    public void activateSynchWithCredentialsTest() {
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
             //newSynchWithCredentials();
-            activateSynch();
+            activateSynchFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.showActivationInstructions")
-    public void showActivationInstructions() {
-        System.out.println("showActivationInstructions");
+    @Test(groups = "BasicTests.showActivationInstructionsTest")
+    public void showActivationInstructionsTest() {
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            showActivationInstuctions();
+            showActivationInstuctionsFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -116,10 +109,9 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.deactivateSynchTest")
     public void deactivateSynchTest() {
-        System.out.println("deactivateSynchTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            deactivateSynch();
+            deactivateSynchFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -127,10 +119,9 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.editDraftSynchTest")
     public void editDraftSynchTest() {
-        System.out.println("editDraftSynchTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            editDraftSynch();
+            editDraftSynchFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -138,10 +129,9 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.editAndActivateSynchTest")
     public void editAndActivateSynchTest() {
-        System.out.println("editAndActivateSynchTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            editAndActivateSynch();
+            editAndActivateSynchFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -149,10 +139,9 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.showSynchInformationTest")
     public void showSynchInformationTest() {
-        System.out.println("showSynchInformationTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            showSynchInformation();
+            showSynchInformationFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -160,10 +149,9 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.modifyUserInformationTest")
     public void modifyUserInformationTest() {
-        System.out.println("modifyUserInformationTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            modifyUserInformation(REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL);
+            modifyUserInformationFlow(REGISTRATION_FIRST_NAME,REGISTRATION_LAST_NAME,REGISTRATION_MAIL);
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
@@ -171,30 +159,27 @@ public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.modifyExistingPaymentMethodTest")
     public void modifyExistingPaymentMethodTest() {
-        System.out.println("modifyExistingPaymentMethodTest");
         try{
             loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD);
-            modifyExistingPaymentMethod(EDIT_PAYMENT_METHOD_CARDHOLDER_NAME, EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES, EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES);
+            modifyExistingPaymentMethodFlow(EDIT_PAYMENT_METHOD_CARDHOLDER_NAME, EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES, EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES);
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.displaySourceVerificationInstructions")
-    public void displaySourceVerificationInstructions() {
-        System.out.println("displaySourceVerificationInstructions");
+    @Test(groups = "BasicTests.displaySourceVerificationInstructionsTest")
+    public void displaySourceVerificationInstructionsTest() {
         try{
-            showSourceVerificationInstructions();
+            showSourceVerificationInstructionsFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
 
-    @Test(groups = "BasicTests.displayTargetVerificationInstructions")
-    public void displayTargetVerificationInstructions() {
-        System.out.println("displayTargetVerificationInstructions");
+    @Test(groups = "BasicTests.displayTargetVerificationInstructionsTest")
+    public void displayTargetVerificationInstructionsTest() {
         try{
-            showTargetVerificationInstructions();
+            showTargetVerificationInstructionsFlow();
         } catch (RuntimeException e) {
             e.printStackTrace();
         }

@@ -6,7 +6,7 @@ import test.BaseTest;
 public class ContactuallyFlows extends BaseTest {
 
     @Test
-    public boolean contactuallyCredentials(String data) throws InterruptedException {
+    public boolean contactuallyCredentialsFlow(String data) throws InterruptedException {
         credentialsPage.clickOnTargetInputButton();
         inputCredentialsPage.enterToken(data);
         inputCredentialsPage.clickOnVerifyButton();

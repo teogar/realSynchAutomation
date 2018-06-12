@@ -5,7 +5,7 @@ import test.BaseTest;
 
 public class Br360Flows extends BaseTest {
     @Test
-    public boolean br360Credentials(String ID) {
+    public boolean br360CredentialsFlow(String ID) {
         credentialsPage.clickOnSourceInputButton();
         inputCredentialsPage.enterClientId(ID);
         inputCredentialsPage.clickOnClose();

@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class BoomTownFlows extends BaseTest {
 
-    public boolean boomTownCredentials(String mail, String pwd) {
+    public boolean boomTownCredentialsFlows(String mail, String pwd) {
         credentialsPage.clickOnTargetInputButton();
         inputCredentialsPage.clickOnVerifyButton();
         Set<String> st= driver.getWindowHandles();
