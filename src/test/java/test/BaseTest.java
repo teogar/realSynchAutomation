@@ -58,7 +58,6 @@ public class BaseTest {
          * Selenium Setup
          **/
         System.out.println("Running Selenium Config");
-        System.out.println("Starting Real Synch Automation Test");
         //System.setProperty(Properties.CHROME_DRIVER_PROPERTY, TEST_CHROME_PATH);
         System.setProperty(Properties.GECKO_DRIVER_PROPERTY, DRIVER_FIREFOX_PATH);
 

@@ -22,7 +22,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2SalesForceAsDraftTest() throws InterruptedException {
-        System.out.println("RealGeeks vs SalesForce saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -36,7 +35,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2FollowUpBossAsDraftTest() throws InterruptedException {
-        System.out.println("RealGeeks vs FollowUpBoss saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -51,7 +49,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2ContactuallyAsDraftTest() throws InterruptedException {
-        System.out.println("RealGeeks vs Contactually saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -66,7 +63,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2BoomTownAsDraftTest() throws InterruptedException {
-        System.out.println("RealGeeks vs BoomTown saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -81,7 +77,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2SalesForceAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("RealGeeks vs SalesForce saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -96,7 +91,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2FollowUpBossAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("RealGeeks vs FollowUpBoss saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -111,7 +105,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2ContactuallyAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("RealGeeks vs Contactually saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);
@@ -126,7 +119,6 @@ public class RealGeeksTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void RealGeeks2BoomTownAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("RealGeeks vs BoomTown saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(REALGEEKS);

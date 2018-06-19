@@ -2,6 +2,7 @@ package test;
 
 import flows.BasicFlows;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utils.RealSynch;
 
@@ -28,19 +29,22 @@ import static utils.Properties.REGISTRATION_TEAM;
 public class BasicTest extends BasicFlows {
 
     @Test(groups = "BasicTests.LogIn")
-    public void loginTest() {
-        assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
+    @Parameters({"username" , "password"})
+    public void loginTest(String username, String password) {
+        assertTrue(loginFlow(username, password));
     }
 
     @Test(groups = "BasicTests.LogoutTest")
-    public void LogoutTest() {
-            assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
-            assertTrue(logoutFLow());
+    @Parameters( { "username", "password"})
+    public void LogoutTest(String username, String password) {
+        assertTrue(loginFlow(username, password));
+        assertTrue(logoutFLow());
     }
 
+    @Parameters( {"username"})
     @Test(groups = "BasicTests.Logout")
     public void forgotPasswordTest() {
-        assertTrue(forgotPasswordFlow("automationtester@mailinator.com"));
+        assertTrue(forgotPasswordFlow("username"));
     }
 
     @Test(groups = "BasicTests.changePasswordTest")

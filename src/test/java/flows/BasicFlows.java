@@ -20,7 +20,7 @@ import static org.testng.Assert.assertTrue;
 public class BasicFlows extends BaseTest {
 
     public boolean loginFlow(String user, String pwd) {
-        System.out.println("login");
+        System.out.println("loginFlow");
         assertTrue(loginPage.sendUsername(user));
         assertTrue(loginPage.sendPassword(pwd));
         assertTrue(loginPage.clickOnSubmitButton());
@@ -28,14 +28,14 @@ public class BasicFlows extends BaseTest {
     }
 
     public boolean logoutFLow() {
-        System.out.println("logout");
+        System.out.println("logoutFLow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnLogoutButton());
         return true;
     }
 
     public boolean modifyPasswordFlow(String pwd, String confirmpwd) {
-        System.out.println("modifyPassword");
+        System.out.println("modifyPasswordFlow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(resetPasswordPage.sendNewPassword(pwd));
         assertTrue(resetPasswordPage.sendConfirmPassword(confirmpwd));
@@ -214,7 +214,7 @@ public class BasicFlows extends BaseTest {
     }
 
     public boolean forgotPasswordFlow(String username){
-        System.out.println("forgotPasswordTest");
+        System.out.println("forgotPasswordFlow");
         assertTrue(loginPage.clickOnForgotPasswordButton());
         assertTrue(forgotPasswordPage.sendPwd(username));
         return true;
@@ -222,7 +222,7 @@ public class BasicFlows extends BaseTest {
 
     public boolean signUpFlow(String team, String firstName, String lastName, String email, String password, String
             company, String phoneNumber){
-        System.out.println("signUpTest");
+        System.out.println("signUpFlow");
         switch(team) {
             case "Beta":
                 break;
@@ -272,7 +272,7 @@ public class BasicFlows extends BaseTest {
 
     public boolean addNewPaymentMethodFlow(String cardHolder, String cardNumber, String expiresAt, String cvv, String
             zipcode, boolean defaultPayment) throws InterruptedException {
-        System.out.println("addNewPaymentMethodTest");
+        System.out.println("addNewPaymentMethodFlow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnAccountSettings());
         TimeUnit.SECONDS.sleep(10);
@@ -288,7 +288,7 @@ public class BasicFlows extends BaseTest {
     }
 
     public boolean changePasswordFlow(String newPassword) {
-        System.out.println("changePasswordTest");
+        System.out.println("changePasswordFlow");
         assertTrue(topPage.clickOnUserAvatarButton());
         assertTrue(topPage.clickOnChangePasswordButton());
         assertTrue(changePasswordPage.sendNewPassword(newPassword));

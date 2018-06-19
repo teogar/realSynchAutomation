@@ -22,7 +22,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2SalesForceAsDraftTest() throws InterruptedException {
-        System.out.println("SiDx vs SalesForce saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -37,7 +36,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2FollowUpBossAsDraftTest() throws InterruptedException {
-        System.out.println("SiDx vs FollowUpBoss saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -52,7 +50,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2ContactuallyAsDraftTest() throws InterruptedException {
-        System.out.println("SiDx vs Contactually saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -67,7 +64,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2BoomTownAsDraftTest() throws InterruptedException {
-        System.out.println("SiDx vs BoomTown saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -82,7 +78,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2SalesForceAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("SiDx vs SalesForce saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -96,7 +91,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2FollowUpBossAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("SiDx vs FollowUpBoss saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -110,7 +104,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2ContactuallyAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("SiDx vs Contactually saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);
@@ -123,7 +116,6 @@ public class SiDxTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void SiDx2BoomTownAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("SiDx vs BoomTown saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(SIDX);

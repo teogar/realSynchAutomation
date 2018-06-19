@@ -12,8 +12,8 @@ public class Properties {
     public static final String REGISTRATION_COMPANY = "Automation Testing Group";
     public static final String REGISTRATION_PHONE = "0123456789";
 
-    public static final String AUTOMATION_PASSWORD = "itexico1*" ;
-    public static final String NEW_PASSWORD = "itexico2*" ;
+    public static final String AUTOMATION_PASSWORD = "itexico1*";
+    public static final String NEW_PASSWORD = "itexico2*";
     public static final String AUTOMATION_USERNAME = "automationtester@mailinator.com";
 
     public static final String SALES_FORCE_CREDENTIAL = "hmarin@itexico.net.rsbxv1";

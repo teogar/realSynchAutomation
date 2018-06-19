@@ -29,7 +29,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602SalesForceAsDraftTest() throws InterruptedException {
-        System.out.println("Br360 vs SalesForce saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -44,7 +43,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602FollowupbossAsDraftTest() throws InterruptedException {
-        System.out.println("Br360 vs FollowUpBoss saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -59,7 +57,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602ContactuallyAsDraftTest() throws InterruptedException {
-        System.out.println("Br360 vs Contactually saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -73,7 +70,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602BoomTownAsDraftTest() throws InterruptedException {
-        System.out.println("Br360 vs BoomTown saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -87,7 +83,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test
     public void Br3602FollowUpBossWCredentialsVerifiedAsDraftTest() throws InterruptedException {
-        System.out.println("Br360 vs FollowUpBoss W credentials verified & saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -105,7 +100,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602SalesForceAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("Br360 vs SalesForce saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -120,7 +114,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602FollowupbossAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("Br360 vs FollowUpBoss saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -135,7 +128,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602ContactuallyAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("Br360 vs Contactually saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);
@@ -150,7 +142,6 @@ public class Br360Test extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void Br3602BoomTownAsDraftShowVerificationInstructionsTest() throws InterruptedException {
-        System.out.println("Br360 vs BoomTown saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(BR360);

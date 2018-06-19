@@ -40,7 +40,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2SalesForceAsDraftTest() throws InterruptedException {
-        System.out.println("VoicePad vs SalesForce saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -55,7 +54,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2FollowupbossAsDraftTest() throws InterruptedException {
-        System.out.println("VoicePad vs FollowUpBoss saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -70,7 +68,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2ContactuallyAsDraftTest() throws InterruptedException {
-        System.out.println("VoicePad vs Contactually saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -85,7 +82,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2BoomTownAsDraft() throws InterruptedException {
-        System.out.println("VoicePad vs BoomTown saved as Draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -101,7 +97,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2SalesForceWCredentialsAsDraft() throws InterruptedException {
-        System.out.println("VoicePad vs SalesForce with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -120,7 +115,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2FollowUpBossWCredentialsAsDraft() throws InterruptedException {
-        System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -139,7 +133,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2ContractuallyWCredentialsAsDraft() throws InterruptedException {
-        System.out.println("VoicePad vs Contractually with credentials saved as draft");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -158,7 +151,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2BoomTownWCredentialsAsDraft() throws InterruptedException {
-        System.out.println("VoicePad vs BoomTown with credentials saved as draft");
         assertTrue(loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD));
         assertTrue(clickOnAddNewSynchButton());
         assertTrue(selectSourceFlow(VOICEPAD));
@@ -175,7 +167,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "no_credentials")
     public void completeVoicepad2Contactually() throws InterruptedException {
-        System.out.println("complete a synch without credentials VoicePad2Contactually");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         editSynchFlow("Draft", "VoicePad", "Contactually");
         VoicePadFlows voicePad = new VoicePadFlows();
@@ -189,7 +180,6 @@ public class VoicePadTest extends BasicFlows {
 
     @Test(groups = "with_credentials")
     public void completeVoicepad2ContactuallyCredentials() throws InterruptedException {
-        System.out.println("complete a synch without credentials VoicePad2Contactually");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         editSynchFlow("VoicePad", "no", "Contactually", "yes");
         VoicePadFlows voicePad = new VoicePadFlows();
@@ -209,7 +199,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2SalesForceAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs SalesForce saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -224,7 +213,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2FollowupbossAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs FollowUpBoss saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -239,7 +227,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2ContactuallyAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs Contactually saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -254,7 +241,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2BoomTownAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs BoomTown saved as Draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -270,7 +256,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2SalesForceWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs SalesForce with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -288,7 +273,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2FollowUpBossWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs FollowUpBoss with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -306,7 +290,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2ContractuallyWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs Contractually with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -324,7 +307,6 @@ public class VoicePadTest extends BasicFlows {
      */
     @Test(groups = "unit 1")
     public void VoicePad2BoomTownWCredentialsAsDraftShowVerificationInstructions() throws InterruptedException {
-        System.out.println("VoicePad vs BoomTown with credentials saved as draft displaying verification instructions");
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
