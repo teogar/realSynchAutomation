@@ -23,11 +23,7 @@ import static utils.Properties.SALES_FORCE_CREDENTIAL;
 import static utils.Properties.SALES_FORCE_PWD;
 import static utils.Properties.SALES_FORCE_TOKEN;
 import static utils.Properties.VOICE_PAD_CLIENT_ID;
-import static utils.SourceTarget.BOOMTOWN;
-import static utils.SourceTarget.CONTACTUALLY;
-import static utils.SourceTarget.FOLLOWUPBOSS;
-import static utils.SourceTarget.SALESFROCE;
-import static utils.SourceTarget.VOICEPAD;
+import static utils.SourceTarget.*;
 
 @Listeners(RealSynch.class)
 public class VoicePadTest extends BasicFlows {
@@ -315,5 +311,26 @@ public class VoicePadTest extends BasicFlows {
         BoomTownFlows boomTownFlows = new BoomTownFlows();
         assertTrue(boomTownFlows.boomTownCredentialsFlows(BOOM_TOWN_EMAIL, BOOM_TOWN_PWD));
         saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
+    }
+
+    /**
+     * Description: Add a New Synch with VoicePad as source
+     * and SierraInteractive as target fill the credentials
+     * and verify the target ones and Activate the Synch
+     */
+    @Test(groups = "VP to SierraI")
+    public  void voicePadToSierraInteractive() {
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSourceFlow(VOICEPAD);
+        selectTargetFlow(SIERRAINTERACTIVE);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
+        System.out.println("VoicePad to Sierra Synch creation and activation : START");
+        sierraInteractiveFlows.sierraInteractiveCredentialsFlows();
+
+
+
+
+
     }
 }

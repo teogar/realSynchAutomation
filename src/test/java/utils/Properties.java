@@ -29,6 +29,7 @@ public class Properties {
     public static final String BOOM_TOWN_EMAIL = "franciscojavier.corona@outlook.com";
     public static final String BOOM_TOWN_PWD = "tFJC0r0n4";
     public static final String BR360_ID = "444";
+    public static final String SIERRA_INTERACTIVE_ID = "14AE8820-BD26-4EEA-812F-FBF4517CF50B";
 
     public static final String EDIT_PAYMENT_METHOD_CARDHOLDER_NAME = "John Connor";
     public static final String EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES = "02";

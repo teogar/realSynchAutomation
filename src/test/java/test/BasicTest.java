@@ -28,20 +28,19 @@ import static utils.Properties.REGISTRATION_TEAM;
 @Listeners(RealSynch.class)
 public class BasicTest extends BasicFlows {
 
-    @Test(groups = "BasicTests.LogIn")
-    @Parameters({"username" , "password"})
-    public void loginTest(String username, String password) {
-        assertTrue(loginFlow(username, password));
+    @Test(groups = "login")
+
+    public void loginTest() {
+        assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
     }
 
-    @Test(groups = "BasicTests.LogoutTest")
-    @Parameters( { "username", "password"})
-    public void LogoutTest(String username, String password) {
-        assertTrue(loginFlow(username, password));
+    @Test(groups = "LogoutTest")
+    public void LogoutTest() {
+        assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
         assertTrue(logoutFLow());
     }
 
-    @Parameters( {"username"})
+    
     @Test(groups = "BasicTests.Logout")
     public void forgotPasswordTest() {
         assertTrue(forgotPasswordFlow("username"));

@@ -8,7 +8,8 @@ public enum SourceTarget{
     SALESFROCE(4, "Salesforce"),
     FOLLOWUPBOSS(5, "Follow Up Boss"),
     CONTACTUALLY(6, "Contactually"),
-    BOOMTOWN(7, "Boom Town")
+    BOOMTOWN(7, "Boom Town"),
+    SIERRAINTERACTIVE(8, "Sierra Interactive")
     ;
 
     private int index;

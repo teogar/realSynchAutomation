@@ -57,7 +57,7 @@ public class InputCredentialsPage extends BaseTest {
     }
 
     public static boolean clickOnClose() {
-        System.out.print("clickOnClose");
+        System.out.print("click On Close");
         assertTrue(closeIcon.isDisplayed());
         closeIcon.click();
         return true;
@@ -75,7 +75,6 @@ public class InputCredentialsPage extends BaseTest {
         assertTrue(clientIdInput.isDisplayed());
         clientIdInput.clear();
         clientIdInput.sendKeys(data);
-        assertEquals(clientIdInput.getText(), data);
         return true;
     }
 

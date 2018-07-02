@@ -1,28 +1,13 @@
 package test;
 
+import flows.SierraInteractiveFlows;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import page.AccountSettingsPage;
-import page.BoomTownPage;
-import page.BottomPage;
-import page.ChangePasswordPage;
-import page.CredentialsPage;
-import page.DashBoardPage;
-import page.FinishPage;
-import page.ForgotPasswordPage;
-import page.InputCredentialsPage;
-import page.LoginPage;
-import page.PaymentMethodPage;
-import page.ResetPasswordPage;
-import page.SignUpPage;
-import page.SourcePage;
-import page.TopPage;
-import page.VerificationInstructionsPage;
-import page.WizardPage;
+import page.*;
 import utils.Properties;
 
 import java.net.MalformedURLException;
@@ -48,6 +33,8 @@ public class BaseTest {
     public WizardPage wizardPage;
     public PaymentMethodPage paymentMethodPage;
     public VerificationInstructionsPage verificationInstructionsPage;
+    public SierraInteractivePage sierraInteractivePage;
+    public SierraInteractiveFlows sierraInteractiveFlows;
 
     public static final String DRIVER_FIREFOX_PATH = "/Users/rchacon/RealSynch/src/geckodriver";
 
@@ -88,6 +75,8 @@ public class BaseTest {
         sourcePage = new SourcePage(driver);
         topPage = new TopPage(driver);
         verificationInstructionsPage = new VerificationInstructionsPage(driver);
+        sierraInteractivePage = new SierraInteractivePage(driver);
+        sierraInteractiveFlows = new SierraInteractiveFlows();
         wizardPage = new WizardPage(driver);
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

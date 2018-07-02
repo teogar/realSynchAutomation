@@ -98,6 +98,8 @@ public class BasicFlows extends BaseTest {
             case BOOMTOWN:
                 assertTrue(wizardPage.clickOnBoomTownLogo());
                 break;
+            case SIERRAINTERACTIVE:
+                assertTrue(wizardPage.clickOnSierraLogo());
             default:
                 System.out.println("Target not found, please check your target name");
                 return false;
