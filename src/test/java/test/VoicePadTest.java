@@ -332,7 +332,7 @@ public class VoicePadTest extends BasicFlows {
     /**
      * Description; Add a new Synch with VoicePad as Source
      * and LionDesk as Target fill the credentials
-     * and Verify the target ones 
+     * and Verify the target ones Without active a synch
      *
      */
     @Test(groups = "VP to LionDesk")
