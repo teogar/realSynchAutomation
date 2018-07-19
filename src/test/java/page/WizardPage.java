@@ -41,6 +41,10 @@ public class WizardPage extends BaseTest {
     @FindBy(how = How.XPATH, using = WizardLocator.SIERRA_INTERACTIVE_LOGO)
     static WebElement sierraLogo;
 
+    @FindBy(how = How.XPATH, using = WizardLocator.LION_DESK_LOGO)
+    static WebElement lionDeskLogo;
+
+
     public static boolean clickOnStep2Navigator() {
         System.out.print("clickOnStep2Navigator");
         assertTrue(stepNavigator.isDisplayed());
@@ -88,4 +92,11 @@ public class WizardPage extends BaseTest {
         sierraLogo.click();
         return true;
     }
+
+    public static boolean clickOnLionDeskLogo() {
+        assertTrue(lionDeskLogo.isDisplayed());
+        lionDeskLogo.click();
+        return true;
+    }
+
 }

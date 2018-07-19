@@ -319,7 +319,7 @@ public class VoicePadTest extends BasicFlows {
      * and verify the target ones and Activate the Synch
      */
     @Test(groups = "VP to SierraI")
-    public  void voicePadToSierraInteractive() {
+    public void voicePadToSierraInteractive() {
         loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
         clickOnAddNewSynchButton();
         selectSourceFlow(VOICEPAD);
@@ -327,10 +327,23 @@ public class VoicePadTest extends BasicFlows {
         voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
         System.out.println("VoicePad to Sierra Synch creation and activation : START");
         sierraInteractiveFlows.sierraInteractiveCredentialsFlows();
-
-
-
-
-
     }
+
+    /**
+     * Description; Add a new Synch with VoicePad as Source
+     * and LionDesk as Target fill the credentials
+     * and Verify the target ones 
+     *
+     */
+    @Test(groups = "VP to LionDesk")
+    public void voicePadToLionDesk() throws Exception {
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSourceFlow(VOICEPAD);
+        Thread.sleep(3000);
+        selectTargetFlow(LIONDESK);
+        voicePadFlows.voicePadCredentialsFlow(VOICE_PAD_CLIENT_ID);
+        lionDeskFlows.lionDeskCredentialsFlow();
+    }
+
 }

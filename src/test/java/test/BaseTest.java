@@ -1,12 +1,13 @@
 package test;
 
+import flows.LionDeskFlows;
 import flows.SierraInteractiveFlows;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import page.*;
 import utils.Properties;
 
@@ -35,10 +36,12 @@ public class BaseTest {
     public VerificationInstructionsPage verificationInstructionsPage;
     public SierraInteractivePage sierraInteractivePage;
     public SierraInteractiveFlows sierraInteractiveFlows;
+    public LionDeskPage lionDeskPage;
+    public LionDeskFlows lionDeskFlows;
 
     public static final String DRIVER_FIREFOX_PATH = "/Users/rchacon/RealSynch/src/geckodriver";
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeTest(alwaysRun = true)
     public void setUp() throws MalformedURLException {
 
         /**
@@ -77,6 +80,8 @@ public class BaseTest {
         verificationInstructionsPage = new VerificationInstructionsPage(driver);
         sierraInteractivePage = new SierraInteractivePage(driver);
         sierraInteractiveFlows = new SierraInteractiveFlows();
+        lionDeskPage = new LionDeskPage(driver);
+        lionDeskFlows = new LionDeskFlows();
         wizardPage = new WizardPage(driver);
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

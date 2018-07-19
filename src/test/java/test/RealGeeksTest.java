@@ -8,11 +8,7 @@ import utils.RealSynch;
 import static page.DashBoardPage.clickOnAddNewSynchButton;
 import static utils.Properties.AUTOMATION_PASSWORD;
 import static utils.Properties.AUTOMATION_USERNAME;
-import static utils.SourceTarget.BOOMTOWN;
-import static utils.SourceTarget.CONTACTUALLY;
-import static utils.SourceTarget.FOLLOWUPBOSS;
-import static utils.SourceTarget.REALGEEKS;
-import static utils.SourceTarget.SALESFROCE;
+import static utils.SourceTarget.*;
 
 @Listeners(RealSynch.class)
 public class RealGeeksTest extends BasicFlows {
@@ -125,5 +121,13 @@ public class RealGeeksTest extends BasicFlows {
         selectTargetFlow(BOOMTOWN);
         saveSynchAsDraftDisplayingVerificationsInstructionsFlow();
         logoutFLow();
+    }
+    @Test(groups = "RealGeeks to SierraI")
+    public void realGeeksToSierraInteractive() throws Exception {
+        loginFlow(AUTOMATION_USERNAME, AUTOMATION_PASSWORD);
+        clickOnAddNewSynchButton();
+        selectSourceFlow(REALGEEKS);
+        selectTargetFlow(SIERRAINTERACTIVE);
+        Thread.sleep(3000);
     }
 }

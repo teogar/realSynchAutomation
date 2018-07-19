@@ -2,34 +2,16 @@ package test;
 
 import flows.BasicFlows;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utils.RealSynch;
 
 import static org.testng.Assert.assertTrue;
-import static utils.Properties.AUTOMATION_PASSWORD;
-import static utils.Properties.AUTOMATION_USERNAME;
-import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_MONTH_EXPIRES;
-import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_NAME;
-import static utils.Properties.EDIT_PAYMENT_METHOD_CARDHOLDER_YEAR_EXPIRES;
-import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_CARD_NUMBER;
-import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_CVV;
-import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_EXPIRES_AT;
-import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_NAME;
-import static utils.Properties.PAYMENT_METHOD_CARDHOLDER_ZIPCODE;
-import static utils.Properties.REGISTRATION_COMPANY;
-import static utils.Properties.REGISTRATION_FIRST_NAME;
-import static utils.Properties.REGISTRATION_LAST_NAME;
-import static utils.Properties.REGISTRATION_MAIL;
-import static utils.Properties.REGISTRATION_PASSWORD;
-import static utils.Properties.REGISTRATION_PHONE;
-import static utils.Properties.REGISTRATION_TEAM;
+import static utils.Properties.*;
 
 @Listeners(RealSynch.class)
 public class BasicTest extends BasicFlows {
 
-    @Test(groups = "login")
-
+    @Test(groups = "Login")
     public void loginTest() {
         assertTrue(loginFlow(AUTOMATION_USERNAME,AUTOMATION_PASSWORD));
     }

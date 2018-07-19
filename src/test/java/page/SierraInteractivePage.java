@@ -1,7 +1,6 @@
 package page;
 
 import locator.SierraInteractiveLocators;
-import locator.WizardLocator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,27 +9,25 @@ import org.openqa.selenium.support.PageFactory;
 import test.BaseTest;
 import utils.Properties;
 
-import javax.xml.xpath.XPath;
-
 import static org.testng.Assert.assertTrue;
 
 public class SierraInteractivePage extends BaseTest {
 
     public SierraInteractivePage(WebDriver driver) {
-        WebDriver pagegeDriver = driver;
-        PageFactory.initElements(pagegeDriver,this);
+        WebDriver pageDriver = driver;
+        PageFactory.initElements(pageDriver,this);
     }
 
     @FindBy(how = How.XPATH, using = SierraInteractiveLocators.SIERRA_INTERACTIVE_INPUT_BUTTON)
     static WebElement sierraInputButton;
 
     @FindBy(how = How.XPATH, using = SierraInteractiveLocators.SIERRA_INTERACTIVE_API_BOX)
-    static  WebElement sierraInputApi;
+    static WebElement sierraInputApi;
 
-    @FindBy(how = How.XPATH,using = SierraInteractiveLocators.SIERRA_INTERACTIVE_VERIFY_BUTTON)
-    static  WebElement sierraVerifyButton;
+    @FindBy(how = How.XPATH, using = SierraInteractiveLocators.SIERRA_INTERACTIVE_VERIFY_BUTTON)
+    static WebElement sierraVerifyButton;
 
-    @FindBy(how = How.XPATH,using = SierraInteractiveLocators.SIERRA_INTERACTIVE_ACTIVATE_BUTTON)
+    @FindBy(how = How.XPATH, using = SierraInteractiveLocators.SIERRA_INTERACTIVE_ACTIVATE_BUTTON)
     static WebElement sierraActivate;
 
     public static boolean sierraCredentials() {

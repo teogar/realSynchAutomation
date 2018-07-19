@@ -100,6 +100,10 @@ public class BasicFlows extends BaseTest {
                 break;
             case SIERRAINTERACTIVE:
                 assertTrue(wizardPage.clickOnSierraLogo());
+                break;
+            case LIONDESK:
+                assertTrue(wizardPage.clickOnLionDeskLogo());
+                break;
             default:
                 System.out.println("Target not found, please check your target name");
                 return false;

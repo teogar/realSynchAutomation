@@ -5,7 +5,7 @@ import test.BaseTest;
 
 public class SierraInteractiveFlows extends BaseTest {
 
-    public boolean sierraInteractiveCredentialsFlows()  {
+    public boolean sierraInteractiveCredentialsFlows() {
         wizardPage.clickOnSierraLogo();
         sierraInteractivePage.sierraCredentials();
         inputCredentialsPage.clickOnClose();

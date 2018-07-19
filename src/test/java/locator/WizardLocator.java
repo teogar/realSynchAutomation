@@ -15,4 +15,5 @@ public class WizardLocator extends BaseTest {
     public static final String CONTACTUALLY_LOGO = "//img[@src='/images/applications/contactually.JPG']";
     public static final String BOOMTOWN_LOGO = "//img[@src='/images/applications/boomtown.JPG']";
     public static final String SIERRA_INTERACTIVE_LOGO = "//img[@src=\"/images/applications/sierrainteractive.JPG\"]";
+    public static final String LION_DESK_LOGO = "//img[@src=\"/images/applications/liondesk.JPG\"]";
 }
