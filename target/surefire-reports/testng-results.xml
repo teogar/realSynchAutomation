@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="46" total="49" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-07-19T17:35:49Z" name="TEST" finished-at="2018-07-19T17:37:24Z" duration-ms="94260">
+    <groups>
+      <group name="VP to SierraI">
+        <method signature="VoicePadTest.voicePadToSierraInteractive()[pri:0, instance:test.VoicePadTest@5542c4ed]" name="voicePadToSierraInteractive" class="test.VoicePadTest"/>
+      </group> <!-- VP to SierraI -->
+      <group name="VP to LionDesk">
+        <method signature="VoicePadTest.voicePadToLionDesk()[pri:0, instance:test.VoicePadTest@78691363]" name="voicePadToLionDesk" class="test.VoicePadTest"/>
+      </group> <!-- VP to LionDesk -->
+      <group name="RealGeeks to SierraI">
+        <method signature="RealGeeksTest.realGeeksToSierraInteractive()[pri:0, instance:test.RealGeeksTest@217ed35e]" name="realGeeksToSierraInteractive" class="test.RealGeeksTest"/>
+      </group> <!-- RealGeeks to SierraI -->
+    </groups>
+    <test started-at="2018-07-19T17:35:49Z" name="TEST" finished-at="2018-07-19T17:36:28Z" duration-ms="38276">
+      <class name="test.VoicePadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.VoicePadTest@78691363]" started-at="2018-07-19T17:35:49Z" name="setUp" finished-at="2018-07-19T17:35:59Z" duration-ms="9365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="voicePadToLionDesk()[pri:0, instance:test.VoicePadTest@78691363]" started-at="2018-07-19T17:35:59Z" name="voicePadToLionDesk" finished-at="2018-07-19T17:36:27Z" duration-ms="28527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voicePadToLionDesk -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.VoicePadTest@78691363]" started-at="2018-07-19T17:36:27Z" name="tearDown" finished-at="2018-07-19T17:36:28Z" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.VoicePadTest -->
+    </test> <!-- TEST -->
+    <test started-at="2018-07-19T17:36:28Z" name="TEST_1" finished-at="2018-07-19T17:37:02Z" duration-ms="34005">
+      <class name="test.VoicePadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.VoicePadTest@5542c4ed]" started-at="2018-07-19T17:36:28Z" name="setUp" finished-at="2018-07-19T17:36:35Z" duration-ms="6927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="voicePadToSierraInteractive()[pri:0, instance:test.VoicePadTest@5542c4ed]" started-at="2018-07-19T17:36:35Z" name="voicePadToSierraInteractive" finished-at="2018-07-19T17:37:02Z" duration-ms="26588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voicePadToSierraInteractive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.VoicePadTest@5542c4ed]" started-at="2018-07-19T17:37:02Z" name="tearDown" finished-at="2018-07-19T17:37:02Z" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.VoicePadTest -->
+    </test> <!-- TEST_1 -->
+    <test started-at="2018-07-19T17:37:02Z" name="TEST_2" finished-at="2018-07-19T17:37:24Z" duration-ms="21551">
+      <class name="test.RealGeeksTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.RealGeeksTest@217ed35e]" started-at="2018-07-19T17:37:02Z" name="setUp" finished-at="2018-07-19T17:37:12Z" duration-ms="9536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="realGeeksToSierraInteractive()[pri:0, instance:test.RealGeeksTest@217ed35e]" started-at="2018-07-19T17:37:12Z" name="realGeeksToSierraInteractive" finished-at="2018-07-19T17:37:23Z" duration-ms="11639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- realGeeksToSierraInteractive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.RealGeeksTest@217ed35e]" started-at="2018-07-19T17:37:23Z" name="tearDown" finished-at="2018-07-19T17:37:24Z" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.RealGeeksTest -->
+    </test> <!-- TEST_2 -->
+  </suite> <!-- TEST -->
+</testng-results>
