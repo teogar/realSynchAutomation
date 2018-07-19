@@ -13,7 +13,7 @@
     <build>
         <resources>
             <resource>
-                <directory>/Users/teodorogarcia/IdeaProjects/TEST/src/resources/testng.xml</directory>
+                <directory>src/main/resources</directory>
             </resource>
         </resources>
         <plugins>
