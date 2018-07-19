@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TEST" class="navigator-link">
-              <span class="suite-name border-failed">TEST</span>
+              <span class="suite-name border-passed">TEST</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,35 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TEST" class="hide-methods failed suite-TEST"> (hide)</a> <!-- hide-methods failed suite-TEST -->
-                      <a href="#" panel-name="suite-TEST" class="show-methods failed suite-TEST"> (show)</a> <!-- show-methods failed suite-TEST -->
-                    </span>
-                    <div class="method-list-content failed suite-TEST">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TEST" title="test.VoicePadTest" class="method navigator-link" hash-for-method="voicePadToSierraInteractive">voicePadToSierraInteractive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TEST -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TEST" class="hide-methods skipped suite-TEST"> (hide)</a> <!-- hide-methods skipped suite-TEST -->
-                      <a href="#" panel-name="suite-TEST" class="show-methods skipped suite-TEST"> (show)</a> <!-- show-methods skipped suite-TEST -->
-                    </span>
-                    <div class="method-list-content skipped suite-TEST">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TEST" title="test.RealGeeksTest" class="method navigator-link" hash-for-method="realGeeksToSierraInteractive">realGeeksToSierraInteractive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TEST -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,7 +102,17 @@
                     <div class="method-list-content passed suite-TEST">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TEST" title="test.RealGeeksTest" class="method navigator-link" hash-for-method="realGeeksToSierraInteractive">realGeeksToSierraInteractive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TEST" title="test.VoicePadTest" class="method navigator-link" hash-for-method="voicePadToLionDesk">voicePadToLionDesk</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TEST" title="test.VoicePadTest" class="method navigator-link" hash-for-method="voicePadToSierraInteractive">voicePadToSierraInteractive</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TEST -->
@@ -145,66 +127,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TEST" class="panel TEST">
-          <div class="suite-TEST-class-failed">
+          <div class="suite-TEST-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.VoicePadTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="voicePadToSierraInteractive">
-                  </a> <!-- voicePadToSierraInteractive -->
-                  <span class="method-name">voicePadToSierraInteractive</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14394, moz:profile: /tmp/rust_mozprofile.gkPMJg..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b31470a5-b93a-4a9c-b796-ee8...}
-Session ID: b31470a5-b93a-4a9c-b796-ee8e18c400b1
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at page.CredentialsPage.clickOnSourceInputButton(CredentialsPage.java:79)
-	at flows.VoicePadFlows.voicePadCredentialsFlow(VoicePadFlows.java:8)
-	at test.VoicePadTest.voicePadToSierraInteractive(VoicePadTest.java:327)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 45.33.121.99:4444 [/45.33.121.99] failed: Connection refused (Connection refused)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:156)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	... 38 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 51 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TEST-class-failed -->
-          <div class="suite-TEST-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">test.RealGeeksTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,49 +138,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
                   <a name="realGeeksToSierraInteractive">
                   </a> <!-- realGeeksToSierraInteractive -->
                   <span class="method-name">realGeeksToSierraInteractive</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
-System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:155)
-	at test.BaseTest.setUp(BaseTest.java:61)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 45.33.121.99:4444 [/45.33.121.99] failed: Connection refused (Connection refused)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	... 31 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:400)
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:243)
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:225)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:402)
-	at java.base/java.net.Socket.connect(Socket.java:591)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 46 more
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TEST-class-skipped -->
+          </div> <!-- suite-TEST-class-passed -->
           <div class="suite-TEST-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -267,6 +153,13 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
                   <a name="voicePadToLionDesk">
                   </a> <!-- voicePadToLionDesk -->
                   <span class="method-name">voicePadToLionDesk</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="voicePadToSierraInteractive">
+                  </a> <!-- voicePadToSierraInteractive -->
+                  <span class="method-name">voicePadToSierraInteractive</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -382,20 +275,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'voicePadToLionDesk')
 data.setCell(0, 2, 'test.VoicePadTest')
-data.setCell(0, 3, 26040);
+data.setCell(0, 3, 28586);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'voicePadToSierraInteractive')
 data.setCell(1, 2, 'test.VoicePadTest')
-data.setCell(1, 3, 11639);
+data.setCell(1, 3, 24649);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'realGeeksToSierraInteractive')
 data.setCell(2, 2, 'test.RealGeeksTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 10902);
 window.suiteTableData['TEST']= { tableData: data, tableDiv: 'times-div-TEST'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TEST">
               </div> <!-- times-div-TEST -->
             </div> <!-- times-div -->
@@ -530,47 +423,39 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">voicePadToLionDesk</span>
-                <span class="method-start">9155 ms</span>
+                <span class="method-start">11742 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35198 ms</span>
+                <span class="method-start">40331 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">35888 ms</span>
+                <span class="method-start">41549 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">voicePadToSierraInteractive</span>
-                <span class="method-start">43042 ms</span>
+                <span class="method-start">50881 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54741 ms</span>
+                <span class="method-start">75531 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.RealGeeksTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">54831 ms</span>
+                <span class="method-start">75903 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">55229 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="test-method">
                 <span class="method-name">realGeeksToSierraInteractive</span>
-                <span class="method-start">-1532029140761 ms</span>
+                <span class="method-start">84339 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95241 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

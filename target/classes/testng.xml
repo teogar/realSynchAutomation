@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "TEST" verbose = "1">
+
+    <test name = "TEST">
+
+        <groups>
+            <run>
+                <include name="VP to LionDesk"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.VoicePadTest" />
+        </classes>
+    </test>
+
+    <test name = "TEST_1">
+
+        <groups>
+            <run>
+                <include name="VP to SierraI"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.VoicePadTest" />
+        </classes>
+    </test>
+
+    <test name = "TEST_2">
+
+        <groups>
+            <run>
+                <include name="RealGeeks to SierraI"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.RealGeeksTest" />
+        </classes>
+    </test>
+
+</suite>

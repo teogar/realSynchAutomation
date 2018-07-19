@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="56.562" tests="6" errors="0" skipped="1" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="96.524" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9+181"/>
@@ -63,71 +63,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="voicePadToLionDesk" classname="test.VoicePadTest" time="26.057"/>
-  <testcase name="voicePadToSierraInteractive" classname="test.VoicePadTest" time="11.7">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;&#10;Driver info: driver.version: RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14394, moz:profile: /tmp/rust_mozprofile.gkPMJg..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b31470a5-b93a-4a9c-b796-ee8...}&#10;Session ID: b31470a5-b93a-4a9c-b796-ee8e18c400b1" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
-Error communicating with the remote browser. It may have died.
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'esolis-2.local', ip: 'fe80:0:0:0:188f:94ca:d3b0:9f8f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '9'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14394, moz:profile: /tmp/rust_mozprofile.gkPMJg..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b31470a5-b93a-4a9c-b796-ee8...}
-Session ID: b31470a5-b93a-4a9c-b796-ee8e18c400b1
-	at test.VoicePadTest.voicePadToSierraInteractive(VoicePadTest.java:327)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 45.33.121.99:4444 [/45.33.121.99] failed: Connection refused (Connection refused)
-	at test.VoicePadTest.voicePadToSierraInteractive(VoicePadTest.java:327)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at test.VoicePadTest.voicePadToSierraInteractive(VoicePadTest.java:327)
-</failure>
-    <system-out><![CDATA[END Of Execution(RealSynch) -> org.testng.SuiteRunner@62d363ab
--- Real Synch Automation Tests --
-Running Selenium Config
-Test Started -> voicePadToSierraInteractive
-loginFlow
-sendUserName
-sendPassword
-clickOnSubmitButton
-clickOnAddNewSynchButtonselectSourceFlow
-scrollToElelementFlow
-clickOnVoicePadLogoclickOnNextButtonselectTargetFlow
-clickOnSourceInputButtonTest Failed -> voicePadToSierraInteractive
-]]></system-out>
-    <system-err><![CDATA[Jul 19, 2018 2:39:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="tearDown" classname="test.VoicePadTest" time="11.75">
-    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;&#10;Driver info: driver.version: RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14394, moz:profile: /tmp/rust_mozprofile.gkPMJg..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b31470a5-b93a-4a9c-b796-ee8...}&#10;Session ID: b31470a5-b93a-4a9c-b796-ee8e18c400b1" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
-Error communicating with the remote browser. It may have died.
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'esolis-2.local', ip: 'fe80:0:0:0:188f:94ca:d3b0:9f8f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '9'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14394, moz:profile: /tmp/rust_mozprofile.gkPMJg..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.13-x86_64-linode106, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: b31470a5-b93a-4a9c-b796-ee8...}
-Session ID: b31470a5-b93a-4a9c-b796-ee8e18c400b1
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 45.33.121.99:4444 [/45.33.121.99] failed: Connection refused (Connection refused)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-</failure>
-  </testcase>
-  <testcase name="setUp" classname="test.RealGeeksTest" time="12.173">
-    <failure message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
-Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'esolis-2.local', ip: 'fe80:0:0:0:188f:94ca:d3b0:9f8f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '9'
-Driver info: driver.version: RemoteWebDriver
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 45.33.121.99:4444 [/45.33.121.99] failed: Connection refused (Connection refused)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-</failure>
-    <system-out><![CDATA[END Of Execution(RealSynch) -> org.testng.SuiteRunner@62d363ab
--- Real Synch Automation Tests --
-Running Selenium Config
-]]></system-out>
-  </testcase>
-  <testcase name="realGeeksToSierraInteractive" classname="test.RealGeeksTest" time="0">
-    <skipped message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;&#10;System info: host: &apos;esolis-2.local&apos;, ip: &apos;fe80:0:0:0:188f:94ca:d3b0:9f8f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9&apos;&#10;Driver info: driver.version: RemoteWebDriver"/>
-    <system-out><![CDATA[Test Skipped -> realGeeksToSierraInteractive
-]]></system-out>
-  </testcase>
-  <testcase name="tearDown" classname="test.RealGeeksTest" time="12.189">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-</failure>
-  </testcase>
+  <testcase name="voicePadToLionDesk" classname="test.VoicePadTest" time="28.589"/>
+  <testcase name="voicePadToSierraInteractive" classname="test.VoicePadTest" time="24.649"/>
+  <testcase name="realGeeksToSierraInteractive" classname="test.RealGeeksTest" time="10.902"/>
 </testsuite>
