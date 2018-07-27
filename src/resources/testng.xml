@@ -4,7 +4,6 @@
 <suite name = "TEST" verbose = "1">
 
     <test name = "TEST">
-
         <groups>
             <run>
                 <include name="VP to LionDesk"/>
@@ -14,9 +13,7 @@
             <class name="test.VoicePadTest" />
         </classes>
     </test>
-
     <test name = "TEST_1">
-
         <groups>
             <run>
                 <include name="VP to SierraI"/>
@@ -26,9 +23,7 @@
             <class name="test.VoicePadTest" />
         </classes>
     </test>
-
     <test name = "TEST_2">
-
         <groups>
             <run>
                 <include name="RealGeeks to SierraI"/>
@@ -38,5 +33,4 @@
             <class name="test.RealGeeksTest" />
         </classes>
     </test>
-
 </suite>

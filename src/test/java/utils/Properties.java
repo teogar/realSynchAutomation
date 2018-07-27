@@ -24,6 +24,7 @@ public class Properties {
     public static final String CONTACTUALLY_API_KEY = "7cao7358zg41vtcx6ow0c9g3mopbxx4i";
     public static final String REAL_SYNCH_FORGOT_PWD = "pete696@yopmail.com";
     public static final String VOICE_PAD_CLIENT_ID = "1680";
+    public static final String VOICE_PAD_WEBSITE_ID = "258";
     public static final String VOICE_PAD_USER = "teoteo999@mailinator.com";
     public static final String VOICE_PAD_PWD = "teoteo999@mailinator.com";
     public static final String BOOM_TOWN_EMAIL = "franciscojavier.corona@outlook.com";

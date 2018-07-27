@@ -27,6 +27,9 @@ public class InputCredentialsPage extends BaseTest {
     @FindBy( how = How.NAME, using = InputCredentialsLocator.CLIENT_ID_INPUT)
     static WebElement  clientIdInput;
 
+    @FindBy( how = How.XPATH, using = InputCredentialsLocator.WEBSITE_ID_INPUT)
+    static WebElement webSiteId;
+
     @FindBy( how = How.NAME, using = InputCredentialsLocator.USER_INPUT)
     static WebElement  userInput;
 
@@ -75,6 +78,14 @@ public class InputCredentialsPage extends BaseTest {
         assertTrue(clientIdInput.isDisplayed());
         clientIdInput.clear();
         clientIdInput.sendKeys(data);
+        return true;
+    }
+
+    public static boolean enterWesiteId(String webSIte) {
+        System.out.println("Enter WebSIte Id");
+        assertTrue(webSiteId.isDisplayed());
+        webSiteId.clear();
+        webSiteId.sendKeys(webSIte);
         return true;
     }
 
